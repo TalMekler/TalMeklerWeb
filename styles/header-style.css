@@ -47,3 +47,11 @@ body{
     letter-spacing: 1px;
     font-weight: bold;
 }
+.nav-wrapper{
+    display: flex;
+    color: #8a8a8a;
+}
+
+.nav-wrapper a i{
+    margin-right: 5px;
+}
