@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/indexMain.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="JS-files/bmi-calc.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,28 @@
     </div>
     
     <div class="main">
-        
+        <div class="bmi-calculator-wrapper">
+            <div class="bmi-header">
+                <h2>BMI - Calculator</h2>
+            </div>
+            <div class="error-msg" id="error-msg">
+
+            </div>
+            <div class="bmi-main">
+                    <div class="input-field">
+                        <input type="text" name="height" id="height" placeholder="Enter Your Height" oninput="checkValue()">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="weight" id="weight" placeholder="Enter Your Weight" oninput="checkValue()">
+                    </div>
+                    <div class="input-field btn">
+                        <input type="submit" name="btn" id="btn" value="Submit" onclick="bmiCalc()">
+                    </div>
+                <div class="bmi-res" id="bmi-res" >
+
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
