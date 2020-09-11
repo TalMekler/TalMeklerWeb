@@ -1,0 +1,58 @@
+.leave-your-details{
+    background-color: $darkGrayBg;
+    @include breakpoint-less(large){
+        padding-top: 0;
+    }
+    
+    h2{
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        width: fit-content;
+        color: $darkCyan;
+        margin: 0 auto;
+        @include breakpoint-less(large){
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+    }
+    p{
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        width: fit-content;
+        margin: 0 auto;
+        line-height: 2.9rem;
+        @include breakpoint-less(large){
+            font-size: 1.2rem;
+            width: 75%;
+            line-height: 1.4rem;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .btn{
+        text-align: center;
+        .conatct-btn{
+            padding: 20px 80px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-top: 80px;
+            background-color: $darkCyan;
+            color: #ffffff;
+            box-shadow: 2px 5px 5px rgba(black, 0.5);
+            cursor: pointer;
+
+            @include breakpoint-less(large){
+                padding: 10px 50px;
+                font-size: 1.3rem;
+                margin-top: 40px;
+            }
+
+            &:hover{
+                background-color: $cyan;
+            }
+        }
+    }
+    
+}

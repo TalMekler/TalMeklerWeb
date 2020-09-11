@@ -1,0 +1,37 @@
+// Colors
+$darkGray: #373737;
+$lightGray: #636363;
+$cyan: #00b9b8;
+
+$darkCyan: #009999;
+
+$lightGrayBg: rgba($lightGray, 0.4);
+$darkGrayBg: rgba($darkGray, 0.4);
+
+// Fonts
+$spacielFont: 'Bai Jamjuree', sans-serif;
+
+// Breakpoints
+$breakpoints: (
+    small: 499px,
+    medium: 699px,
+    large: 999px,
+    xlarge: 1399px
+);
+
+@mixin breakpoint($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value){
+        @content;
+    }
+    
+}
+@mixin breakpoint-less($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (max-width: $breakpoint-value){
+        @content;
+    }
+    
+}

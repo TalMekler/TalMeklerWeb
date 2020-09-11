@@ -1,0 +1,76 @@
+.start{
+    background: $lightGrayBg;
+    padding-top: 70px;
+    h1{ 
+        font-size: 1.6em;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 0;
+        color: $darkCyan;    
+        text-transform: uppercase;
+        width: fit-content;
+        margin: 0 auto;
+        @include breakpoint(large){
+            // letter-spacing: 5px;
+            font-size: 2.8em;
+        }
+    }
+    .desc{
+        font-size: .9em;
+        line-height: 1.3em;
+        width: 85%;
+        @include breakpoint(large){
+            font-size: 1.2em;
+            line-height: 1.6em;
+            width: 670px;
+        }
+        text-transform: capitalize;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        span{
+            text-transform: uppercase;
+            color: red;
+            font-weight: 700;
+            font-size: 1.1em;
+            @include breakpoint(large){
+                letter-spacing: 7px;
+                margin-top: 5px;
+            }
+        }
+    }
+    .btn-wrapper{
+        width: 100%;
+        text-align: center;
+        .conatct-btn{
+            cursor: pointer;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 30px;
+            padding: 20px 50px;
+            background-color: $darkCyan;
+            font-size: 1.1em;
+            letter-spacing: 3px;
+            font-weight: 700;
+            color: #ffffff;
+            // margin-left: 50%;
+            // transform: translateX(-50%);
+            margin: 0 auto;
+            position: relative;
+            bottom: -80px;
+            transition: .2s ease-in-out;
+            @include breakpoint-less(large){
+                font-size: .9em;
+                letter-spacing: 0;
+                padding: 20px 40px;
+            }
+            &:hover{
+                background: $cyan;
+                @include breakpoint(large){
+                    // transform: translateX(-50%) scale(1.1);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    
+}
