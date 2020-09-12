@@ -145,7 +145,7 @@ if(isset($_POST['submit-open-form'])){
 
     <section class="contact-form-wrapper" id="contact-form-wrapper">
         <div class="contact-form">
-            <form action="index.php" method="post">
+            <form action="index.php" method="post" netlify>
                 <input type="text" name="reg-name" placeholder="Enter Your Name" autocomplete="off" required>
                 <input type="tel" name="reg-phone" pattern="[0-9]{10}" placeholder="Enter Your Phone Number" autocomplete="off" required>
                 <input type="email" name="reg-email" placeholder="Enter Your Email" autocomplete="off" required>
