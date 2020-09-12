@@ -27,7 +27,7 @@ $(document).ready(function () {
     });
     $("#close-bar-btn").click(function() {
         if(mobile == false){
-            $("#open-bar").css("right", "-250px");
+            $("#open-bar").css("right", "-400px");
             setTimeout(function(){$("#open-bar").hide();}, 500);
         }else{
             $("#open-bar").hide();
@@ -35,7 +35,7 @@ $(document).ready(function () {
     });
     $(".bar-link").click(function() {
         if(mobile == false){
-            $("#open-bar").css("right", "-250px");
+            $("#open-bar").css("right", "-400px");
         }
         setTimeout(function(){$("#open-bar").hide();}, 500);
     });
