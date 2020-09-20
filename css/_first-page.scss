@@ -36,7 +36,7 @@
         transform: translateX(30%);
         opacity: 0;
         // color: white;
-        transition: all 1s ease-in-out;
+        transition: transform 1.4s ease-in-out, opacity 1.4s ease-in .3s;
         &.active {
             transform: translateX(-45%);
             opacity: 1;

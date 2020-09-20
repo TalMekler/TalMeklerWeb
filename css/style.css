@@ -118,8 +118,10 @@ header .logo-text::before {
   -webkit-transform: translateX(30%);
           transform: translateX(30%);
   opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: opacity 1.4s ease-in .3s, -webkit-transform 1.4s ease-in-out;
+  transition: opacity 1.4s ease-in .3s, -webkit-transform 1.4s ease-in-out;
+  transition: transform 1.4s ease-in-out, opacity 1.4s ease-in .3s;
+  transition: transform 1.4s ease-in-out, opacity 1.4s ease-in .3s, -webkit-transform 1.4s ease-in-out;
 }
 
 .first-page .main-text.active {
