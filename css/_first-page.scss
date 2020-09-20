@@ -12,8 +12,7 @@
         height: 100%;
         position: absolute;
         clip-path: circle(0% at 100% 0%);
-        // background-color: $main-blue;
-        background-color: rgba($main-blue, .7);
+        background-color: rgba($main-blue, 0.7);
         opacity: 0;
         z-index: 1;
         transition: all 1.2s ease-in-out;
@@ -22,6 +21,9 @@
         &::before {
             opacity: 1;
             clip-path: circle(50% at 100% 60%);
+            @include breakpoint-less(large){
+                clip-path: circle(50% at 100% 0%);
+            }
         }
     }
 
@@ -36,17 +38,45 @@
         transform: translateX(30%);
         opacity: 0;
         // color: white;
-        transition: transform 1.4s ease-in-out, opacity 1.4s ease-in .3s;
+        transition: transform 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
         &.active {
             transform: translateX(-45%);
             opacity: 1;
+            @include breakpoint-less(large){
+                transform: translateX(0);
+                padding: 0 50px;
+                
+            }
         }
 
         h1 {
             font-size: 3rem;
+            @include breakpoint-less(xlarge) {
+                font-size: 2.5rem;
+            }
+            @include breakpoint-less(large){
+                font-size: 2rem;
+                text-align: center;
+            }
         }
         p {
             font-size: 2rem;
+            @include breakpoint-less(xlarge) {
+                font-size: 1.65rem;
+            }
+            @include breakpoint-less(large){
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            br {
+                display: none;
+                @media screen and (max-width: 1200px) {
+                    display: block;
+                }
+                @include breakpoint-less(large){
+                    display: none;
+                }
+            }
         }
         a {
             width: fit-content;
@@ -61,6 +91,16 @@
             overflow: hidden;
             z-index: 1;
             transition: all 0.4s ease-in-out;
+            @include breakpoint-less(xlarge) {
+                font-size: 1.4rem;
+            }
+            @include breakpoint-less(large){
+                font-size: 1.3rem;
+                margin: 35px auto 0 auto;
+                color: white;
+                background-color: $main-blue;
+                box-shadow: 0 0 15px $main-blue;
+            }
             &::before {
                 content: "";
                 position: absolute;
@@ -70,7 +110,7 @@
                 height: 10px;
                 border-left: 3px solid $main-blue;
                 border-top: 3px solid $main-blue;
-                transition: all 0.5s ease-in-out .3s;
+                transition: all 0.5s ease-in-out 0.3s;
             }
             &::after {
                 content: "";
@@ -81,13 +121,13 @@
                 height: 10px;
                 border-right: 3px solid $main-blue;
                 border-bottom: 3px solid $main-blue;
-                transition: all 0.5s ease-in-out .3s;
+                transition: all 0.5s ease-in-out 0.3s;
             }
             &:hover {
                 color: white;
                 background-color: $main-blue;
                 box-shadow: 0 0 15px $main-blue;
-                transition: all 0.4s ease-in-out .3s;
+                transition: all 0.4s ease-in-out 0.3s;
                 &::before,
                 &::after {
                     width: 100%;

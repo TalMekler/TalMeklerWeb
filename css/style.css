@@ -8,6 +8,11 @@
   text-decoration: none;
 }
 
+html,
+body {
+  overflow: hidden;
+}
+
 a {
   color: black;
 }
@@ -31,6 +36,13 @@ header {
   z-index: 1;
 }
 
+@media screen and (max-width: 999px) {
+  header {
+    padding: 30px 70px;
+    z-index: 2;
+  }
+}
+
 header .logo {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -49,12 +61,30 @@ header .logo-text {
   display: none;
 }
 
+@media screen and (max-width: 999px) {
+  header .logo-text {
+    margin: 0 auto;
+  }
+}
+
 header .logo-text h1 {
   font-size: 1.7rem;
   line-height: 2.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
+}
+
+@media screen and (max-width: 999px) {
+  header .logo-text h1 {
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+header .logo-text h1 .clr-blue {
+  color: #E74C3C;
 }
 
 header .logo-text::before {
@@ -102,6 +132,13 @@ header .logo-text::before {
           clip-path: circle(50% at 100% 60%);
 }
 
+@media screen and (max-width: 999px) {
+  .first-page.active::before {
+    -webkit-clip-path: circle(50% at 100% 0%);
+            clip-path: circle(50% at 100% 0%);
+  }
+}
+
 .first-page .main-text {
   direction: rtl;
   z-index: 1;
@@ -118,10 +155,10 @@ header .logo-text::before {
   -webkit-transform: translateX(30%);
           transform: translateX(30%);
   opacity: 0;
-  -webkit-transition: opacity 1.4s ease-in .3s, -webkit-transform 1.4s ease-in-out;
-  transition: opacity 1.4s ease-in .3s, -webkit-transform 1.4s ease-in-out;
-  transition: transform 1.4s ease-in-out, opacity 1.4s ease-in .3s;
-  transition: transform 1.4s ease-in-out, opacity 1.4s ease-in .3s, -webkit-transform 1.4s ease-in-out;
+  -webkit-transition: opacity 1.4s ease-in 0.3s, -webkit-transform 1.4s ease-in-out;
+  transition: opacity 1.4s ease-in 0.3s, -webkit-transform 1.4s ease-in-out;
+  transition: transform 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
+  transition: transform 1.4s ease-in-out, opacity 1.4s ease-in 0.3s, -webkit-transform 1.4s ease-in-out;
 }
 
 .first-page .main-text.active {
@@ -130,12 +167,62 @@ header .logo-text::before {
   opacity: 1;
 }
 
+@media screen and (max-width: 999px) {
+  .first-page .main-text.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    padding: 0 50px;
+  }
+}
+
 .first-page .main-text h1 {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 1399px) {
+  .first-page .main-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .first-page .main-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
 .first-page .main-text p {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1399px) {
+  .first-page .main-text p {
+    font-size: 1.65rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .first-page .main-text p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.first-page .main-text p br {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .first-page .main-text p br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .first-page .main-text p br {
+    display: none;
+  }
 }
 
 .first-page .main-text a {
@@ -162,6 +249,23 @@ header .logo-text::before {
   transition: all 0.4s ease-in-out;
 }
 
+@media screen and (max-width: 1399px) {
+  .first-page .main-text a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .first-page .main-text a {
+    font-size: 1.3rem;
+    margin: 35px auto 0 auto;
+    color: white;
+    background-color: #2980B9;
+    -webkit-box-shadow: 0 0 15px #2980B9;
+            box-shadow: 0 0 15px #2980B9;
+  }
+}
+
 .first-page .main-text a::before {
   content: "";
   position: absolute;
@@ -171,8 +275,8 @@ header .logo-text::before {
   height: 10px;
   border-left: 3px solid #2980B9;
   border-top: 3px solid #2980B9;
-  -webkit-transition: all 0.5s ease-in-out .3s;
-  transition: all 0.5s ease-in-out .3s;
+  -webkit-transition: all 0.5s ease-in-out 0.3s;
+  transition: all 0.5s ease-in-out 0.3s;
 }
 
 .first-page .main-text a::after {
@@ -184,8 +288,8 @@ header .logo-text::before {
   height: 10px;
   border-right: 3px solid #2980B9;
   border-bottom: 3px solid #2980B9;
-  -webkit-transition: all 0.5s ease-in-out .3s;
-  transition: all 0.5s ease-in-out .3s;
+  -webkit-transition: all 0.5s ease-in-out 0.3s;
+  transition: all 0.5s ease-in-out 0.3s;
 }
 
 .first-page .main-text a:hover {
@@ -193,8 +297,8 @@ header .logo-text::before {
   background-color: #2980B9;
   -webkit-box-shadow: 0 0 15px #2980B9;
           box-shadow: 0 0 15px #2980B9;
-  -webkit-transition: all 0.4s ease-in-out .3s;
-  transition: all 0.4s ease-in-out .3s;
+  -webkit-transition: all 0.4s ease-in-out 0.3s;
+  transition: all 0.4s ease-in-out 0.3s;
 }
 
 .first-page .main-text a:hover::before, .first-page .main-text a:hover::after {

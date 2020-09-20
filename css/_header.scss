@@ -3,6 +3,10 @@ header {
     position: fixed;
     background-color: transparent;
     z-index: 1;
+    @include breakpoint-less(large){
+        padding: 30px 70px;
+        z-index: 2;
+    }
     .logo {
         width: fit-content;
         cursor: pointer;
@@ -11,12 +15,23 @@ header {
             align-items: center;
             position: relative;
             display: none;
+            @include breakpoint-less(large){
+                margin: 0 auto;
+            }
             h1 {
                 font-size: 1.7rem;
                 line-height: 2.5rem;
                 font-family: $poppins;
                 font-weight: 700;
                 letter-spacing: 3px;
+                @include breakpoint-less(large){
+                    letter-spacing: 1px;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+                .clr-blue{
+                    color: $main-red;
+                }
             }
             &::before {
                 content: "\f120";
