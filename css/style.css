@@ -171,8 +171,9 @@ header .logo-text::before {
 
 @media screen and (max-width: 999px) {
   .first-page .main-text.active {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
     padding: 0 50px;
   }
 }

@@ -43,7 +43,8 @@
             transform: translateX(-45%);
             opacity: 1;
             @include breakpoint-less(large){
-                transform: translateX(0);
+                right: 50%;
+                transform: translateX(50%);
                 padding: 0 50px;
                 
             }
