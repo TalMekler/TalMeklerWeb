@@ -1,37 +1,4 @@
-<?php
-
-if(isset($_POST['submit-reg-form'])){
-    $name = $_POST['reg-name'];
-    $phone = $_POST['reg-phone'];
-    $email = $_POST['reg-email'];
-
-    $mailTo = "tal.mekler11@gmail.com";
-    $mailTxt = "Name: ".$name."\n\nPhone Number: ".$phone."\n\nEmail: ".$email."\n\nLeave his details the website (TM Developer).";
-
-    $headers = "From: ".$email;
-    if(mail($mailTo, "New Message From TM Developer", $mailTxt, $headers)){
-        header("Location: index.php");
-    }
-}
-if(isset($_POST['submit-open-form'])){
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-
-    $mailTo = "tal.mekler11@gmail.com";
-    $mailTxt = "Name: ".$name."\n\nPhone Number: ".$phone."\n\nEmail: ".$email."\n\nLeave his details the website (TM Developer).";
-
-    $mailStatus = false;
-    $headers = "From: ".$email;
-    if(mail($mailTo, "New Message From TM Developer", $mailTxt, $headers)){
-        $mailStatus = true;
-    }
-}
-
-
-?>
-
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
