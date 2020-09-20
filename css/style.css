@@ -16,6 +16,14 @@ a {
   color: #E74C3C;
 }
 
+.clr-blue {
+  color: #2980B9;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 header {
   padding: 30px 150px;
   position: fixed;
@@ -72,7 +80,6 @@ header .logo-text::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #999999;
 }
 
 .first-page::before {
@@ -82,7 +89,7 @@ header .logo-text::before {
   position: absolute;
   -webkit-clip-path: circle(0% at 100% 0%);
           clip-path: circle(0% at 100% 0%);
-  background-color: #2980B9;
+  background-color: rgba(41, 128, 185, 0.7);
   opacity: 0;
   z-index: 1;
   -webkit-transition: all 1.2s ease-in-out;
@@ -111,14 +118,13 @@ header .logo-text::before {
   -webkit-transform: translateX(30%);
           transform: translateX(30%);
   opacity: 0;
-  color: white;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
 .first-page .main-text.active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
   opacity: 1;
 }
 
@@ -134,7 +140,7 @@ header .logo-text::before {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 20px auto 0 0;
+  margin: 20px 0 0 auto;
   color: #2980B9;
   font-size: 1.7rem;
   position: relative;
@@ -147,7 +153,7 @@ header .logo-text::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px 20px;
+  padding: 10px 20px;
   overflow: hidden;
   z-index: 1;
   -webkit-transition: all 0.4s ease-in-out;

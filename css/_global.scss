@@ -4,9 +4,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-a{
+a {
     color: black;
 }
-.clr-red{
+.clr-red {
     color: $main-red;
+}
+.clr-blue {
+    color: $main-blue;
+}
+.bold {
+    font-weight: bold;
 }
