@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  padding: 30px 150px;
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+}
+
+header .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+header .logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  display: none;
+}
+
+header .logo-text h1 {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+header .logo-text::before {
+  content: "\f120";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -60px;
+}
+
+.first-page {
+  position: relative;
+  height: 100vh;
+  overflow: visible;
+}
+
+.first-page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-clip-path: circle(0% at 100% 0%);
+          clip-path: circle(0% at 100% 0%);
+  background-color: #2980B9;
+  opacity: 0;
+  -webkit-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+}
+
+.first-page.active::before {
+  opacity: 1;
+  -webkit-clip-path: circle(50% at 100% 60%);
+          clip-path: circle(50% at 100% 60%);
+}
+/*# sourceMappingURL=style.css.map */

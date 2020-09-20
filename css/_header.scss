@@ -1,0 +1,31 @@
+header {
+    padding: 30px 150px;
+    position: fixed;
+    background-color: #fff;
+    width: 100vw;
+    .logo {
+        width: fit-content;
+        &-text {
+            display: flex;
+            align-items: center;
+            position: relative;
+            display: none;
+            h1 {
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+                font-family: $poppins;
+                font-weight: 700;
+            }
+            &::before {
+                content: "\f120";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 2.5rem;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -60px;
+            }
+        }
+    }
+}

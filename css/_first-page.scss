@@ -1,0 +1,21 @@
+.first-page {
+    position: relative;
+    height: 100vh;
+    overflow: visible;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(0% at 100% 0%);
+        background-color: $main-blue;
+        opacity: 0;
+        transition: all 1.2s ease-in-out;
+    }
+    &.active{
+        &::before{
+            opacity: 1;
+            clip-path: circle(50% at 100% 60%);
+        }
+    }
+}
