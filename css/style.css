@@ -83,8 +83,10 @@ header .logo-text h1 {
   }
 }
 
-header .logo-text h1 .clr-blue {
-  color: #E74C3C;
+@media screen and (max-width: 999px) {
+  header .logo-text h1 .clr-blue {
+    color: #E74C3C;
+  }
 }
 
 header .logo-text::before {

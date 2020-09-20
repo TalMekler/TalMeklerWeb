@@ -30,7 +30,9 @@ header {
                     line-height: 2rem;
                 }
                 .clr-blue{
-                    color: $main-red;
+                    @include breakpoint-less(large){
+                        color: $main-red;
+                    }
                 }
             }
             &::before {
