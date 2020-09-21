@@ -23,6 +23,9 @@
         &::before {
             opacity: 1;
             clip-path: circle(50% at 100% 28%);
+            @media screen and (max-width: 1200px) {
+                clip-path: circle(50% at 100% 40%);
+            }
             @include breakpoint-less(large){
                 clip-path: circle(50% at 100% 0%);
             }

@@ -171,6 +171,13 @@ header .logo-text::before {
           clip-path: circle(50% at 100% 28%);
 }
 
+@media screen and (max-width: 1200px) {
+  .first-page.active::before {
+    -webkit-clip-path: circle(50% at 100% 40%);
+            clip-path: circle(50% at 100% 40%);
+  }
+}
+
 @media screen and (max-width: 999px) {
   .first-page.active::before {
     -webkit-clip-path: circle(50% at 100% 0%);
