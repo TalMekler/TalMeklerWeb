@@ -10,7 +10,7 @@
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -29,11 +29,19 @@ a {
   font-weight: bold;
 }
 
+section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
 header {
   padding: 30px 150px;
   position: fixed;
   background-color: transparent;
   z-index: 1;
+  width: 100vw;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 999px) {
@@ -41,6 +49,24 @@ header {
     padding: 30px 70px;
     z-index: 2;
   }
+}
+
+header.page-down {
+  background-color: black;
+  z-index: 2;
+  width: 100vw;
+}
+
+header.page-down .logo h1 {
+  color: white;
+}
+
+header.page-down .logo .clr-blue {
+  color: #E74C3C;
+}
+
+header.page-down .logo-text::before {
+  color: white;
 }
 
 header .logo {
@@ -73,6 +99,8 @@ header .logo-text h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
+  -webkit-transition: color 0.5s ease-in-out 0.1s;
+  transition: color 0.5s ease-in-out 0.1s;
 }
 
 @media screen and (max-width: 999px) {
@@ -81,6 +109,11 @@ header .logo-text h1 {
     font-size: 1.4rem;
     line-height: 2rem;
   }
+}
+
+header .logo-text h1 .clr-blue {
+  -webkit-transition: color 0.5s ease-in-out 0.1s;
+  transition: color 0.5s ease-in-out 0.1s;
 }
 
 @media screen and (max-width: 999px) {
@@ -99,13 +132,15 @@ header .logo-text::before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: -60px;
+  -webkit-transition: color 0.5s ease-in-out 0.1s;
+  transition: color 0.5s ease-in-out 0.1s;
 }
 
 .first-page {
   direction: rtl;
   position: relative;
   height: 100vh;
-  overflow: visible;
+  overflow-y: visible;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,5 +339,32 @@ header .logo-text::before {
   z-index: -1;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
+}
+
+.second-page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-clip-path: circle(0% at 100% -40%);
+          clip-path: circle(0% at 100% -40%);
+  background-color: rgba(41, 128, 185, 0.7);
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+}
+
+.second-page.active::before {
+  opacity: 1;
+  -webkit-clip-path: circle(50% at 100% -40%);
+          clip-path: circle(50% at 100% -40%);
+}
+
+@media screen and (max-width: 999px) {
+  .second-page.active::before {
+    -webkit-clip-path: circle(0% at 100% 0%);
+            clip-path: circle(0% at 100% 0%);
+  }
 }
 /*# sourceMappingURL=style.css.map */

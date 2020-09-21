@@ -6,7 +6,7 @@
 }
 html,
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 a {
     color: black;
@@ -19,4 +19,8 @@ a {
 }
 .bold {
     font-weight: bold;
+}
+section{
+    min-height: 100vh;
+    width: 100vw;
 }

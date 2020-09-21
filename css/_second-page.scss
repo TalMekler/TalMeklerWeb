@@ -1,0 +1,22 @@
+.second-page{
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        clip-path: circle(0% at 100% -40%);
+        background-color: rgba($main-blue, 0.7);
+        opacity: 0;
+        z-index: 1;
+        transition: all 1.2s ease-in-out;
+    }
+    &.active {
+        &::before {
+            opacity: 1;
+            clip-path: circle(50% at 100% -40%);
+            @include breakpoint-less(large){
+                clip-path: circle(0% at 100% 0%);
+            }
+        }
+    }
+}
