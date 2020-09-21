@@ -42,6 +42,7 @@ header {
   width: 100vw;
   -webkit-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
+  display: none;
 }
 
 @media screen and (max-width: 999px) {
@@ -83,7 +84,6 @@ header .logo-text {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  display: none;
 }
 
 @media screen and (max-width: 999px) {

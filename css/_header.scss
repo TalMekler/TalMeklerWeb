@@ -5,6 +5,7 @@ header {
     z-index: 2;
     width: 100vw;
     transition: background 0.5s ease-in-out;
+    display: none;
     @include breakpoint-less(large) {
         padding: 30px 70px;
         z-index: 2;
@@ -33,7 +34,7 @@ header {
             display: flex;
             align-items: center;
             position: relative;
-            display: none;
+            // display: none;
             @include breakpoint-less(large) {
                 margin: 0 auto;
             }
