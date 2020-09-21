@@ -222,12 +222,6 @@ header .logo-text::before {
   }
 }
 
-@media screen and (max-width: 999px) {
-  .first-page .main-text p br {
-    display: none;
-  }
-}
-
 .first-page .main-text a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
