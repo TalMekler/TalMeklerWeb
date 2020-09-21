@@ -38,7 +38,7 @@ header {
   padding: 30px 150px;
   position: fixed;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   -webkit-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
@@ -54,7 +54,6 @@ header {
 header.page-down {
   background-color: black;
   z-index: 2;
-  width: 100vw;
 }
 
 header.page-down .logo h1 {
