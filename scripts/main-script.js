@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // Header on SCROLL
     $(function () {
         var scroll = $(window).scrollTop();
             if (scroll > 100){
@@ -16,9 +17,9 @@ $(document).ready(function () {
         })
         
     })
+    // Show Elements when page LOAD
     $(function () {
         setTimeout(function(){
-            // $("header .logo .logo-text").fadeIn(1000);
             $("header").fadeIn(1000);
             $(".first-page, .second-page").addClass("active");
             setTimeout(function(){
@@ -26,4 +27,5 @@ $(document).ready(function () {
             }, 700);
         }, 500);
     })
+
 });
