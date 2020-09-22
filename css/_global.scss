@@ -22,6 +22,6 @@ a {
     font-weight: bold;
 }
 section{
-    min-height: 100vh;
+    height: calc(100vh - 100px);
     width: 100vw;
 }

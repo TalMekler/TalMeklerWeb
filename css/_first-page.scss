@@ -1,11 +1,9 @@
 .first-page {
     direction: rtl;
     position: relative;
-    height: 100vh;
-    overflow-y: visible;
     display: flex;
     align-items: center;
-    // background-color: #999999;
+    height: 100vh;
     &::before {
         content: "";
         width: 100%;
@@ -29,7 +27,7 @@
         }
     }
 
-    .main-text {
+    .main-content {
         direction: rtl;
         z-index: 1;
         display: flex;
@@ -41,6 +39,7 @@
         opacity: 0;
         // color: white;
         transition: transform 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
+        
         &.active {
             transform: translateX(-45%);
             opacity: 1;

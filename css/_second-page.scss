@@ -1,3 +1,94 @@
-.second-page{
+.second-page {
+    direction: rtl;
+    padding-top: 30px;
+    position: relative;
+    height: calc(100vh - 100px);
 
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        position: absolute;
+        clip-path: circle(0% at 0% 100%);
+        background-color: rgba($main-blue, 0.7);
+        opacity: 1;
+        z-index: 1;
+        overflow: visible;
+        transition: all 1.2s ease-in-out;
+    }
+    &.active {
+        &::before {
+            opacity: 1;
+            clip-path: circle(50% at 0% 79.5%);
+            @include breakpoint-less(large){
+                clip-path: circle(0% at 0% 100%);
+            }
+        }
+    }
+
+    .main-content {
+        padding: 0 150px;
+        display: flex;
+        z-index: 1;
+        .in-web-desc {
+            position: relative;
+            right: -50%;
+            opacity: 0;
+            width: 50%;
+            transition: right 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
+            &.active{
+                right: 0%;
+                opacity: 1;
+            }
+            h2 {
+                font-family: $assistant;
+                font-size: 2.5rem;
+            }
+            ul {
+                list-style: none;
+                padding: 10px 20px;
+                li {
+                    padding: 15px 0;
+                    font-size: 1.7rem;
+
+                    .english-text{
+                        font-family: $poppins;
+                    }
+                }
+            }
+        }
+        .codes-text{
+            position: relative;
+            left: -50%;
+            opacity: 0;
+            width: 50%;
+            transition: left 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
+            &.active{
+                left: 0%;
+                opacity: 1;
+            }
+            text-align: center;
+            z-index: 2;
+            h2 {
+                margin-top: 250px;
+                font-family: $assistant;
+                font-size: 2.5rem;
+            }
+            .codes-lang {
+                margin-top: 35px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+                i{
+                    font-size: 4rem;
+                    color: $main-red;
+                }
+                h4{
+                    direction: ltr;
+                    font-family: $poppins;
+                }
+            }
+        }
+    }
 }
