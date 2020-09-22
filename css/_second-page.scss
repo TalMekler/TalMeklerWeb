@@ -21,6 +21,9 @@
         z-index: 1;
         overflow: visible;
         transition: all 1.2s ease-in-out;
+        @include breakpoint-less(large){
+            transition: all .6s ease-in-out;
+        }
     }
     &.active {
         &::before {
@@ -48,6 +51,7 @@
             transition: right 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
             @include breakpoint-less(large){
                 width: 90%;
+                transition: right 1s ease-in-out, opacity 1s ease-in 0.3s;
             }
             &.active{
                 right: 0%;
@@ -97,6 +101,7 @@
             @include breakpoint-less(large){
                 width: 90%;
                 margin-top: 100px;
+                transition: left 1s ease-in-out, opacity 1s ease-in 0.3s;
             }
             &.active{
                 left: 0%;
