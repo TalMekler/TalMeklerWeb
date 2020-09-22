@@ -14,7 +14,7 @@
         background-color: rgba($main-blue, 0.7);
         opacity: 0;
         z-index: 1;
-        overflow: visible;
+        // overflow: visible;
         transition: all 1.2s ease-in-out;
     }
     &.active {

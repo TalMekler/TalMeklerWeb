@@ -31,7 +31,6 @@ a {
 }
 
 section {
-  height: calc(100vh - 100px);
   width: 100vw;
 }
 
@@ -159,7 +158,6 @@ header .logo-text::before {
   background-color: rgba(41, 128, 185, 0.7);
   opacity: 0;
   z-index: 1;
-  overflow: visible;
   -webkit-transition: all 1.2s ease-in-out;
   transition: all 1.2s ease-in-out;
 }
@@ -346,12 +344,13 @@ header .logo-text::before {
   direction: rtl;
   padding-top: 30px;
   position: relative;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 
 @media screen and (max-width: 999px) {
   .second-page {
     padding: 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -411,14 +410,41 @@ header .logo-text::before {
   transition: right 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
 }
 
+@media screen and (max-width: 999px) {
+  .second-page .main-content .in-web-desc {
+    width: 90%;
+  }
+}
+
 .second-page .main-content .in-web-desc.active {
   right: 0%;
   opacity: 1;
 }
 
+@media screen and (max-width: 999px) {
+  .second-page .main-content .in-web-desc.active {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+
 .second-page .main-content .in-web-desc h2 {
   font-family: "Assistant", sans-serif;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1399px) {
+  .second-page .main-content .in-web-desc h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .in-web-desc h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 
 .second-page .main-content .in-web-desc ul {
@@ -429,6 +455,19 @@ header .logo-text::before {
 .second-page .main-content .in-web-desc ul li {
   padding: 15px 0;
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1399px) {
+  .second-page .main-content .in-web-desc ul li {
+    font-size: 1.496rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .in-web-desc ul li {
+    font-size: 1.224rem;
+    text-align: center;
+  }
 }
 
 .second-page .main-content .in-web-desc ul li .english-text {
@@ -446,15 +485,42 @@ header .logo-text::before {
   z-index: 2;
 }
 
+@media screen and (max-width: 999px) {
+  .second-page .main-content .codes-text {
+    width: 90%;
+    margin-top: 100px;
+  }
+}
+
 .second-page .main-content .codes-text.active {
   left: 0%;
   opacity: 1;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .codes-text.active {
+    margin: 100px auto 0 auto;
+  }
 }
 
 .second-page .main-content .codes-text h2 {
   margin-top: 250px;
   font-family: "Assistant", sans-serif;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1399px) {
+  .second-page .main-content .codes-text h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .codes-text h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0px;
+  }
 }
 
 .second-page .main-content .codes-text .codes-lang {
@@ -464,6 +530,14 @@ header .logo-text::before {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .codes-text .codes-lang {
+    gap: 25px;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .second-page .main-content .codes-text .codes-lang i {
