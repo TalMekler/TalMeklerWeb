@@ -34,7 +34,11 @@ $(document).ready(function () {
             var scroll = $(window).scrollTop();
             var top = $(section).position().top - scroll - 100;
             var window_height = $(window).height();
-            if (top < (window_height / 1.5)) {
+            var dividedBy = 1.5;
+            if ($(window).width() < 999){
+                dividedBy = 1.17;
+            }
+            if (top < (window_height / dividedBy)) {
                 if (!$(section).hasClass()){
                     $(section).addClass("active");
                 }

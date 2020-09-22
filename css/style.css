@@ -351,6 +351,7 @@ header .logo-text::before {
   .second-page {
     padding: 0;
     padding-bottom: 30px;
+    margin-top: -10%;
   }
 }
 
