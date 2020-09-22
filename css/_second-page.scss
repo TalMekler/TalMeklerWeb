@@ -17,7 +17,7 @@
         bottom: 0;
         position: absolute;
         clip-path: circle(0% at 0% 100%);
-        background-color: rgba($main-blue, 0.7);
+        background-color: rgba($main-blue, 0.3);
         opacity: 1;
         z-index: 1;
         overflow: visible;
@@ -29,7 +29,7 @@
     &.active {
         &::before {
             opacity: 1;
-            clip-path: circle(50% at 0% 79.5%);
+            clip-path: circle(65% at 0% 79.5%);
             @include breakpoint-less(large){
                 clip-path: circle(0% at 0% 100%);
             }
@@ -121,6 +121,7 @@
             }
         }
         .codes-text{
+            margin-top: 250px;
             position: relative;
             left: -50%;
             opacity: 0;
@@ -141,7 +142,7 @@
             text-align: center;
             z-index: 2;
             h2 {
-                margin-top: 250px;
+                // margin-top: 250px;
                 font-family: $assistant;
                 font-size: 2.5rem;
                 @include breakpoint-less(xlarge) {

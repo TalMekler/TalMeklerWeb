@@ -364,7 +364,7 @@ header .logo-text::before {
   position: absolute;
   -webkit-clip-path: circle(0% at 0% 100%);
           clip-path: circle(0% at 0% 100%);
-  background-color: rgba(41, 128, 185, 0.7);
+  background-color: rgba(41, 128, 185, 0.3);
   opacity: 1;
   z-index: 1;
   overflow: visible;
@@ -381,8 +381,8 @@ header .logo-text::before {
 
 .second-page.active::before {
   opacity: 1;
-  -webkit-clip-path: circle(50% at 0% 79.5%);
-          clip-path: circle(50% at 0% 79.5%);
+  -webkit-clip-path: circle(65% at 0% 79.5%);
+          clip-path: circle(65% at 0% 79.5%);
 }
 
 @media screen and (max-width: 999px) {
@@ -522,6 +522,7 @@ header .logo-text::before {
 }
 
 .second-page .main-content .codes-text {
+  margin-top: 250px;
   position: relative;
   left: -50%;
   opacity: 0;
@@ -553,7 +554,6 @@ header .logo-text::before {
 }
 
 .second-page .main-content .codes-text h2 {
-  margin-top: 250px;
   font-family: "Assistant", sans-serif;
   font-size: 2.5rem;
 }
