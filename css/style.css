@@ -349,6 +349,12 @@ header .logo-text::before {
   height: calc(100vh - 100px);
 }
 
+@media screen and (max-width: 999px) {
+  .second-page {
+    padding: 0;
+  }
+}
+
 .second-page::before {
   content: "";
   width: 100%;
@@ -384,6 +390,16 @@ header .logo-text::before {
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content {
+    padding: 0 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .second-page .main-content .in-web-desc {

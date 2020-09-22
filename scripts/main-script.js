@@ -2,7 +2,13 @@ $(document).ready(function () {
     // Header on SCROLL
     $(function () {
         var scroll = $(window).scrollTop();
-        if (scroll > 100) {
+        var scrollQ = 100;
+        if (parseInt($(window).width()) < 999){
+            scrollQ = 30;
+        }
+        console.log(scrollQ);
+
+        if (scroll > scrollQ) {
             $("header").addClass("page-down");
         } else {
             $("header").removeClass("page-down")
@@ -10,7 +16,8 @@ $(document).ready(function () {
         $(window).scroll(function () {
 
             var scroll = $(this).scrollTop();
-            if (scroll > 100) {
+            console.log("scroll", scroll)
+            if (scroll > scrollQ) {
                 $("header").addClass("page-down");
             } else {
                 $("header").removeClass("page-down")
@@ -28,25 +35,27 @@ $(document).ready(function () {
             }, 700);
         }, 500);
 
-        function show_section(section) {
-            var scroll = $(window).scrollTop();
-            var top = $(section).position().top - scroll - 100;
-            var window_height = $(window).height();
-            if (top < (window_height / 1.5)) {
-                $(section).addClass("active");
-                setTimeout(function(){
-                    $(section).children(".main-content").children().each(function(){
-                        if(!$(this).hasClass("active")){
-                            $(this).addClass("active");
-                        }
-                    });
-                }, 500)
-            }
-        }
-        show_section(".second-page");
-        $(window).scroll(function () { 
-            show_section(".second-page");
-        });
+        // function show_section(section) {
+        //     var scroll = $(window).scrollTop();
+        //     var top = $(section).position().top - scroll - 100;
+        //     var window_height = $(window).height();
+        //     if (top < (window_height / 1.5)) {
+        //         if (!$(section).hasClass()){
+        //             $(section).addClass("active");
+        //         }
+        //         setTimeout(function(){
+        //             $(section).children(".main-content").children().each(function(){
+        //                 if(!$(this).hasClass("active")){
+        //                     $(this).addClass("active");
+        //                 }
+        //             });
+        //         }, 500)
+        //     }
+        // }
+        // show_section(".second-page");
+        // $(window).scroll(function () { 
+        //     show_section(".second-page");
+        // });
 
     })
 

@@ -3,6 +3,9 @@
     padding-top: 30px;
     position: relative;
     height: calc(100vh - 100px);
+    @include breakpoint-less(large){
+        padding: 0;
+    }
 
     &::before {
         content: "";
@@ -31,12 +34,17 @@
         padding: 0 150px;
         display: flex;
         z-index: 1;
+        @include breakpoint-less(large){
+            padding: 0 50px;
+            flex-direction: column;
+        }
         .in-web-desc {
             position: relative;
             right: -50%;
             opacity: 0;
             width: 50%;
             transition: right 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
+            
             &.active{
                 right: 0%;
                 opacity: 1;
