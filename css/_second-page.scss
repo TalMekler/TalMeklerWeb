@@ -52,7 +52,7 @@
             transition: right 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
             @include breakpoint-less(large){
                 width: 90%;
-                transition: right 1s ease-in-out, opacity 1s ease-in 0.3s;
+                transition: right .7s ease-in-out, opacity .7s ease-in-out;
             }
             &.active{
                 right: 0%;
@@ -129,7 +129,7 @@
             @include breakpoint-less(large){
                 width: 90%;
                 margin-top: 100px;
-                transition: left 1s ease-in-out, opacity 1s ease-in 0.3s;
+                transition: left .7s ease-in-out, opacity .7s ease-in-out;
             }
             &.active{
                 left: 0%;
