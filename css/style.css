@@ -459,7 +459,14 @@ header .logo-text::before {
 
 .second-page .main-content .in-web-desc ul {
   list-style: none;
-  padding: 10px 20px;
+  padding: 10px 0px;
+  text-align: right;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .in-web-desc ul {
+    margin: 0 auto;
+  }
 }
 
 .second-page .main-content .in-web-desc ul li {
@@ -476,7 +483,35 @@ header .logo-text::before {
 @media screen and (max-width: 999px) {
   .second-page .main-content .in-web-desc ul li {
     font-size: 1.224rem;
+  }
+}
+
+.second-page .main-content .in-web-desc ul li.check {
+  position: relative;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .in-web-desc ul li.check {
     text-align: center;
+  }
+}
+
+.second-page .main-content .in-web-desc ul li.check::before {
+  position: absolute;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #2ECC71;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -35px;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .main-content .in-web-desc ul li.check::before {
+    font-size: 1.1em;
+    right: -25px;
   }
 }
 
