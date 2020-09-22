@@ -352,6 +352,7 @@ header .logo-text::before {
     padding: 0;
     padding-bottom: 30px;
     margin-top: -10%;
+    min-height: calc(100vh - 92px);
   }
 }
 
@@ -497,21 +498,22 @@ header .logo-text::before {
 }
 
 .second-page .main-content .in-web-desc ul li.check::before {
-  position: absolute;
+  position: relative;
   content: "\f00c";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  margin-left: 15px;
   color: #2ECC71;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: -35px;
 }
 
 @media screen and (max-width: 999px) {
   .second-page .main-content .in-web-desc ul li.check::before {
     font-size: 1.1em;
-    right: -25px;
+    right: -10px;
+    margin-left: 0px;
   }
 }
 
