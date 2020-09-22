@@ -34,11 +34,13 @@ $(document).ready(function () {
             var window_height = $(window).height();
             if (top < (window_height / 1.5)) {
                 $(section).addClass("active");
-                $(section).children(".main-content").children().each(function(){
-                    if(!$(this).hasClass("active")){
-                        $(this).addClass("active");
-                    }
-                });
+                setTimeout(function(){
+                    $(section).children(".main-content").children().each(function(){
+                        if(!$(this).hasClass("active")){
+                            $(this).addClass("active");
+                        }
+                    });
+                }, 500)
             }
         }
         show_section(".second-page");
