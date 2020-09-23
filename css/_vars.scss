@@ -31,3 +31,13 @@ $breakpoints: (
         @content;
     }
 }
+
+// Keyframes
+@keyframes wave {
+    from{
+        left: 0;
+    }
+    to{
+        left: -200%;
+    }
+}

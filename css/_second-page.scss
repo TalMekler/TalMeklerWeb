@@ -29,7 +29,7 @@
     &.active {
         &::before {
             opacity: 1;
-            clip-path: circle(65% at 0% 79.5%);
+            // clip-path: circle(65% at 0% 79.5%);
             @include breakpoint-less(large){
                 clip-path: circle(0% at 0% 100%);
             }
@@ -175,5 +175,30 @@
                 }
             }
         }
+    }
+    .custom-shape-divider-bottom-1600853732 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 300%;
+        overflow: hidden;
+        line-height: 0;
+        animation-name: wave;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-duration: 7s;
+    }
+    
+    .custom-shape-divider-bottom-1600853732 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+    
+    .custom-shape-divider-bottom-1600853732 .shape-fill {
+        // fill: #2980B94D;
+        fill: rgba($main-blue, 0.7);
     }
 }

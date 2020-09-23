@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+@-webkit-keyframes wave {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
+}
+@keyframes wave {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -381,8 +398,6 @@ header .logo-text::before {
 
 .second-page.active::before {
   opacity: 1;
-  -webkit-clip-path: circle(65% at 0% 79.5%);
-          clip-path: circle(65% at 0% 79.5%);
 }
 
 @media screen and (max-width: 999px) {
@@ -597,5 +612,35 @@ header .logo-text::before {
 .second-page .main-content .codes-text .codes-lang h4 {
   direction: ltr;
   font-family: "Poppins", sans-serif;
+}
+
+.second-page .custom-shape-divider-bottom-1600853732 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-animation-name: wave;
+          animation-name: wave;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.second-page .custom-shape-divider-bottom-1600853732 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.second-page .custom-shape-divider-bottom-1600853732 .shape-fill {
+  fill: rgba(41, 128, 185, 0.7);
 }
 /*# sourceMappingURL=style.css.map */
