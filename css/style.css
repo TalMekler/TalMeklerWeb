@@ -700,8 +700,8 @@ header .logo-text::before {
 
 @media screen and (max-width: 999px) {
   .contact-page .main-content .titles {
-    -webkit-transition: .75s ease-in-out;
-    transition: .75s ease-in-out;
+    -webkit-transition: 0.75s ease-in-out;
+    transition: 0.75s ease-in-out;
   }
 }
 
@@ -759,8 +759,8 @@ header .logo-text::before {
 @media screen and (max-width: 999px) {
   .contact-page .main-content .form-wrapper {
     width: 90%;
-    -webkit-transition: .75s ease-in-out;
-    transition: .75s ease-in-out;
+    -webkit-transition: 0.75s ease-in-out;
+    transition: 0.75s ease-in-out;
   }
 }
 
@@ -783,7 +783,7 @@ header .logo-text::before {
   transition: all 0.9s ease-in-out;
 }
 
-.contact-page .main-content .form-wrapper form .input-div::before {
+.contact-page .main-content .form-wrapper form .input-div.text-type::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -800,9 +800,9 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .contact-page .main-content .form-wrapper form .input-div::before {
-    -webkit-transition: all .7s ease-in-out;
-    transition: all .7s ease-in-out;
+  .contact-page .main-content .form-wrapper form .input-div.text-type::before {
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
   }
 }
 
@@ -817,17 +817,81 @@ header .logo-text::before {
 
 .contact-page .main-content .form-wrapper form .input-div.submit {
   border: none;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .form-wrapper form .input-div.submit {
+    background-color: #E74C3C;
+    -webkit-box-shadow: 0 0 15px #E74C3C;
+            box-shadow: 0 0 15px #E74C3C;
+  }
 }
 
 .contact-page .main-content .form-wrapper form .input-div.submit input {
   cursor: pointer;
-  background-color: #E74C3C;
   font-weight: bold;
-  border-radius: 5px;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .form-wrapper form .input-div.submit input {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .form-wrapper form .input-div.submit::before, .contact-page .main-content .form-wrapper form .input-div.submit::after {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .contact-page .main-content .form-wrapper form .input-div.submit::before {
-  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-left: 3px solid #E74C3C;
+  border-top: 3px solid #E74C3C;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.submit::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid #E74C3C;
+  border-bottom: 3px solid #E74C3C;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.submit:hover {
+  background-color: #E74C3C;
+  -webkit-box-shadow: 0 0 15px #E74C3C;
+          box-shadow: 0 0 15px #E74C3C;
+  -webkit-transition: all 0.4s ease-in-out 0.3s;
+  transition: all 0.4s ease-in-out 0.3s;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.submit:hover input {
+  color: white;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.submit:hover::before, .contact-page .main-content .form-wrapper form .input-div.submit:hover::after {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .contact-page .main-content .form-wrapper form .input-div.required {
