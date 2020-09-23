@@ -659,6 +659,14 @@ header .logo-text::before {
   font-family: "assistant";
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page {
+    padding: 0;
+    padding-bottom: 30px;
+    min-height: calc(100vh - 92px);
+  }
+}
+
 .contact-page .main-content {
   position: relative;
   padding: 0 150px;
@@ -680,6 +688,12 @@ header .logo-text::before {
   z-index: 1;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content {
+    padding: 25px 15px 0 15px;
+  }
+}
+
 .contact-page .main-content .titles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,6 +709,13 @@ header .logo-text::before {
   transition: 1s ease-in-out;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .titles {
+    -webkit-transition: .75s ease-in-out;
+    transition: .75s ease-in-out;
+  }
+}
+
 .contact-page .main-content .titles.active {
   opacity: 1;
   -webkit-transform: translateY(0%);
@@ -706,9 +727,21 @@ header .logo-text::before {
   text-align: center;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .titles h2 {
+    font-size: 1.8rem;
+  }
+}
+
 .contact-page .main-content .titles h4 {
   font-size: 1.5rem;
   text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .titles h4 {
+    font-size: 1.35rem;
+  }
 }
 
 .contact-page .main-content .form-wrapper {
@@ -732,6 +765,14 @@ header .logo-text::before {
           transform: translateY(10%);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .form-wrapper {
+    width: 90%;
+    -webkit-transition: .75s ease-in-out;
+    transition: .75s ease-in-out;
+  }
 }
 
 .contact-page .main-content .form-wrapper.active {
@@ -767,6 +808,13 @@ header .logo-text::before {
           transform-origin: right;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .form-wrapper form .input-div::before {
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+  }
 }
 
 .contact-page .main-content .form-wrapper form .input-div.active {
@@ -808,6 +856,12 @@ header .logo-text::before {
   font-size: 0.7rem;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .form-wrapper form .input-div.required::after {
+    font-size: 0.5rem;
+  }
+}
+
 .contact-page .main-content .form-wrapper form .input-div input,
 .contact-page .main-content .form-wrapper form .input-div textarea {
   padding: 10px 20px;
@@ -815,7 +869,16 @@ header .logo-text::before {
   outline: none;
   font-size: 1.2rem;
   border: none;
+  font-family: "assistant";
   background-color: transparent;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .form-wrapper form .input-div input,
+  .contact-page .main-content .form-wrapper form .input-div textarea {
+    font-size: 1rem;
+    padding: 10px 10px 5px 10px;
+  }
 }
 
 .contact-page .main-content .form-wrapper form .input-div textarea {

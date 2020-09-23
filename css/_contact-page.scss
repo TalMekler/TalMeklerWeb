@@ -5,6 +5,13 @@
     position: relative;
     min-height: calc(100vh - 100px);
     font-family: "assistant";
+
+    @include breakpoint-less(large){
+        padding: 0;
+        padding-bottom: 30px;
+        // margin-top: -10%;
+        min-height: calc(100vh - 92px);
+    }
     .main-content {
         position: relative;
         padding: 0 150px;
@@ -15,6 +22,10 @@
         align-items: center;
         justify-content: center;
         z-index: 1;
+        
+        @include breakpoint-less(large){
+            padding: 25px 15px 0 15px;
+        }
 
         .titles {
             display: flex;
@@ -22,6 +33,9 @@
             opacity: 0;
             transform: translateY(-10%);
             transition: 1s ease-in-out;
+            @include breakpoint-less(large){
+                transition: .75s ease-in-out;
+            }
             &.active {
                 opacity: 1;
                 transform: translateY(0%);
@@ -29,10 +43,16 @@
             h2 {
                 font-size: 2rem;
                 text-align: center;
+                @include breakpoint-less(large){
+                    font-size: 1.8rem;
+                }
             }
             h4 {
                 font-size: 1.5rem;
                 text-align: center;
+                @include breakpoint-less(large){
+                    font-size: 1.35rem;
+                }
             }
         }
         .form-wrapper {
@@ -45,6 +65,10 @@
             opacity: 0;
             transform: translateY(10%);
             transition: 1s ease-in-out;
+            @include breakpoint-less(large){
+                width: 90%;
+                transition: .75s ease-in-out;
+            }
             &.active {
                 opacity: 1;
                 transform: translateY(0%);
@@ -68,6 +92,9 @@
                         transform: scaleX(0);
                         transform-origin: right;
                         transition: all 1s ease-in-out;
+                        @include breakpoint-less(large){
+                            transition: all .7s ease-in-out;
+                        }
                     }
                     &.active {
                         border-bottom: 2px solid #80808000;
@@ -97,6 +124,10 @@
                             right: -15px;
                             color: $main-red;
                             font-size: 0.7rem;
+                            @include breakpoint-less(large){
+                                font-size: 0.5rem;
+
+                            }
                         }
                     }
                     input,
@@ -106,8 +137,12 @@
                         outline: none;
                         font-size: 1.2rem;
                         border: none;
-                        // color: transparent;
+                        font-family: "assistant";
                         background-color: transparent;
+                        @include breakpoint-less(large){
+                            font-size: 1rem;
+                            padding: 10px 10px 5px 10px;
+                        }
                     }
                     textarea {
                         resize: none;
