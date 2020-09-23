@@ -71,7 +71,7 @@ header {
 
 header.page-down {
   background-color: black;
-  z-index: 2;
+  z-index: 9999999;
 }
 
 header.page-down .logo h1 {
@@ -407,12 +407,15 @@ header .logo-text::before {
   }
 }
 
+.second-page.active .custom-shape-divider-bottom-1600853732 {
+  opacity: 1;
+}
+
 .second-page .main-content {
   padding: 0 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 1;
 }
 
 @media screen and (max-width: 999px) {
@@ -621,14 +624,17 @@ header .logo-text::before {
   width: 300%;
   overflow: hidden;
   line-height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1.4s ease-in-out;
+  transition: opacity 1.4s ease-in-out;
   -webkit-animation-name: wave;
           animation-name: wave;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
 }
@@ -642,5 +648,200 @@ header .logo-text::before {
 
 .second-page .custom-shape-divider-bottom-1600853732 .shape-fill {
   fill: rgba(41, 128, 185, 0.7);
+}
+
+.contact-page {
+  direction: rtl;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  min-height: calc(100vh - 100px);
+  font-family: "assistant";
+}
+
+.contact-page .main-content {
+  position: relative;
+  padding: 0 150px;
+  padding-top: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.contact-page .main-content .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.contact-page .main-content .titles.active {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.contact-page .main-content .titles h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-page .main-content .titles h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-page .main-content .form-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.contact-page .main-content .form-wrapper.active {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.contact-page .main-content .form-wrapper form {
+  width: 75%;
+}
+
+.contact-page .main-content .form-wrapper form .input-div {
+  width: 100%;
+  margin-top: 25px;
+  border-bottom: 2px solid #808080;
+  position: relative;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+}
+
+.contact-page .main-content .form-wrapper form .input-div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  right: 0;
+  bottom: -1.5px;
+  background-color: #2980B9;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.active {
+  border-bottom: 2px solid #80808000;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.active::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.contact-page .main-content .form-wrapper form .input-div.submit {
+  border: none;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.submit input {
+  cursor: pointer;
+  background-color: #808080;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.submit::before {
+  opacity: 0;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.required {
+  position: relative;
+}
+
+.contact-page .main-content .form-wrapper form .input-div.required::after {
+  content: "\f069";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -15px;
+  color: #E74C3C;
+  font-size: 0.7rem;
+}
+
+.contact-page .main-content .form-wrapper form .input-div input,
+.contact-page .main-content .form-wrapper form .input-div textarea {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+}
+
+.contact-page .main-content .form-wrapper form .input-div textarea {
+  resize: none;
+  height: 250px;
+}
+
+.contact-page .custom-shape-divider-bottom-1600873633 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contact-page .custom-shape-divider-bottom-1600873633 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 151px;
+}
+
+.contact-page .custom-shape-divider-bottom-1600873633 .shape-fill {
+  fill: rgba(41, 128, 185, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

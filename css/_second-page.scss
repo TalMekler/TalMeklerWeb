@@ -34,12 +34,15 @@
                 clip-path: circle(0% at 0% 100%);
             }
         }
+        .custom-shape-divider-bottom-1600853732{
+            opacity: 1;
+        }
     }
 
     .main-content {
         padding: 0 150px;
         display: flex;
-        z-index: 1;
+        // z-index: 1;
         @include breakpoint-less(large){
             padding: 0 50px;
             flex-direction: column;
@@ -176,6 +179,8 @@
             }
         }
     }
+    
+    // Bottom svg WAVE
     .custom-shape-divider-bottom-1600853732 {
         position: absolute;
         bottom: 0;
@@ -183,10 +188,13 @@
         width: 300%;
         overflow: hidden;
         line-height: 0;
+        opacity: 0;
+        transition: opacity 1.4s ease-in-out;
         animation-name: wave;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-        animation-timing-function: ease-in-out;
+        // animation-timing-function: ease-in-out;
+        animation-timing-function: linear;
         animation-duration: 7s;
     }
     

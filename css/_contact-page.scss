@@ -1,0 +1,140 @@
+.contact-page {
+    direction: rtl;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: calc(100vh - 100px);
+    font-family: "assistant";
+    .main-content {
+        position: relative;
+        padding: 0 150px;
+        padding-top: 50px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            transform: translateY(-10%);
+            transition: 1s ease-in-out;
+            &.active {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            h4 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        .form-wrapper {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(10%);
+            transition: 1s ease-in-out;
+            &.active {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            form {
+                width: 75%;
+                .input-div {
+                    width: 100%;
+                    margin-top: 25px;
+                    border-bottom: 2px solid #808080;
+                    position: relative;
+                    transition: all 0.9s ease-in-out;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        right: 0;
+                        bottom: -1.5px;
+                        background-color: $main-blue;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        transition: all 1s ease-in-out;
+                    }
+                    &.active {
+                        border-bottom: 2px solid #80808000;
+                        &::before {
+                            transform: scaleX(1);
+                        }
+                    }
+                    &.submit {
+                        border: none;
+                        input {
+                            cursor: pointer;
+                            background-color: #808080;
+                        }
+                        &::before {
+                            opacity: 0;
+                        }
+                    }
+                    &.required {
+                        position: relative;
+                        &::after {
+                            content: "\f069";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: -15px;
+                            color: $main-red;
+                            font-size: 0.7rem;
+                        }
+                    }
+                    input,
+                    textarea {
+                        padding: 10px 20px;
+                        width: 100%;
+                        outline: none;
+                        font-size: 1.2rem;
+                        border: none;
+                        // color: transparent;
+                        background-color: transparent;
+                    }
+                    textarea {
+                        resize: none;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .custom-shape-divider-bottom-1600873633 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1600873633 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 151px;
+    }
+
+    .custom-shape-divider-bottom-1600873633 .shape-fill {
+        fill: rgba($main-blue, 0.3);
+    }
+}
