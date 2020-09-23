@@ -617,36 +617,25 @@ header .logo-text::before {
   font-family: "Poppins", sans-serif;
 }
 
-.second-page .custom-shape-divider-bottom-1600853732 {
+.second-page .custom-shape-divider-bottom-1600873633 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 300%;
+  width: 100%;
   overflow: hidden;
   line-height: 0;
-  opacity: 0;
-  -webkit-transition: opacity 1.4s ease-in-out;
-  transition: opacity 1.4s ease-in-out;
-  -webkit-animation-name: wave;
-          animation-name: wave;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-.second-page .custom-shape-divider-bottom-1600853732 svg {
+.second-page .custom-shape-divider-bottom-1600873633 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 150px;
+  height: 151px;
 }
 
-.second-page .custom-shape-divider-bottom-1600853732 .shape-fill {
+.second-page .custom-shape-divider-bottom-1600873633 .shape-fill {
   fill: rgba(41, 128, 185, 0.7);
 }
 
@@ -832,7 +821,9 @@ header .logo-text::before {
 
 .contact-page .main-content .form-wrapper form .input-div.submit input {
   cursor: pointer;
-  background-color: #808080;
+  background-color: #E74C3C;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .contact-page .main-content .form-wrapper form .input-div.submit::before {
@@ -886,25 +877,36 @@ header .logo-text::before {
   height: 250px;
 }
 
-.contact-page .custom-shape-divider-bottom-1600873633 {
+.contact-page .custom-shape-divider-bottom-1600853732 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 300%;
   overflow: hidden;
   line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  opacity: 1;
+  -webkit-transition: opacity 1.4s ease-in-out;
+  transition: opacity 1.4s ease-in-out;
+  -webkit-animation-name: wave;
+          animation-name: wave;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 
-.contact-page .custom-shape-divider-bottom-1600873633 svg {
+.contact-page .custom-shape-divider-bottom-1600853732 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 151px;
+  height: 150px;
 }
 
-.contact-page .custom-shape-divider-bottom-1600873633 .shape-fill {
-  fill: rgba(41, 128, 185, 0.3);
+.contact-page .custom-shape-divider-bottom-1600853732 .shape-fill {
+  fill: rgba(41, 128, 185, 0.7);
 }
 /*# sourceMappingURL=style.css.map */

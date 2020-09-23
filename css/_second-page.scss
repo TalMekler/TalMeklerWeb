@@ -181,32 +181,26 @@
     }
     
     // Bottom svg WAVE
-    .custom-shape-divider-bottom-1600853732 {
+    
+
+    .custom-shape-divider-bottom-1600873633 {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 300%;
+        width: 100%;
         overflow: hidden;
         line-height: 0;
-        opacity: 0;
-        transition: opacity 1.4s ease-in-out;
-        animation-name: wave;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        // animation-timing-function: ease-in-out;
-        animation-timing-function: linear;
-        animation-duration: 7s;
+        transform: rotate(180deg);
     }
-    
-    .custom-shape-divider-bottom-1600853732 svg {
+
+    .custom-shape-divider-bottom-1600873633 svg {
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
-        height: 150px;
+        height: 151px;
     }
-    
-    .custom-shape-divider-bottom-1600853732 .shape-fill {
-        // fill: #2980B94D;
+
+    .custom-shape-divider-bottom-1600873633 .shape-fill {
         fill: rgba($main-blue, 0.7);
     }
 }

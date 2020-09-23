@@ -106,7 +106,9 @@
                         border: none;
                         input {
                             cursor: pointer;
-                            background-color: #808080;
+                            background-color: $main-red;
+                            font-weight: bold;
+                            border-radius: 5px;
                         }
                         &::before {
                             opacity: 0;
@@ -152,24 +154,32 @@
             }
         }
     }
-    .custom-shape-divider-bottom-1600873633 {
+    .custom-shape-divider-bottom-1600853732 {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 100%;
+        width: 300%;
         overflow: hidden;
         line-height: 0;
-        transform: rotate(180deg);
+        opacity: 1;
+        transition: opacity 1.4s ease-in-out;
+        animation-name: wave;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        // animation-timing-function: ease-in-out;
+        animation-timing-function: linear;
+        animation-duration: 7s;
     }
-
-    .custom-shape-divider-bottom-1600873633 svg {
+    
+    .custom-shape-divider-bottom-1600853732 svg {
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
-        height: 151px;
+        height: 150px;
     }
-
-    .custom-shape-divider-bottom-1600873633 .shape-fill {
-        fill: rgba($main-blue, 0.3);
+    
+    .custom-shape-divider-bottom-1600853732 .shape-fill {
+        // fill: #2980B94D;
+        fill: rgba($main-blue, 0.7);
     }
 }
