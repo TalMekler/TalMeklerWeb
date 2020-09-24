@@ -382,6 +382,7 @@ header .logo-text::before {
 
 @media screen and (max-width: 999px) {
   .second-page {
+    background-size: 50% cover;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 30px;
@@ -851,8 +852,6 @@ header .logo-text::before {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
@@ -866,8 +865,6 @@ header .logo-text::before {
 
 .contact-page .main-content .titles.active {
   opacity: 1;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
 .contact-page .main-content .titles h2 {
@@ -909,8 +906,6 @@ header .logo-text::before {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
@@ -925,8 +920,6 @@ header .logo-text::before {
 
 .contact-page .main-content .form-wrapper.active {
   opacity: 1;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
 .contact-page .main-content .form-wrapper form {
