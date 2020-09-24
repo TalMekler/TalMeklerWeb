@@ -378,37 +378,17 @@ header .logo-text::before {
       grid-template-columns: repeat(2, 1fr);
   gap: 100px;
   color: #ffffff;
-  position: relative;
 }
 
 @media screen and (max-width: 999px) {
   .second-page {
-    background: none;
+    background-position: 20% 0;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     padding: 0 50px;
     margin-top: -10%;
     min-height: calc(100vh - 92px);
-  }
-}
-
-@media screen and (max-width: 999px) {
-  .second-page::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url("https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg"), rgba(0, 0, 0, 0.85);
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
   }
 }
 

@@ -15,33 +15,12 @@
     gap: 100px;
     color: #ffffff;
     @include breakpoint-less(large) {
-        // background-position: 20% 0;
-        background: none;
+        background-position: 20% 0;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         padding: 0 50px;
         margin-top: -10%;
         min-height: calc(100vh - 92px);
-    }
-    position: relative;
-    &::before {
-        @include breakpoint-less(large) {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -10;
-            background: url("https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg"),
-                rgba(black, 0.85);
-            background-blend-mode: multiply;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-        }
     }
 
     .why {
@@ -52,7 +31,7 @@
         &-title {
             font-size: 2rem;
             padding-bottom: 20px;
-            @include breakpoint-less(large) {
+            @include breakpoint-less(large){
                 font-size: 1.5rem;
                 padding-bottom: 10px;
             }
@@ -64,7 +43,7 @@
                 font-size: 1.3rem;
                 position: relative;
                 text-align: justify;
-                @include breakpoint-less(large) {
+                @include breakpoint-less(large){
                     font-size: 1rem;
                     padding: 8px 0px;
                 }
@@ -79,7 +58,7 @@
                         top: 50%;
                         transform: translateY(-50%);
                         font-size: 1.3em;
-                        @include breakpoint-less(large) {
+                        @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
                         }
@@ -96,7 +75,7 @@
                         top: 50%;
                         transform: translateY(-50%);
                         font-size: 1.3em;
-                        @include breakpoint-less(large) {
+                        @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
                         }
@@ -113,7 +92,7 @@
                         top: 50%;
                         transform: translateY(-50%);
                         font-size: 1.3em;
-                        @include breakpoint-less(large) {
+                        @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
                         }
@@ -130,7 +109,7 @@
                         top: 50%;
                         transform: translateY(-50%);
                         font-size: 1.3em;
-                        @include breakpoint-less(large) {
+                        @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
                         }
