@@ -165,7 +165,7 @@ header .logo-text::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .first-page::before {
@@ -365,7 +365,7 @@ header .logo-text::before {
   direction: rtl;
   padding: 0px 150px;
   position: relative;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh);
   background: url("https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg"), rgba(0, 0, 0, 0.85);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
