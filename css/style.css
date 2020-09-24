@@ -382,7 +382,7 @@ header .logo-text::before {
 
 @media screen and (max-width: 999px) {
   .second-page {
-    background-size: 50% cover;
+    background-size: 75% cover;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 30px;
