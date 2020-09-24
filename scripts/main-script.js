@@ -11,7 +11,6 @@ $(document).ready(function () {
         $(window).scroll(function () {
 
             var scroll = $(this).scrollTop();
-            console.log("scroll", scroll)
             if (scroll > 50) {
                 $("header").addClass("page-down");
             } else {
@@ -63,13 +62,11 @@ $(document).ready(function () {
 
     // Contact From
     $(function () {
-        $(".contact-page .form-wrapper form .input-div input, .contact-page .form-wrapper form .input-div textarea").focus(function(){
-            var p = $(this).parent().addClass("active");
-            console.log("p", p)
+        $(".contact-page .form-wrapper form .input-div input, .contact-page .form-wrapper form .input-div textarea").focus(function () {
+            $(this).parent().addClass("active");
         })
-        $(".contact-page .form-wrapper form .input-div input, .contact-page .form-wrapper form .input-div textarea").focusout(function(){
-            var p = $(this).parent().removeClass("active");
-            console.log("p", p)
+        $(".contact-page .form-wrapper form .input-div input, .contact-page .form-wrapper form .input-div textarea").focusout(function () {
+            $(this).parent().removeClass("active");
         })
     })
 });
