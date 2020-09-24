@@ -1,7 +1,7 @@
 .contact-page {
     direction: rtl;
     padding-top: 30px;
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
     position: relative;
     min-height: calc(100vh - 100px);
     font-family: "assistant";
@@ -107,6 +107,7 @@
                     &.submit {
                         border: none;
                         overflow: hidden;
+                        margin-bottom: 30px;
                         @include breakpoint-less(large){
                             background-color: $main-red;
                             box-shadow: 0 0 15px $main-red;

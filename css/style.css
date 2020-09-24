@@ -802,7 +802,6 @@ header .logo-text::before {
 .contact-page {
   direction: rtl;
   padding-top: 30px;
-  padding-bottom: 30px;
   position: relative;
   min-height: calc(100vh - 100px);
   font-family: "assistant";
@@ -978,6 +977,7 @@ header .logo-text::before {
 .contact-page .main-content .form-wrapper form .input-div.submit {
   border: none;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 999px) {
