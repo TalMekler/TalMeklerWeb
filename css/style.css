@@ -47,6 +47,10 @@ a {
   font-weight: bold;
 }
 
+.bigger {
+  font-size: 1.3em;
+}
+
 section {
   width: 100vw;
 }
@@ -359,21 +363,177 @@ header .logo-text::before {
 
 .second-page {
   direction: rtl;
+  padding: 0px 150px;
+  position: relative;
+  min-height: calc(100vh - 100px);
+  background: url("https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg"), rgba(0, 0, 0, 0.85);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 0 50px;
+    margin-top: -10%;
+    min-height: calc(100vh - 92px);
+  }
+}
+
+.second-page .why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-page .why-title {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .why-title {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+}
+
+.second-page .why-list {
+  list-style: none;
+}
+
+.second-page .why-list-item {
+  padding: 15px 0px;
+  font-size: 1.3rem;
+  position: relative;
+  text-align: justify;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .why-list-item {
+    font-size: 1rem;
+    padding: 8px 0px;
+  }
+}
+
+.second-page .why-list-item.check::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #2ecc71;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .why-list-item.check::before {
+    font-size: 1rem;
+    right: -30px;
+  }
+}
+
+.second-page .why-list-item.money::before {
+  content: "\f4c0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #2ecc71;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .why-list-item.money::before {
+    font-size: 1rem;
+    right: -30px;
+  }
+}
+
+.second-page .why-list-item.time::before {
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #2ecc71;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .why-list-item.time::before {
+    font-size: 1rem;
+    right: -30px;
+  }
+}
+
+.second-page .why-list-item.eso::before {
+  content: "\f00e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #2ecc71;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .why-list-item.eso::before {
+    font-size: 1rem;
+    right: -30px;
+  }
+}
+
+.third-page {
+  direction: rtl;
   padding-top: 30px;
   position: relative;
   min-height: calc(100vh - 100px);
 }
 
 @media screen and (max-width: 999px) {
-  .second-page {
+  .third-page {
     padding: 0;
     padding-bottom: 30px;
-    margin-top: -10%;
+    margin-top: 10%;
     min-height: calc(100vh - 92px);
   }
 }
 
-.second-page::before {
+.third-page::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -390,28 +550,28 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page::before {
+  .third-page::before {
     -webkit-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
   }
 }
 
-.second-page.active::before {
+.third-page.active::before {
   opacity: 1;
 }
 
 @media screen and (max-width: 999px) {
-  .second-page.active::before {
+  .third-page.active::before {
     -webkit-clip-path: circle(0% at 0% 100%);
             clip-path: circle(0% at 0% 100%);
   }
 }
 
-.second-page.active .custom-shape-divider-bottom-1600853732 {
+.third-page.active .custom-shape-divider-bottom-1600853732 {
   opacity: 1;
 }
 
-.second-page .main-content {
+.third-page .main-content {
   padding: 0 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,7 +579,7 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content {
+  .third-page .main-content {
     padding: 0 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -428,7 +588,7 @@ header .logo-text::before {
   }
 }
 
-.second-page .main-content .in-web-desc {
+.third-page .main-content .in-web-desc {
   position: relative;
   right: -50%;
   opacity: 0;
@@ -438,84 +598,84 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .in-web-desc {
+  .third-page .main-content .in-web-desc {
     width: 90%;
     -webkit-transition: right .7s ease-in-out, opacity .7s ease-in-out;
     transition: right .7s ease-in-out, opacity .7s ease-in-out;
   }
 }
 
-.second-page .main-content .in-web-desc.active {
+.third-page .main-content .in-web-desc.active {
   right: 0%;
   opacity: 1;
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .in-web-desc.active {
+  .third-page .main-content .in-web-desc.active {
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
 }
 
-.second-page .main-content .in-web-desc h2 {
+.third-page .main-content .in-web-desc h2 {
   font-family: "Assistant", sans-serif;
   font-size: 2.5rem;
 }
 
 @media screen and (max-width: 1399px) {
-  .second-page .main-content .in-web-desc h2 {
+  .third-page .main-content .in-web-desc h2 {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .in-web-desc h2 {
+  .third-page .main-content .in-web-desc h2 {
     font-size: 1.8rem;
     text-align: center;
   }
 }
 
-.second-page .main-content .in-web-desc ul {
+.third-page .main-content .in-web-desc ul {
   list-style: none;
   padding: 10px 0px;
   text-align: right;
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .in-web-desc ul {
+  .third-page .main-content .in-web-desc ul {
     margin: 0 auto;
   }
 }
 
-.second-page .main-content .in-web-desc ul li {
+.third-page .main-content .in-web-desc ul li {
   padding: 15px 0;
   font-size: 1.7rem;
 }
 
 @media screen and (max-width: 1399px) {
-  .second-page .main-content .in-web-desc ul li {
+  .third-page .main-content .in-web-desc ul li {
     font-size: 1.496rem;
   }
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .in-web-desc ul li {
+  .third-page .main-content .in-web-desc ul li {
     font-size: 1.224rem;
   }
 }
 
-.second-page .main-content .in-web-desc ul li.check {
+.third-page .main-content .in-web-desc ul li.check {
   position: relative;
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .in-web-desc ul li.check {
+  .third-page .main-content .in-web-desc ul li.check {
     text-align: center;
   }
 }
 
-.second-page .main-content .in-web-desc ul li.check::before {
+.third-page .main-content .in-web-desc ul li.check::before {
   position: relative;
   content: "\f00c";
   font-family: "Font Awesome 5 Free";
@@ -528,18 +688,18 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .in-web-desc ul li.check::before {
+  .third-page .main-content .in-web-desc ul li.check::before {
     font-size: 1.1em;
     right: -10px;
     margin-left: 0px;
   }
 }
 
-.second-page .main-content .in-web-desc ul li .english-text {
+.third-page .main-content .in-web-desc ul li .english-text {
   font-family: "Poppins", sans-serif;
 }
 
-.second-page .main-content .codes-text {
+.third-page .main-content .codes-text {
   margin-top: 250px;
   position: relative;
   left: -50%;
@@ -552,7 +712,7 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .codes-text {
+  .third-page .main-content .codes-text {
     width: 90%;
     margin-top: 100px;
     -webkit-transition: left .7s ease-in-out, opacity .7s ease-in-out;
@@ -560,37 +720,37 @@ header .logo-text::before {
   }
 }
 
-.second-page .main-content .codes-text.active {
+.third-page .main-content .codes-text.active {
   left: 0%;
   opacity: 1;
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .codes-text.active {
+  .third-page .main-content .codes-text.active {
     margin: 100px auto 0 auto;
   }
 }
 
-.second-page .main-content .codes-text h2 {
+.third-page .main-content .codes-text h2 {
   font-family: "Assistant", sans-serif;
   font-size: 2.5rem;
 }
 
 @media screen and (max-width: 1399px) {
-  .second-page .main-content .codes-text h2 {
+  .third-page .main-content .codes-text h2 {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .codes-text h2 {
+  .third-page .main-content .codes-text h2 {
     font-size: 1.8rem;
     text-align: center;
     margin-top: 0px;
   }
 }
 
-.second-page .main-content .codes-text .codes-lang {
+.third-page .main-content .codes-text .codes-lang {
   margin-top: 35px;
   display: -ms-grid;
   display: grid;
@@ -600,24 +760,24 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .main-content .codes-text .codes-lang {
+  .third-page .main-content .codes-text .codes-lang {
     gap: 25px;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.second-page .main-content .codes-text .codes-lang i {
+.third-page .main-content .codes-text .codes-lang i {
   font-size: 4rem;
   color: #E74C3C;
 }
 
-.second-page .main-content .codes-text .codes-lang h4 {
+.third-page .main-content .codes-text .codes-lang h4 {
   direction: ltr;
   font-family: "Poppins", sans-serif;
 }
 
-.second-page .custom-shape-divider-bottom-1600873633 {
+.third-page .custom-shape-divider-bottom-1600873633 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -628,14 +788,14 @@ header .logo-text::before {
           transform: rotate(180deg);
 }
 
-.second-page .custom-shape-divider-bottom-1600873633 svg {
+.third-page .custom-shape-divider-bottom-1600873633 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 151px;
 }
 
-.second-page .custom-shape-divider-bottom-1600873633 .shape-fill {
+.third-page .custom-shape-divider-bottom-1600873633 .shape-fill {
   fill: rgba(41, 128, 185, 0.7);
 }
 
