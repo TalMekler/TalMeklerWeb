@@ -941,6 +941,26 @@ header .logo-text::before {
   height: 250px;
 }
 
+.contact-page .custom-shape-divider-top-1600957640 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.contact-page .custom-shape-divider-top-1600957640 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 108px;
+}
+
+.contact-page .custom-shape-divider-top-1600957640 .shape-fill {
+  fill: rgba(41, 128, 185, 0.7);
+}
+
 .contact-page .custom-shape-divider-bottom-1600853732 {
   position: absolute;
   bottom: 0;
