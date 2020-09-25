@@ -52,10 +52,10 @@
             right: -50%;
             opacity: 0;
             width: 50%;
-            transition: right 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
+            transition: right .8s ease-in-out, opacity .8s ease-in 0.15s;
             @include breakpoint-less(large){
                 width: 90%;
-                transition: right .7s ease-in-out, opacity .7s ease-in-out;
+                transition: right .4s ease-in-out, opacity .4s ease-in-out;
             }
             &.active{
                 right: 0%;
