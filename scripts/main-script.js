@@ -1,11 +1,11 @@
 $(document).ready(function () {
     // Parallax Effect Background Img
     $(function () {
-        function parallaxEffect(section){
+        function parallaxEffect(section) {
             var header_height = 100;
             var smallPage = false;
             bgXvalue = 0;
-            if ($(window).width() < 999){
+            if ($(window).width() < 999) {
                 header_height = 92
                 smallPage = true;
                 bgXvalue = 20;
@@ -13,7 +13,7 @@ $(document).ready(function () {
             var windowHeight = $(this).height();
             var scrollValue = ($(this).scrollTop() - windowHeight) * 0.15;
             console.log("parallaxEffect -> scrollValue", scrollValue)
-            if(scrollValue < 0 && smallPage){
+            if (scrollValue < 0 && smallPage) {
                 scrollValue = 0;
             }
             bgValue = bgXvalue + "% " + scrollValue + "px"
@@ -58,7 +58,7 @@ $(document).ready(function () {
             var scroll = $(window).scrollTop();
             var top = $(section).position().top - scroll - 100;
             var window_height = $(window).height();
-            var dividedBy = 1.15;
+            var dividedBy = 1.25;
             if (top < (window_height / dividedBy)) {
                 if (!$(section).hasClass()) {
                     $(section).addClass("active");
@@ -69,7 +69,12 @@ $(document).ready(function () {
                             $(this).addClass("active");
                         }
                     });
-                }, 500)
+                }, 100)
+            } else {
+                $(section).removeClass("active");
+                $(section).children(".main-content").children().each(function () {
+                    $(this).removeClass("active");
+                });
             }
         }
 

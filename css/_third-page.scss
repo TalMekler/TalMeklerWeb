@@ -52,7 +52,7 @@
             right: -50%;
             opacity: 0;
             width: 50%;
-            transition: right .8s ease-in-out, opacity .8s ease-in 0.15s;
+            // transition: right .8s ease-in-out, opacity .8s ease-in 0.15s;
             @include breakpoint-less(large){
                 width: 90%;
                 transition: right .4s ease-in-out, opacity .4s ease-in-out;
@@ -60,6 +60,7 @@
             &.active{
                 right: 0%;
                 opacity: 1;
+                transition: right .8s ease-in-out, opacity .95s ease-in;
                 @include breakpoint-less(large){
                     right: 50%;
                     transform: translateX(50%);
@@ -129,7 +130,7 @@
             left: -50%;
             opacity: 0;
             width: 50%;
-            transition: left 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
+            // transition: left 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
             @include breakpoint-less(large){
                 width: 90%;
                 margin-top: 100px;
@@ -138,6 +139,7 @@
             &.active{
                 left: 0%;
                 opacity: 1;
+                transition: left 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
                 @include breakpoint-less(large){
                     margin: 100px auto 0 auto;
                 }
