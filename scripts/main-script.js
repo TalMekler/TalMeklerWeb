@@ -4,9 +4,11 @@ $(document).ready(function () {
         function parallaxEffect(section){
             var header_height = 100;
             var smallPage = false;
+            bgXvalue = 0;
             if ($(window).width() < 999){
                 header_height = 92
                 smallPage = true;
+                bgXvalue = 20;
             }
             var windowHeight = $(this).height();
             var scrollValue = ($(this).scrollTop() - windowHeight) * 0.15;
@@ -14,7 +16,7 @@ $(document).ready(function () {
             if(scrollValue < 0 && smallPage){
                 scrollValue = 0;
             }
-            bgValue = "0 " + scrollValue + "px"
+            bgValue = bgXvalue + "% " + scrollValue + "px"
             $(section).css("background-position", bgValue)
         }
         $(window).scroll(function () {
