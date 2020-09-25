@@ -1,4 +1,27 @@
 $(document).ready(function () {
+    // Parallax Effect Background Img
+    $(function () {
+        function parallaxEffect(section){
+            var header_height = 100;
+            var smallPage = false;
+            if ($(window).width() < 999){
+                header_height = 92
+                smallPage = true;
+            }
+            var windowHeight = $(this).height();
+            var scrollValue = ($(this).scrollTop() - windowHeight) * 0.15;
+            console.log("parallaxEffect -> scrollValue", scrollValue)
+            if(scrollValue < 0 && smallPage){
+                scrollValue = 0;
+            }
+            bgValue = "0 " + scrollValue + "px"
+            $(section).css("background-position", bgValue)
+        }
+        $(window).scroll(function () {
+            parallaxEffect(".second-page")
+
+        });
+    })
     // Header on SCROLL
     $(function () {
         var scroll = $(window).scrollTop();
@@ -58,8 +81,6 @@ $(document).ready(function () {
         });
 
     })
-
-
     // Contact From
     $(function () {
         $(".contact-page .form-wrapper form .input-div input, .contact-page .form-wrapper form .input-div textarea").focus(function () {
