@@ -1,8 +1,18 @@
 .contact-page {
+    color: white;
     direction: rtl;
     padding-top: 30px;
     // padding-bottom: 30px;
     position: relative;
+    
+    background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg"),
+        rgba(black, 0.85);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
     min-height: calc(100vh - 100px);
     font-family: "assistant";
 
@@ -15,7 +25,7 @@
     .main-content {
         position: relative;
         padding: 0 150px;
-        padding-top: 50px;
+        // padding-top: 50px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -71,7 +81,6 @@
             &.active {
                 opacity: 1;
                 transition: 1s ease-in-out;
-                // transform: translateY(0%);
             }
             form {
                 width: 75%;
@@ -191,6 +200,7 @@
                         border: none;
                         font-family: "assistant";
                         background-color: transparent;
+                        color: white;
                         @include breakpoint-less(large) {
                             font-size: 1rem;
                             padding: 10px 10px 5px 10px;
@@ -198,61 +208,10 @@
                     }
                     textarea {
                         resize: none;
-                        height: 250px;
+                        height: 170px;
                     }
                 }
             }
         }
-    }
-
-    // Top SVG
-    .custom-shape-divider-top-1600957640 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-    
-    .custom-shape-divider-top-1600957640 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 108px;
-    }
-    
-    .custom-shape-divider-top-1600957640 .shape-fill {
-        fill: rgba($main-blue, 0.7);
-    }
-
-    // Bottom SVG
-    .custom-shape-divider-bottom-1600853732 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 300%;
-        overflow: hidden;
-        line-height: 0;
-        opacity: 1;
-        transition: opacity 1.4s ease-in-out;
-        animation-name: wave;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        // animation-timing-function: ease-in-out;
-        animation-timing-function: linear;
-        animation-duration: 7s;
-    }
-
-    .custom-shape-divider-bottom-1600853732 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 150px;
-    }
-
-    .custom-shape-divider-bottom-1600853732 .shape-fill {
-        // fill: #2980B94D;
-        fill: rgba($main-blue, 0.7);
     }
 }

@@ -4,13 +4,14 @@ $(document).ready(function () {
         function parallaxEffect(section) {
             var header_height = 100;
             var smallPage = false;
-            bgXvalue = 0;
+            var bgXvalue = 0;
             if ($(window).width() < 999) {
                 header_height = 92
                 smallPage = true;
             }
             var windowHeight = $(this).height();
             var scrollValue = ($(this).scrollTop() - windowHeight) * 0.15;
+            console.log("parallaxEffect -> scrollValue", scrollValue)
             if (smallPage) {
                 scrollValue = 0;
                 bgXvalue = 20;
@@ -19,8 +20,8 @@ $(document).ready(function () {
             $(section).css("background-position", bgValue)
         }
         $(window).scroll(function () {
-            parallaxEffect(".second-page")
-
+            parallaxEffect(".second-page");
+            // parallaxEffect(".contact-page");
         });
     })
     // Header on SCROLL
