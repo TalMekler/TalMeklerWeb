@@ -4,9 +4,8 @@
     padding-top: 30px;
     // padding-bottom: 30px;
     position: relative;
-    
-    background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg"),
-        rgba(black, 0.85);
+
+    background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg"), rgba(black, 0.85);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,6 +20,9 @@
         padding-bottom: 30px;
         // margin-top: -10%;
         min-height: calc(100vh - 92px);
+
+        background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg"),
+            rgba(black, 0.5);
     }
     .main-content {
         position: relative;
@@ -117,7 +119,7 @@
                         border: none;
                         overflow: hidden;
                         margin-bottom: 30px;
-                        @include breakpoint-less(large){
+                        @include breakpoint-less(large) {
                             background-color: $main-red;
                             box-shadow: 0 0 15px $main-red;
                         }
@@ -125,12 +127,13 @@
                             cursor: pointer;
                             font-weight: bold;
                             transition: color 0.5s ease-in-out;
-                            @include breakpoint-less(large){
+                            @include breakpoint-less(large) {
                                 color: white;
                             }
                         }
-                        &::before, &::after{
-                            @include breakpoint-less(large){
+                        &::before,
+                        &::after {
+                            @include breakpoint-less(large) {
                                 width: 100%;
                                 height: 100%;
                             }
