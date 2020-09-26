@@ -820,7 +820,7 @@ header .logo-text::before {
     padding: 0;
     padding-bottom: 30px;
     min-height: calc(100vh - 92px);
-    background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg"), rgba(0, 0, 0, 0.85);
+    background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg"), rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
