@@ -820,7 +820,7 @@ header .logo-text::before {
     padding: 0;
     padding-bottom: 30px;
     min-height: calc(100vh - 92px);
-    background: url("/imgs/contact-us-bg.jpg"), rgba(0, 0, 0, 0.5);
+    background: url("/imgs/contact-us-bg.jpg");
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: center;
