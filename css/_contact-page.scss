@@ -25,8 +25,8 @@
             rgba(black, 0.5);
         background-blend-mode: multiply;
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-position: fit;
+        background-size: auto;
         background-attachment: fixed;
     }
     .main-content {
