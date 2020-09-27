@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     min-height: 100vh;
-    position: relative;
+    // position: relative;
 }
 a {
     color: black;
@@ -25,8 +25,4 @@ a {
 }
 .bigger{
     font-size: 1.3em;
-}
-section{
-    // height: calc(100vh - 100px);
-    width: 100vw;
 }

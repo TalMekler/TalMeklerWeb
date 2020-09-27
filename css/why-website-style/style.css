@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
-@-webkit-keyframes wave {
-  from {
-    left: 0;
-  }
-  to {
-    left: -200%;
-  }
-}
-@keyframes wave {
-  from {
-    left: 0;
-  }
-  to {
-    left: -200%;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +13,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   min-height: 100vh;
-  position: relative;
 }
 
 a {
@@ -53,16 +35,24 @@ a {
   font-size: 1.3em;
 }
 
-section {
-  width: 100vw;
-}
-
 header {
   padding: 30px 150px;
   position: fixed;
   width: 100vw;
   background-color: black;
-  z-index: 9999999;
+  z-index: 111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 header .logo h1 {
@@ -99,12 +89,6 @@ header .logo-text {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-}
-
-@media screen and (max-width: 999px) {
-  header .logo-text {
-    margin: 0 auto;
-  }
 }
 
 header .logo-text h1 {
@@ -150,51 +134,101 @@ header .logo-text::before {
   transition: color 0.5s ease-in-out 0.1s;
 }
 
+header .page-name a {
+  color: #2980B9;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  font-weight: 700;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  font-family: "Assistant", sans-serif;
+}
+
+header .page-name a.active {
+  opacity: 1;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+}
+
 main {
+  direction: rtl;
   min-height: calc(100vh - 135px);
-  position: relative;
-  top: 100px;
-  background: url("https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_960_720.jpg"), rgba(0, 0, 0, 0.85);
+  margin-top: 100px;
+  background: url("https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268_960_720.jpg"), rgba(0, 0, 0, 0.85);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
+  color: white;
+  font-family: "assistant";
+  padding: 30px 0;
+  z-index: 1;
 }
 
 @media screen and (max-width: 999px) {
   main {
     min-height: calc(100vh - 92px);
-    top: 92px;
+    margin-top: 92px;
   }
 }
 
-.copyright {
+main .title {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+main .title h1 {
+  letter-spacing: 5px;
+}
+
+main .reasons {
+  padding: 25px 250px;
+}
+
+main .reasons .reason:not(:first-child) {
+  margin-top: 25px;
+}
+
+main .reasons .reason p {
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+main .reasons .reason p .reason-title {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+footer {
   font-family: "poppins";
   text-transform: capitalize;
   padding: 5px 100px;
   color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
   background-color: #fff;
   width: 100vw;
+  position: relative;
 }
 
 @media screen and (max-width: 999px) {
-  .copyright {
+  footer {
     text-align: center;
     padding: 5px 0;
     font-size: .85em;
   }
 }
 
-.copyright a {
+footer a {
   color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
 
-.copyright a:hover {
+footer a:hover {
   color: #2980B9;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,51 @@
-main{
+body {
+    min-height: 100vh;
+    padding: 0;
+}
+main {
+    direction: rtl;
     min-height: calc(100vh - 135px);
-    position: relative;
-    top: 100px;
-    background: url('https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_960_720.jpg'), rgba(#000, .85);
+    margin-top: 100px;
+    // position: relative;
+    // top: 100px;
+    background: url("https://cdn.pixabay.com/photo/2017/01/18/16/46/hong-kong-1990268_960_720.jpg"), rgba(#000, 0.85);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
-
-    @include breakpoint-less(large){
+    color: white;
+    font-family: "assistant";
+    padding: 30px 0;
+    z-index: 1;
+    @include breakpoint-less(large) {
         min-height: calc(100vh - 92px);
-        top: 92px;
+        margin-top: 92px;
+    }
+
+    .title {
+        // padding-top: 30px;
+        text-align: center;
+        font-size: 1.3em;
+        h1 {
+            letter-spacing: 5px;
+        }
+    }
+    .reasons {
+        padding: 25px 250px;
+
+        .reason:not(:first-child) {
+            margin-top: 25px;
+        }
+        .reason {
+            p {
+                text-align: justify;
+                font-size: 1.3em;
+                .reason-title {
+                    font-size: 1.1em;
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }
