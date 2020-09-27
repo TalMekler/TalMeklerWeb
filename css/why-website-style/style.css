@@ -29,6 +29,8 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  min-height: 100vh;
+  position: relative;
 }
 
 a {
@@ -58,11 +60,21 @@ section {
 header {
   padding: 30px 150px;
   position: fixed;
-  background-color: transparent;
-  z-index: 2;
   width: 100vw;
-  -webkit-transition: background 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out;
+  background-color: black;
+  z-index: 9999999;
+}
+
+header .logo h1 {
+  color: white;
+}
+
+header .logo .clr-blue {
+  color: #E74C3C;
+}
+
+header .logo-text::before {
+  color: white;
 }
 
 @media screen and (max-width: 999px) {
@@ -70,23 +82,6 @@ header {
     padding: 30px 70px;
     z-index: 2;
   }
-}
-
-header.page-down {
-  background-color: black;
-  z-index: 9999999;
-}
-
-header.page-down .logo h1 {
-  color: white;
-}
-
-header.page-down .logo .clr-blue {
-  color: #E74C3C;
-}
-
-header.page-down .logo-text::before {
-  color: white;
 }
 
 header .logo {
@@ -155,11 +150,34 @@ header .logo-text::before {
   transition: color 0.5s ease-in-out 0.1s;
 }
 
+main {
+  min-height: calc(100vh - 135px);
+  position: relative;
+  top: 100px;
+  background: url("https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_960_720.jpg"), rgba(0, 0, 0, 0.85);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 999px) {
+  main {
+    min-height: calc(100vh - 92px);
+    top: 92px;
+  }
+}
+
 .copyright {
   font-family: "poppins";
   text-transform: capitalize;
   padding: 5px 100px;
   color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 100vw;
 }
 
 @media screen and (max-width: 999px) {

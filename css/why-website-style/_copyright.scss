@@ -3,6 +3,10 @@
     text-transform: capitalize;
     padding: 5px 100px;
     color: rgba(#000, 0.5);
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 100vw;
     @include breakpoint-less(large){
         text-align: center;
         padding: 5px 0;

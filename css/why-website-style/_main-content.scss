@@ -1,0 +1,16 @@
+main{
+    min-height: calc(100vh - 135px);
+    position: relative;
+    top: 100px;
+    background: url('https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_960_720.jpg'), rgba(#000, .85);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    @include breakpoint-less(large){
+        min-height: calc(100vh - 92px);
+        top: 92px;
+    }
+}

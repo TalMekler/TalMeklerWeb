@@ -1,31 +1,27 @@
 header {
     padding: 30px 150px;
     position: fixed;
-    background-color: transparent;
-    z-index: 2;
     width: 100vw;
-    transition: background 0.5s ease-in-out;
+    // transition: background 0.5s ease-in-out;
     // display: none;
+    background-color: black;
+    z-index: 9999999;
+    .logo {
+        h1 {
+            color: white;
+        }
+        .clr-blue {
+            color: $main-red;
+        }
+        &-text {
+            &::before {
+                color: white;
+            }
+        }
+    }
     @include breakpoint-less(large) {
         padding: 30px 70px;
         z-index: 2;
-    }
-    &.page-down {
-        background-color: black;
-        z-index: 9999999;
-        .logo {
-            h1 {
-                color: white;
-            }
-            .clr-blue {
-                color: $main-red;
-            }
-            &-text {
-                &::before {
-                    color: white;
-                }
-            }
-        }
     }
     .logo {
         width: fit-content;
