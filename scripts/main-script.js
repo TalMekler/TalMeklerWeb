@@ -22,8 +22,8 @@ $(document).ready(function () {
             $(section).css("background-position", bgValue)
         }
         $(window).scroll(function () {
-            parallaxEffect(".second-page");
-            parallaxEffect(".contact-page");
+            // parallaxEffect(".second-page");
+            // parallaxEffect(".contact-page");
         });
     })
     // Header on SCROLL
