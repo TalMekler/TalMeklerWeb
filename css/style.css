@@ -63,7 +63,6 @@ header {
   width: 100vw;
   -webkit-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
-  display: none;
 }
 
 @media screen and (max-width: 999px) {
