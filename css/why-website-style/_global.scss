@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a {
+    color: black;
+}
+.clr-red {
+    color: $main-red;
+}
+.clr-blue {
+    color: $main-blue;
+}
+.bold {
+    font-weight: bold;
+}
+.bigger{
+    font-size: 1.3em;
+}
+section{
+    // height: calc(100vh - 100px);
+    width: 100vw;
+}

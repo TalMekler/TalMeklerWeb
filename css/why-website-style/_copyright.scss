@@ -1,0 +1,18 @@
+.copyright{
+    font-family: "poppins";
+    text-transform: capitalize;
+    padding: 5px 100px;
+    color: rgba(#000, 0.5);
+    @include breakpoint-less(large){
+        text-align: center;
+        padding: 5px 0;
+        font-size: .85em;
+    }
+    a{
+        color: rgba(#000, 0.5);
+        transition: all .35s ease-in-out;
+        &:hover{
+            color: $main-blue;
+        }
+    }
+}

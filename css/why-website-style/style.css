@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+@-webkit-keyframes wave {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
+}
+@keyframes wave {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+}
+
+.clr-red {
+  color: #E74C3C;
+}
+
+.clr-blue {
+  color: #2980B9;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bigger {
+  font-size: 1.3em;
+}
+
+section {
+  width: 100vw;
+}
+
+header {
+  padding: 30px 150px;
+  position: fixed;
+  background-color: transparent;
+  z-index: 2;
+  width: 100vw;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 999px) {
+  header {
+    padding: 30px 70px;
+    z-index: 2;
+  }
+}
+
+header.page-down {
+  background-color: black;
+  z-index: 9999999;
+}
+
+header.page-down .logo h1 {
+  color: white;
+}
+
+header.page-down .logo .clr-blue {
+  color: #E74C3C;
+}
+
+header.page-down .logo-text::before {
+  color: white;
+}
+
+header .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+header .logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 999px) {
+  header .logo-text {
+    margin: 0 auto;
+  }
+}
+
+header .logo-text h1 {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  -webkit-transition: color 0.5s ease-in-out 0.1s;
+  transition: color 0.5s ease-in-out 0.1s;
+}
+
+@media screen and (max-width: 999px) {
+  header .logo-text h1 {
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+header .logo-text h1 .clr-blue {
+  -webkit-transition: color 0.5s ease-in-out 0.1s;
+  transition: color 0.5s ease-in-out 0.1s;
+}
+
+@media screen and (max-width: 999px) {
+  header .logo-text h1 .clr-blue {
+    color: #E74C3C;
+  }
+}
+
+header .logo-text::before {
+  content: "\f120";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -60px;
+  -webkit-transition: color 0.5s ease-in-out 0.1s;
+  transition: color 0.5s ease-in-out 0.1s;
+}
+
+.copyright {
+  font-family: "poppins";
+  text-transform: capitalize;
+  padding: 5px 100px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 999px) {
+  .copyright {
+    text-align: center;
+    padding: 5px 0;
+    font-size: .85em;
+  }
+}
+
+.copyright a {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.copyright a:hover {
+  color: #2980B9;
+}
+/*# sourceMappingURL=style.css.map */
