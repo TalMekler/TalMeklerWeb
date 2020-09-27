@@ -8,4 +8,11 @@
         padding: 5px 0;
         font-size: .85em;
     }
+    a{
+        color: rgba(#000, 0.5);
+        transition: all .35s ease-in-out;
+        &:hover{
+            color: $main-blue;
+        }
+    }
 }

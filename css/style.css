@@ -1129,4 +1129,14 @@ header .logo-text::before {
     font-size: .85em;
   }
 }
+
+.copyright a {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.copyright a:hover {
+  color: #2980B9;
+}
 /*# sourceMappingURL=style.css.map */
