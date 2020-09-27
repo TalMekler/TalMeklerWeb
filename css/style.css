@@ -646,6 +646,10 @@ header .logo-text::before {
   }
 }
 
+.third-page .main-content .in-web-desc h3 {
+  display: inline-block;
+}
+
 .third-page .main-content .in-web-desc ul {
   list-style: none;
   padding: 10px 0px;
