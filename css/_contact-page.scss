@@ -22,11 +22,11 @@
         min-height: calc(100vh - 92px);
 
         background: url("/imgs/contact-us-bg.jpg"),
-            rgba(black, 0.5);
+            rgba(black, 0.75);
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: auto 100%;
+        background-size: 100% 100%;
         // background-size: cover;
         background-attachment: fixed;
     }
