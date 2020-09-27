@@ -10,7 +10,9 @@ $(document).ready(function () {
                 smallPage = true;
             }
             var windowHeight = $(this).height();
-            var scrollValue = ($(this).scrollTop() - windowHeight) * 0.15;
+            var item_scrollTop = $(this).scrollTop() + header_height;
+            var sec_top = $(section).offset().top - item_scrollTop;
+            var scrollValue = (sec_top - windowHeight) * 0.15;
             console.log("parallaxEffect -> scrollValue", scrollValue)
             if (smallPage) {
                 scrollValue = 0;
@@ -21,7 +23,7 @@ $(document).ready(function () {
         }
         $(window).scroll(function () {
             parallaxEffect(".second-page");
-            // parallaxEffect(".contact-page");
+            parallaxEffect(".contact-page");
         });
     })
     // Header on SCROLL
