@@ -118,5 +118,4 @@ $(document).ready(function () {
             $(this).parent().removeClass("active");
         })
     })
-    // adding text for check 
 });
