@@ -17,7 +17,7 @@
     @include breakpoint-less(large) {
         background-position: 20% 0;
         grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+        gap: 0px;
         padding: 0 50px;
         margin-top: -10%;
         min-height: calc(100vh - 92px);
@@ -43,9 +43,14 @@
                 font-size: 1.3rem;
                 position: relative;
                 text-align: justify;
+                line-height: 1.6rem;
                 @include breakpoint-less(large){
                     font-size: 1rem;
                     padding: 8px 0px;
+                    line-height: 1.3rem;
+                }
+                h2{
+                    display: inline-block;
                 }
                 &.check {
                     &::before {
@@ -55,12 +60,13 @@
                         color: #2ecc71;
                         position: absolute;
                         right: -40px;
-                        top: 50%;
+                        top: 1.6rem;
                         transform: translateY(-50%);
                         font-size: 1.3em;
                         @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
+                            top: 1.3rem;
                         }
                     }
                 }
@@ -72,12 +78,13 @@
                         color: #2ecc71;
                         position: absolute;
                         right: -40px;
-                        top: 50%;
+                        top: 1.6rem;
                         transform: translateY(-50%);
                         font-size: 1.3em;
                         @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
+                            top: 1.3rem;
                         }
                     }
                 }
@@ -89,12 +96,13 @@
                         color: #2ecc71;
                         position: absolute;
                         right: -40px;
-                        top: 50%;
+                        top: 1.6rem;
                         transform: translateY(-50%);
                         font-size: 1.3em;
                         @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
+                            top: 1.3rem;
                         }
                     }
                 }
@@ -106,12 +114,13 @@
                         color: #2ecc71;
                         position: absolute;
                         right: -40px;
-                        top: 50%;
+                        top: 1.6rem;
                         transform: translateY(-50%);
                         font-size: 1.3em;
                         @include breakpoint-less(large){
                             font-size: 1rem;
                             right: -30px;
+                            top: 1.3rem;
                         }
                     }
                 }
