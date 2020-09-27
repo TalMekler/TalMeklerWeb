@@ -1114,4 +1114,19 @@ header .logo-text::before {
   resize: none;
   height: 170px;
 }
+
+.copyright {
+  font-family: "poppins";
+  text-transform: capitalize;
+  padding: 5px 100px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 999px) {
+  .copyright {
+    text-align: center;
+    padding: 5px 0;
+    font-size: .85em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
