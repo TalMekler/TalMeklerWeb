@@ -35,6 +35,36 @@ a {
   font-size: 1.3em;
 }
 
+.leave-details {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto 0 auto;
+}
+
+@media screen and (max-width: 999px) {
+  .leave-details {
+    margin: 25px auto 0 auto;
+  }
+}
+
+.leave-details a {
+  padding: 15px 40px;
+  background-color: #E74C3C;
+  border-radius: 30px;
+  font-size: 1.3em;
+  -webkit-box-shadow: 0 0 15px #E74C3C;
+          box-shadow: 0 0 15px #E74C3C;
+  color: white;
+}
+
+@media screen and (max-width: 999px) {
+  .leave-details a {
+    padding: 10px 30px;
+    font-size: 1em;
+  }
+}
+
 header {
   padding: 30px 150px;
   position: fixed;
@@ -139,14 +169,10 @@ header .page-name a {
   font-size: 1.3em;
   letter-spacing: 3px;
   font-weight: 700;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   font-family: "Assistant", sans-serif;
-}
-
-header .page-name a.active {
-  opacity: 1;
 }
 
 @media screen and (max-width: 999px) {
@@ -180,6 +206,7 @@ main {
   main {
     min-height: calc(100vh - 92px);
     margin-top: 92px;
+    padding: 30px;
   }
 }
 
@@ -192,17 +219,42 @@ main .title h1 {
   letter-spacing: 5px;
 }
 
+@media screen and (max-width: 999px) {
+  main .title {
+    font-size: 1em;
+  }
+}
+
 main .reasons {
   padding: 25px 250px;
+}
+
+@media screen and (max-width: 999px) {
+  main .reasons {
+    padding: 25px 10px;
+  }
 }
 
 main .reasons .reason:not(:first-child) {
   margin-top: 25px;
 }
 
+@media screen and (max-width: 999px) {
+  main .reasons .reason:not(:first-child) {
+    margin-top: 12.5px;
+  }
+}
+
 main .reasons .reason p {
   text-align: justify;
   font-size: 1.3em;
+}
+
+@media screen and (max-width: 999px) {
+  main .reasons .reason p {
+    text-align: right;
+    font-size: 1em;
+  }
 }
 
 main .reasons .reason p .reason-title {

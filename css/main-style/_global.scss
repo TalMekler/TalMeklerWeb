@@ -28,31 +28,32 @@ section {
     // height: calc(100vh - 100px);
     width: 100vw;
 }
-.read-more-link {
+.read-more-link,
+.leave-details {
     color: white;
     padding: 10px 30px;
     border: 2.5px solid white;
     border-radius: 30px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     font-size: 1.3em;
-    @include breakpoint-less(large){
+    @include breakpoint-less(large) {
         font-size: 1em;
         background-color: #fff;
         color: black;
     }
-    &:hover{
+    &:hover {
         background-color: #fff;
         color: black;
     }
-    &.black{
+    &.black {
         color: black;
         border: 2.5px solid black;
-        @include breakpoint-less(large){
+        @include breakpoint-less(large) {
             font-size: 1em;
             background-color: black;
             color: #fff;
         }
-        &:hover{
+        &:hover {
             background-color: black;
             color: #fff;
         }
@@ -76,3 +77,4 @@ section {
         }
     }
 }
+

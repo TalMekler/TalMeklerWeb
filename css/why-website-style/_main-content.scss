@@ -21,6 +21,7 @@ main {
     @include breakpoint-less(large) {
         min-height: calc(100vh - 92px);
         margin-top: 92px;
+        padding: 30px;
     }
 
     .title {
@@ -30,22 +31,41 @@ main {
         h1 {
             letter-spacing: 5px;
         }
+        @include breakpoint-less(large){
+            font-size: 1em;
+        }
     }
     .reasons {
         padding: 25px 250px;
+        @include breakpoint-less(large){
+            padding: 25px 10px;
+        }
 
         .reason:not(:first-child) {
             margin-top: 25px;
+            @include breakpoint-less(large){
+                margin-top: 12.5px;
+            }
         }
         .reason {
             p {
                 text-align: justify;
                 font-size: 1.3em;
+                @include breakpoint-less(large){
+                    text-align: right;
+                    font-size: 1em;
+                }
                 .reason-title {
                     font-size: 1.1em;
                     font-weight: 700;
                 }
             }
+        }
+    }
+    btn{
+
+        a{
+            
         }
     }
 }

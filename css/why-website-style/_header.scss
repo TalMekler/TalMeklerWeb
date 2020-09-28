@@ -72,12 +72,9 @@ header {
             font-size: 1.3em;
             letter-spacing: 3px;
             font-weight: 700;
-            opacity: 0;
+            opacity: 1;
             transition: .3s ease-in-out;
             font-family: $assistant;
-            &.active{
-                opacity: 1;
-            }
         }
         @include breakpoint-less(large){
             display: none;
