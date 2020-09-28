@@ -9,13 +9,18 @@
 
 <url>
   <loc>https://tal-mekler.com/</loc>
-  <lastmod>2020-09-28T07:11:20+00:00</lastmod>
+  <lastmod>2020-09-28T19:12:57+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://tal-mekler.com/why-website.html</loc>
-  <lastmod>2020-09-28T07:11:20+00:00</lastmod>
+  <lastmod>2020-09-28T19:12:57+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tal-mekler.com/index.html</loc>
+  <lastmod>2020-09-28T19:12:57+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
