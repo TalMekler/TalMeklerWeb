@@ -279,6 +279,8 @@ header .page-name {
   font-size: 1.3em;
   font-weight: 700;
   letter-spacing: 2px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 999px) {

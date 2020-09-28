@@ -1,5 +1,19 @@
 $(document).ready(function () {
+    // Show the page name
+    $(function () {
+        $(window).scroll(function () {
+            $("section").each(function () {
+                var elementTop = $(this).offset().top;
+                var elementBottom = elementTop + $(this).outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var header_height = parseInt($("header").height()) + parseInt($("header").css("padding-top").split("px")[0]) + parseInt($("header").css("padding-bottom").split("px")[0]);
 
+                if (elementTop - viewportTop - 100 < header_height && ((elementBottom - viewportTop) > 0)) {
+                    $("header .page-name").text($(this).attr("data-name"));
+                }
+            })
+        })
+    })
     // Header on SCROLL
     $(function () {
         var scroll = $(window).scrollTop();
@@ -28,7 +42,6 @@ $(document).ready(function () {
         }
         $(".scroll-link").click(function (e) {
             e.preventDefault();
-            console.log(e);
             var header_height = 100;
             if ($(window).width() < 999) {
                 header_height = 92;
