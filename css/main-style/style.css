@@ -444,6 +444,7 @@ header .logo-text::before {
 }
 
 .second-page {
+  font-family: "Assistant", sans-serif;
   direction: rtl;
   padding: 0px 150px;
   position: relative;
