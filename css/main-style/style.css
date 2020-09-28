@@ -64,6 +64,8 @@ section {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 1.3em;
+  font-weight: 700;
+  font-family: "Assistant", sans-serif;
 }
 
 @media screen and (max-width: 999px) {
@@ -83,6 +85,14 @@ section {
   color: black;
   -webkit-box-shadow: 0 0 15px white;
           box-shadow: 0 0 15px white;
+}
+
+@media screen and (max-width: 999px) {
+  .read-more-link:hover,
+  .leave-details:hover {
+    -webkit-box-shadow: 0 0 10px white;
+            box-shadow: 0 0 10px white;
+  }
 }
 
 .read-more-link.black,
@@ -106,6 +116,16 @@ section {
 .leave-details.black:hover {
   background-color: black;
   color: #fff;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+}
+
+@media screen and (max-width: 999px) {
+  .read-more-link.black:hover,
+  .leave-details.black:hover {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+  }
 }
 
 .read-more-link.right,
@@ -152,6 +172,12 @@ header {
   width: 100vw;
   -webkit-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 999px) {
@@ -183,6 +209,9 @@ header .logo {
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 header .logo-text {
@@ -242,6 +271,20 @@ header .logo-text::before {
   left: -60px;
   -webkit-transition: color 0.5s ease-in-out 0.1s;
   transition: color 0.5s ease-in-out 0.1s;
+}
+
+header .page-name {
+  color: #2980B9;
+  font-family: "Assistant", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 999px) {
+  header .page-name {
+    display: none;
+  }
 }
 
 .first-page {

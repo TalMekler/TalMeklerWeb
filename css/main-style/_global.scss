@@ -36,6 +36,9 @@ section {
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
     font-size: 1.3em;
+    font-weight: 700;
+    font-family: $assistant;
+
     @include breakpoint-less(large) {
         font-size: 1em;
         background-color: #fff;
@@ -46,6 +49,9 @@ section {
         background-color: #fff;
         color: black;
         box-shadow: 0 0 15px white;
+        @include breakpoint-less(large){
+            box-shadow: 0 0 10px white;
+        }
     }
     &.black {
         color: black;
@@ -59,6 +65,10 @@ section {
         &:hover {
             background-color: black;
             color: #fff;
+            box-shadow: 0 0 15px black;
+            @include breakpoint-less(large){
+                box-shadow: 0 0 10px black;
+            }
         }
     }
     &.right {
