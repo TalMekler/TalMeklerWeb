@@ -446,7 +446,6 @@ header .logo-text::before {
 .second-page {
   font-family: "Assistant", sans-serif;
   direction: rtl;
-  padding: 0px 150px;
   position: relative;
   min-height: calc(100vh);
   background: url("https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg"), rgba(0, 0, 0, 0.85);
@@ -455,11 +454,12 @@ header .logo-text::before {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
 }
 
@@ -475,7 +475,16 @@ header .logo-text::before {
   }
 }
 
-.second-page .why {
+.second-page .why-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  padding: 0px 150px;
+}
+
+.second-page .why-wrapper .why {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,31 +492,28 @@ header .logo-text::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.second-page .why-title {
+.second-page .why-wrapper .why-title {
   font-size: 2.75vw;
   padding-bottom: 20px;
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .why-title {
+  .second-page .why-wrapper .why-title {
     font-size: 1.5rem;
     padding-bottom: 10px;
   }
 }
 
-.second-page .why-list {
+.second-page .why-wrapper .why-list {
   list-style: none;
 }
 
-.second-page .why-list-item {
+.second-page .why-wrapper .why-list-item {
   padding: 15px 0px;
   font-size: 1.3rem;
   position: relative;
@@ -516,7 +522,7 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .why-list-item {
+  .second-page .why-wrapper .why-list-item {
     font-size: 1rem;
     padding: 8px 0px;
     line-height: 1.3rem;
@@ -524,11 +530,11 @@ header .logo-text::before {
   }
 }
 
-.second-page .why-list-item h2 {
+.second-page .why-wrapper .why-list-item h2 {
   display: inline-block;
 }
 
-.second-page .why-list-item.check::before {
+.second-page .why-wrapper .why-list-item.check::before {
   content: "\f00c";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -542,14 +548,14 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .why-list-item.check::before {
+  .second-page .why-wrapper .why-list-item.check::before {
     font-size: 1rem;
     right: -30px;
     top: 1.3rem;
   }
 }
 
-.second-page .why-list-item.money::before {
+.second-page .why-wrapper .why-list-item.money::before {
   content: "\f4c0";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -563,14 +569,14 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .why-list-item.money::before {
+  .second-page .why-wrapper .why-list-item.money::before {
     font-size: 1rem;
     right: -30px;
     top: 1.3rem;
   }
 }
 
-.second-page .why-list-item.time::before {
+.second-page .why-wrapper .why-list-item.time::before {
   content: "\f017";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -584,14 +590,14 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .why-list-item.time::before {
+  .second-page .why-wrapper .why-list-item.time::before {
     font-size: 1rem;
     right: -30px;
     top: 1.3rem;
   }
 }
 
-.second-page .why-list-item.eso::before {
+.second-page .why-wrapper .why-list-item.eso::before {
   content: "\f00e";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -605,7 +611,7 @@ header .logo-text::before {
 }
 
 @media screen and (max-width: 999px) {
-  .second-page .why-list-item.eso::before {
+  .second-page .why-wrapper .why-list-item.eso::before {
     font-size: 1rem;
     right: -30px;
     top: 1.3rem;
