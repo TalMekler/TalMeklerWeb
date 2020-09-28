@@ -72,6 +72,8 @@ section {
     font-size: 1em;
     background-color: #fff;
     color: black;
+    -webkit-box-shadow: 0 0 10px white;
+            box-shadow: 0 0 10px white;
   }
 }
 
@@ -79,6 +81,8 @@ section {
 .leave-details:hover {
   background-color: #fff;
   color: black;
+  -webkit-box-shadow: 0 0 15px white;
+          box-shadow: 0 0 15px white;
 }
 
 .read-more-link.black,
@@ -93,6 +97,8 @@ section {
     font-size: 1em;
     background-color: black;
     color: #fff;
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
   }
 }
 
@@ -466,10 +472,6 @@ header .logo-text::before {
 @media screen and (max-width: 999px) {
   .second-page {
     background-position: 20% 0;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    padding: 30px 50px;
     margin-top: -10%;
     min-height: calc(100vh - 92px);
   }
@@ -482,6 +484,15 @@ header .logo-text::before {
       grid-template-columns: repeat(2, 1fr);
   gap: 100px;
   padding: 0px 150px;
+}
+
+@media screen and (max-width: 999px) {
+  .second-page .why-wrapper {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 30px 50px;
+  }
 }
 
 .second-page .why-wrapper .why {

@@ -16,9 +16,7 @@
     color: #ffffff;
     @include breakpoint-less(large) {
         background-position: 20% 0;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-        padding: 30px 50px;
+        
         margin-top: -10%;
         min-height: calc(100vh - 92px);
     }
@@ -27,6 +25,11 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 100px;
         padding: 0px 150px;
+        @include breakpoint-less(large){
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            padding: 30px 50px;
+        }
         .why {
             display: flex;
             flex-direction: column;

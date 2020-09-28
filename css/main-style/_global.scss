@@ -40,10 +40,12 @@ section {
         font-size: 1em;
         background-color: #fff;
         color: black;
+        box-shadow: 0 0 10px white;
     }
     &:hover {
         background-color: #fff;
         color: black;
+        box-shadow: 0 0 15px white;
     }
     &.black {
         color: black;
@@ -52,6 +54,7 @@ section {
             font-size: 1em;
             background-color: black;
             color: #fff;
+            box-shadow: 0 0 10px black;
         }
         &:hover {
             background-color: black;
