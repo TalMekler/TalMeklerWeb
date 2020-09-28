@@ -79,5 +79,8 @@ header {
                 opacity: 1;
             }
         }
+        @include breakpoint-less(large){
+            display: none;
+        }
     }
 }

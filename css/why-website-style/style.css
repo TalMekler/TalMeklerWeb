@@ -149,6 +149,12 @@ header .page-name a.active {
   opacity: 1;
 }
 
+@media screen and (max-width: 999px) {
+  header .page-name {
+    display: none;
+  }
+}
+
 body {
   min-height: 100vh;
   padding: 0;
