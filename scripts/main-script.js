@@ -28,9 +28,14 @@ $(document).ready(function () {
         }
         $(".scroll-link").click(function (e) {
             e.preventDefault();
+            console.log(e);
             var header_height = 100;
             if ($(window).width() < 999) {
                 header_height = 92;
+            }
+            if (window.location.href.indexOf("#") > -1 && $(this).hasClass("go-to-top")) {
+                window.location.href = 'index.html';
+                return true
             }
             var firstSecCheck = $(this.hash).attr("data-first");
             if (firstSecCheck) {
