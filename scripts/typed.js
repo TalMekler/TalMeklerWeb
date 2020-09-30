@@ -11,16 +11,25 @@ $(document).ready(function () {
     var letter = "";
 
     function type() {
-        if(count == texts.length){
+        // console.log("start - count = "+count)
+        if (count == texts.length) {
             count = 0;
         }
         current_text = texts[count];
-        letter = current_text.slice(0, index);
+        try {
+            letter = current_text.slice(0, index);
+        }
+        catch (err) {
+            console.log("Error -> Count was: "+count+" To 0");
+            count = 0;
+            current_text = texts[count];
+            letter = current_text.slice(0, index);
+        }
         index += 1;
 
         $("#typed").text(letter);
-        if(letter.length == current_text.length){
-            setTimeout(function() {
+        if (letter.length == current_text.length) {
+            setTimeout(function () {
                 count += 1;
                 index = 0;
             }, 750);

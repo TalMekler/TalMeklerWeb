@@ -454,6 +454,40 @@ header .social i:hover {
   padding-left: 5px;
 }
 
+.first-page .main-content .text h1 .span-wrapper {
+  position: relative;
+}
+
+.first-page .main-content .text h1 .span-wrapper.hide {
+  display: none;
+  overflow-x: hidden;
+  width: 0;
+  -webkit-transition: width 500ms linear;
+  transition: width 500ms linear;
+}
+
+.first-page .main-content .text h1 .span-wrapper.show {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: width 850ms linear;
+  transition: width 850ms linear;
+}
+
+.first-page .main-content .text h1 .span-wrapper .typed {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: none;
+  min-width: 400px;
+}
+
+.first-page .main-content .text h1 .span-wrapper .typed.active {
+  display: inline-block;
+}
+
 .first-page .main-content .text p {
   font-size: 1.8rem;
 }
