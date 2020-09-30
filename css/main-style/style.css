@@ -1306,28 +1306,59 @@ header .social i:hover {
   height: 170px;
 }
 
-.copyright {
-  font-family: "poppins";
-  text-transform: capitalize;
+footer {
   padding: 5px 100px;
-  color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 999px) {
-  .copyright {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 10px;
     text-align: center;
     padding: 5px 0;
     font-size: .85em;
   }
 }
 
-.copyright a {
+footer .copyright {
+  font-family: "poppins";
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer .copyright a {
   color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
 
-.copyright a:hover {
+footer .copyright a:hover {
   color: #2980B9;
+}
+
+footer .social i {
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+footer .social i:hover {
+  color: black;
+}
+
+@media screen and (max-width: 999px) {
+  footer .social i {
+    color: black;
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
