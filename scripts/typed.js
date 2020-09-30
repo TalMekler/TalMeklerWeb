@@ -7,7 +7,7 @@ $(document).ready(function () {
     ]
     var count = 0;
     var index = 0;
-    var current_text = "";
+    var current_text = texts[count];
     var letter = "";
 
     function type() {
