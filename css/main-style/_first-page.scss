@@ -40,7 +40,7 @@
         transition: transform 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
         
         &.active {
-            transform: translateX(-45%);
+            transform: translateX(0%);
             opacity: 1;
             @include breakpoint-less(large){
                 right: 50%;
@@ -52,12 +52,19 @@
 
         h1 {
             font-size: 3rem;
+            font-family: $assistant;
             @include breakpoint-less(xlarge) {
                 font-size: 2.5rem;
             }
             @include breakpoint-less(large){
                 font-size: 2rem;
                 text-align: center;
+            }
+            #typed{
+                color: $main-red;
+                width: 0px;
+                border-left: 3px solid black;
+                padding-left: 5px;
             }
         }
         p {

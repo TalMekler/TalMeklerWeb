@@ -392,8 +392,8 @@ header .social i:hover {
 }
 
 .first-page .main-content.active {
-  -webkit-transform: translateX(-45%);
-          transform: translateX(-45%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
   opacity: 1;
 }
 
@@ -408,6 +408,7 @@ header .social i:hover {
 
 .first-page .main-content h1 {
   font-size: 3rem;
+  font-family: "Assistant", sans-serif;
 }
 
 @media screen and (max-width: 1399px) {
@@ -421,6 +422,13 @@ header .social i:hover {
     font-size: 2rem;
     text-align: center;
   }
+}
+
+.first-page .main-content h1 #typed {
+  color: #E74C3C;
+  width: 0px;
+  border-left: 3px solid black;
+  padding-left: 5px;
 }
 
 .first-page .main-content p {
