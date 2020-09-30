@@ -200,6 +200,7 @@ header .social i:hover {
 @media screen and (max-width: 999px) {
   header .social i {
     font-size: 1.4em;
+    color: #fff;
   }
 }
 

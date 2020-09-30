@@ -216,6 +216,12 @@ header.page-down .social i:hover {
   color: #fff;
 }
 
+@media screen and (max-width: 999px) {
+  header.page-down .social i {
+    color: #fff;
+  }
+}
+
 header .logo {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -319,6 +325,7 @@ header .social i:hover {
 @media screen and (max-width: 999px) {
   header .social i {
     font-size: 1.4em;
+    color: black;
   }
 }
 

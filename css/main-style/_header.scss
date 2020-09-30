@@ -37,7 +37,9 @@ header {
                 &:hover{
                     color: #fff;
                 }
-                
+                @include breakpoint-less(large){
+                    color: #fff;
+                }
             }
         }
     }
@@ -111,6 +113,7 @@ header {
             }
             @include breakpoint-less(large){
                 font-size: 1.4em;
+                color: black;
             }
         }
     }
