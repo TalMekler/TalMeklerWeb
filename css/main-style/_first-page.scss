@@ -20,7 +20,7 @@
         &::before {
             opacity: 1;
             clip-path: circle(50% at 100% 28%);
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 clip-path: circle(50% at 100% 0%);
             }
         }
@@ -29,116 +29,124 @@
     .main-content {
         direction: rtl;
         z-index: 1;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         padding: 0 150px;
         font-family: $assistant;
         position: relative;
-        transform: translateX(30%);
+        transform: translateX(50%);
         opacity: 0;
-        // color: white;
         transition: transform 1.4s ease-in-out, opacity 1.4s ease-in 0.3s;
-        
+
+        @include breakpoint-less(large){
+            display: flex;
+        }
+
         &.active {
             transform: translateX(0%);
             opacity: 1;
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 right: 50%;
                 transform: translateX(50%);
                 padding: 0 50px;
-                
             }
         }
-
-        h1 {
-            font-size: 3rem;
-            font-family: $assistant;
-            @include breakpoint-less(xlarge) {
-                font-size: 2.5rem;
+        .text {
+            @include breakpoint(large){
+                grid-column: 2/3;
             }
-            @include breakpoint-less(large){
-                font-size: 2rem;
-                text-align: center;
-            }
-            #typed{
-                color: $main-red;
-                width: 0px;
-                border-left: 3px solid black;
-                padding-left: 5px;
-            }
-        }
-        p {
-            font-size: 2rem;
-            @include breakpoint-less(xlarge) {
-                font-size: 1.65rem;
-            }
-            @include breakpoint-less(large){
-                font-size: 1.4rem;
-                text-align: center;
-            }
-            br {
-                display: none;
-                @media screen and (max-width: 1200px) {
-                    display: block;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                font-size: 3rem;
+                font-family: $assistant;
+                @include breakpoint-less(xlarge) {
+                    font-size: 2.5rem;
+                }
+                @include breakpoint-less(large) {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                #typed {
+                    color: $main-blue;
+                    width: 0px;
+                    border-left: 3px solid black;
+                    padding-left: 5px;
                 }
             }
-        }
-        a {
-            width: fit-content;
-            margin: 20px 0 0 auto;
-            color: $main-blue;
-            font-size: 1.7rem;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px 40px;
-            overflow: hidden;
-            z-index: 1;
-            transition: all 0.4s ease-in-out;
-            @include breakpoint-less(xlarge) {
+            p {
+                font-size: 1.8rem;
+                @include breakpoint-less(xlarge) {
+                    font-size: 1.55rem;
+                }
+                @include breakpoint-less(large) {
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+                br {
+                    display: none;
+                    @media screen and (max-width: 1200px) {
+                        display: block;
+                    }
+                }
+            }
+            a {
+                width: fit-content;
+                margin: 40px 0 0 auto;
+                color: $main-blue;
                 font-size: 1.4rem;
-            }
-            @include breakpoint-less(large){
-                font-size: 1.3rem;
-                margin: 35px auto 0 auto;
-                color: white;
-                background-color: $main-blue;
-                box-shadow: 0 0 15px $main-blue;
-            }
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 10px;
-                height: 10px;
-                border-left: 3px solid $main-blue;
-                border-top: 3px solid $main-blue;
-                transition: all 0.5s ease-in-out 0s;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                width: 10px;
-                height: 10px;
-                border-right: 3px solid $main-blue;
-                border-bottom: 3px solid $main-blue;
-                transition: all 0.5s ease-in-out 0s;
-            }
-            &:hover {
-                color: white;
-                background-color: $main-blue;
-                box-shadow: 0 0 15px $main-blue;
-                transition: all 0.4s ease-in-out 0.3s;
-                &::before,
-                &::after {
-                    width: 100%;
-                    height: 100%;
-                    z-index: -1;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 30px;
+                overflow: hidden;
+                z-index: 1;
+                transition: all 0.4s ease-in-out;
+                @include breakpoint-less(xlarge) {
+                    font-size: 1.2rem;
+                }
+                @include breakpoint-less(large) {
+                    font-size: 1.3rem;
+                    margin: 35px auto 0 auto;
+                    color: white;
+                    background-color: $main-blue;
+                    box-shadow: 0 0 15px $main-blue;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-left: 3px solid $main-blue;
+                    border-top: 3px solid $main-blue;
                     transition: all 0.5s ease-in-out 0s;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-right: 3px solid $main-blue;
+                    border-bottom: 3px solid $main-blue;
+                    transition: all 0.5s ease-in-out 0s;
+                }
+                &:hover {
+                    color: white;
+                    background-color: $main-blue;
+                    box-shadow: 0 0 15px $main-blue;
+                    transition: all 0.4s ease-in-out 0.3s;
+                    &::before,
+                    &::after {
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        transition: all 0.5s ease-in-out 0s;
+                    }
                 }
             }
         }
