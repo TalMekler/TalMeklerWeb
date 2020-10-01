@@ -32,7 +32,7 @@ $(document).ready(function () {
                 text_index = 0;
                 ch_index = 0;
             }
-            setTimeout(type, newText_delay);
+            setTimeout(type, 100);
         }
     }
 
