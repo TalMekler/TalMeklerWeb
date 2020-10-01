@@ -17,16 +17,30 @@
         width: 100%;
         min-height: 100%;
         align-items: center;
+        @include breakpoint-less(large){
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
 
         .right {
             height: 100%;
             width: 50%;
             text-align: center;
+            @include breakpoint-less(large){
+                width: 85%;
+            }
             h2 {
                 font-size: 2.5rem;
+                @include breakpoint-less(large){
+                    font-size: 1.5rem;
+                }
             }
             h1 {
                 font-size: 4rem;
+                @include breakpoint-less(large){
+                    font-size: 2.5rem;
+                }
             }
             .social {
                 display: flex;
@@ -34,6 +48,10 @@
                 width: 35%;
                 margin: 0 auto;
                 margin-top: 50px;
+                @include breakpoint-less(large){
+                    margin-top: 25px;
+                    width: 50%;
+                }
                 .social-item {
                     z-index: 11;
                     position: relative;
@@ -46,6 +64,9 @@
                         font-size: 3rem;
                         color: #ffffff;
                         z-index: 1;
+                        @include breakpoint-less(large){
+                            font-size: 2rem;
+                        }
                     }
                     &::before {
                         content: "";
@@ -55,12 +76,13 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        // right: -1rem;
-                        // bottom: -1rem;
-                        // left: -1rem;
                         background-color: #000;
                         z-index: -1;
                         border-radius: 50%;
+                        @include breakpoint-less(large){
+                            width: 4rem;
+                            height: 4rem;
+                        }
                     }
 
                     &:first-child {
@@ -80,14 +102,25 @@
             height: 100%;
             width: 50%;
             text-align: center;
+
+            @include breakpoint-less(large){
+                margin-top: 50px;
+                width: 85%;
+            }
             h3 {
                 font-size: 1.8rem;
+                @include breakpoint-less(large){
+                    font-size: 1.4rem;
+                }
             }
 
             form {
                 margin: 0 auto;
                 margin-top: 15px;
                 width: 50%;
+                @include breakpoint-less(large){
+                    width: 90%;
+                }
 
                 .input-div {
                     width: 100%;
@@ -103,6 +136,9 @@
                         pointer-events: none;
                         font-size: 1.2em;
                         transition: .3s all ease-in-out;
+                        @include breakpoint-less(large){
+                            font-size: 1rem;
+                        }
                     }
 
                     &.required{
@@ -134,6 +170,9 @@
                         border-radius: 10px;
                         // background-color: rgba(#fff, .75);
                         background-color: transparent;
+                        @include breakpoint-less(large){
+                            font-size: 1rem;
+                        }
                     }
                     textarea{
                         height: 150px;

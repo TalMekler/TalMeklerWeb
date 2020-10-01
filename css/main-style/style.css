@@ -1110,18 +1110,47 @@ header .social i:hover {
           align-items: center;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+}
+
 .contact-page .main-content .right {
   height: 100%;
   width: 50%;
   text-align: center;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .right {
+    width: 85%;
+  }
+}
+
 .contact-page .main-content .right h2 {
   font-size: 2.5rem;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .right h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .contact-page .main-content .right h1 {
   font-size: 4rem;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .right h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .contact-page .main-content .right .social {
@@ -1134,6 +1163,13 @@ header .social i:hover {
   width: 35%;
   margin: 0 auto;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .right .social {
+    margin-top: 25px;
+    width: 50%;
+  }
 }
 
 .contact-page .main-content .right .social .social-item {
@@ -1157,6 +1193,12 @@ header .social i:hover {
   z-index: 1;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .right .social .social-item i {
+    font-size: 2rem;
+  }
+}
+
 .contact-page .main-content .right .social .social-item::before {
   content: "";
   position: absolute;
@@ -1169,6 +1211,13 @@ header .social i:hover {
   background-color: #000;
   z-index: -1;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .right .social .social-item::before {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 .contact-page .main-content .right .social .social-item:first-child::before {
@@ -1185,14 +1234,33 @@ header .social i:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .left {
+    margin-top: 50px;
+    width: 85%;
+  }
+}
+
 .contact-page .main-content .left h3 {
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .left h3 {
+    font-size: 1.4rem;
+  }
 }
 
 .contact-page .main-content .left form {
   margin: 0 auto;
   margin-top: 15px;
   width: 50%;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .left form {
+    width: 90%;
+  }
 }
 
 .contact-page .main-content .left form .input-div {
@@ -1212,6 +1280,12 @@ header .social i:hover {
   font-size: 1.2em;
   -webkit-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .left form .input-div::after {
+    font-size: 1rem;
+  }
 }
 
 .contact-page .main-content .left form .input-div.required::before {
@@ -1240,6 +1314,13 @@ header .social i:hover {
   border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: transparent;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .left form .input-div input,
+  .contact-page .main-content .left form .input-div textarea {
+    font-size: 1rem;
+  }
 }
 
 .contact-page .main-content .left form .input-div textarea {
