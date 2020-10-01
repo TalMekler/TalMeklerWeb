@@ -89,13 +89,11 @@
                     &:first-child {
                         &::before {
                             background-color: #00da31;
-                            border: 2.5px solid black;
                         }
                     }
                     &:last-child {
                         &::before {
                             background-color: #3e5db2;
-                            border: 2.5px solid black;
                         }
                     }
                 }

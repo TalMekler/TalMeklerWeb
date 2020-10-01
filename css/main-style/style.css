@@ -1206,6 +1206,7 @@ header .social i:hover {
   height: 5rem;
   top: 50%;
   left: 50%;
+  border: 2.5px solid black;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #000;
