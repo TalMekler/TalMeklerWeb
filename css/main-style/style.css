@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
-@-webkit-keyframes wave {
-  from {
-    left: 0;
+@-webkit-keyframes blink {
+  0% {
+    border-left-color: black;
   }
-  to {
-    left: -200%;
+  50% {
+    border-left-color: transparent;
+  }
+  100% {
+    border-left-color: black;
   }
 }
-@keyframes wave {
-  from {
-    left: 0;
+@keyframes blink {
+  0% {
+    border-left-color: black;
   }
-  to {
-    left: -200%;
+  50% {
+    border-left-color: transparent;
+  }
+  100% {
+    border-left-color: black;
   }
 }
 
@@ -452,6 +458,8 @@ header .social i:hover {
   width: 0px;
   border-left: 3px solid black;
   padding-left: 5px;
+  -webkit-animation: blink 750ms infinite;
+          animation: blink 750ms infinite;
 }
 
 .first-page .main-content .text h1 .span-wrapper {

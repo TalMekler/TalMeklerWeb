@@ -33,11 +33,14 @@ $breakpoints: (
 }
 
 // Keyframes
-@keyframes wave {
-    from{
-        left: 0;
+@keyframes blink {
+    0%{
+        border-left-color: black;
     }
-    to{
-        left: -200%;
+    50%{
+        border-left-color: transparent;
+    }
+    100%{
+        border-left-color: black;
     }
 }

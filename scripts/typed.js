@@ -1,40 +1,41 @@
 $(document).ready(function () {
+    var typing_text_span = $("#typed");
     var texts = [
         "דפי נחיתה",
         "גלריות",
         "תיקי עבודות",
         "אתרי תדמית"
     ]
-    var count = 0;
-    var index = 0;
-    var current_text = texts[count];
-    var letter = "";
+    var typing_delay = 75;
+    var delete_delay = 25;
+    var newText_delay = 1250;
+    var text_index = 0;
+    var ch_index = 0;
 
     function type() {
-        // console.log("start - count = "+count)
-        if (count == texts.length) {
-            count = 0;
-        }
-        current_text = texts[count];
-        try {
-            letter = current_text.slice(0, index);
-        }
-        catch (err) {
-            count = 0;
-            current_text = texts[count];
-            letter = current_text.slice(0, index);
-        }
-        index += 1;
-
-        $("#typed").text(letter);
-        if (letter.length == current_text.length) {
-            setTimeout(function () {
-                count += 1;
-                index = 0;
-            }, 750);
+        if(ch_index < texts[text_index].length+1){
+            typing_text_span.text(texts[text_index].slice(0, ch_index));
+            ch_index += 1;
+            setTimeout(type, typing_delay);
+        }else{
+            setTimeout(deleteText, newText_delay);
         }
     }
-    setInterval(function () {
-        type();
-    }, 50);
+    function deleteText() {
+        if (ch_index > 0){
+            typing_text_span.text(texts[text_index].slice(0,ch_index-1));
+            ch_index -= 1;
+            setTimeout(deleteText, delete_delay);
+        }else{
+            console.log("deleteText -> ch_index", ch_index)
+            text_index += 1;
+            if (text_index >= texts.length){
+                text_index = 0;
+                ch_index = 0;
+            }
+            setTimeout(type, newText_delay);
+        }
+    }
+
+    setTimeout(type, 2000);
 });
