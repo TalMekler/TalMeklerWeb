@@ -103,13 +103,19 @@ $(document).ready(function () {
         });
 
     })
-    // Contact From
+    // Contact Form
     $(function () {
-        $(".contact-page .form-wrapper form .input-div input, .contact-page .form-wrapper form .input-div textarea").focus(function () {
+        var text_inputs = $(".contact-page .main-content .left form .text input, .contact-page .main-content .left form .text textarea");
+        
+        text_inputs.focus(function () { 
             $(this).parent().addClass("active");
-        })
-        $(".contact-page .form-wrapper form .input-div input, .contact-page .form-wrapper form .input-div textarea").focusout(function () {
-            $(this).parent().removeClass("active");
-        })
+        });
+        text_inputs.focusout(function () { 
+            if($(this).val() == ""){
+                $(this).parent().removeClass("active");
+            }
+        });
+        
     })
+
 });

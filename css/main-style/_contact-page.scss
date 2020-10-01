@@ -1,223 +1,211 @@
 .contact-page {
-    color: white;
-    direction: rtl;
-    padding-top: 30px;
-    // padding-bottom: 30px;
-    position: relative;
-
-    background: url("https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_960_720.jpg"), rgba(black, 0.85);
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
+    background: rgba($main-blue, 0.5);
     min-height: calc(100vh - 100px);
-    font-family: "assistant";
+    position: relative;
+    font-family: $assistant;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include breakpoint-less(large) {
-        padding: 0;
-        padding-bottom: 30px;
-        // margin-top: -10%;
         min-height: calc(100vh - 92px);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%;
-        background-attachment: fixed;
-        // background-color: #000000;
-        background-image: linear-gradient(147deg, #000000 26%, #04619f 74%);
     }
     .main-content {
         position: relative;
-        padding: 0 150px;
-        // padding-top: 50px;
-        height: 100%;
+        direction: rtl;
         display: flex;
-        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
         align-items: center;
-        justify-content: center;
-        z-index: 1;
 
-        @include breakpoint-less(large) {
-            padding: 25px 15px 0 15px;
-        }
-
-        .titles {
-            display: flex;
-            flex-direction: column;
-            opacity: 0;
-            // transition: 1s ease-in-out;
-            @include breakpoint-less(large) {
-                transition: 0.75s ease-in-out;
-            }
-            &.active {
-                opacity: 1;
-                transition: 1s ease-in-out;
-            }
+        .right {
+            height: 100%;
+            width: 50%;
+            text-align: center;
             h2 {
-                font-size: 2rem;
-                text-align: center;
-                @include breakpoint-less(large) {
-                    font-size: 1.8rem;
-                }
+                font-size: 2.5rem;
             }
-            h4 {
-                font-size: 1.5rem;
-                text-align: center;
-                @include breakpoint-less(large) {
-                    font-size: 1.35rem;
+            h1 {
+                font-size: 4rem;
+            }
+            .social {
+                display: flex;
+                justify-content: space-between;
+                width: 35%;
+                margin: 0 auto;
+                margin-top: 50px;
+                .social-item {
+                    z-index: 11;
+                    position: relative;
+                    cursor: pointer;
+                    transition: transform 0.25s ease-in-out;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    i {
+                        font-size: 3rem;
+                        color: #ffffff;
+                        z-index: 1;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 5rem;
+                        height: 5rem;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        // right: -1rem;
+                        // bottom: -1rem;
+                        // left: -1rem;
+                        background-color: #000;
+                        z-index: -1;
+                        border-radius: 50%;
+                    }
+
+                    &:first-child {
+                        &::before {
+                            background-color: #00da31;
+                        }
+                    }
+                    &:last-child {
+                        &::before {
+                            background-color: #3e5db2;
+                        }
+                    }
                 }
             }
         }
-        .form-wrapper {
-            width: 75%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            // transform: translateY(10%);
-            // transition: 1s ease-in-out;
-            @include breakpoint-less(large) {
-                width: 90%;
-                transition: 0.75s ease-in-out;
+        .left {
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            h3 {
+                font-size: 1.8rem;
             }
-            &.active {
-                opacity: 1;
-                transition: 1s ease-in-out;
-            }
+
             form {
-                width: 75%;
+                margin: 0 auto;
+                margin-top: 15px;
+                width: 50%;
+
                 .input-div {
                     width: 100%;
-                    margin-top: 25px;
-                    border-bottom: 2px solid #808080;
                     position: relative;
-                    transition: all 0.9s ease-in-out;
-                    &.text-type {
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 3px;
-                            right: 0;
-                            bottom: -1.5px;
-                            background-color: $main-blue;
-                            transform: scaleX(0);
-                            transform-origin: right;
-                            transition: all 1s ease-in-out;
-                            @include breakpoint-less(large) {
-                                transition: all 0.7s ease-in-out;
-                            }
-                        }
+                    margin-top: 20px;
+                    &::after {
+                        content: attr(data-title);
+                        position: absolute;
+                        color: rgba(#000, 0.75);
+                        right: 20px;
+                        top: 10px;
+                        z-index: 2;
+                        pointer-events: none;
+                        font-size: 1.2em;
+                        transition: .3s all ease-in-out;
                     }
-                    &.active {
-                        border-bottom: 2px solid #80808000;
-                        &::before {
-                            transform: scaleX(1);
-                        }
-                    }
-                    &.submit {
-                        border: none;
-                        overflow: hidden;
-                        margin-bottom: 30px;
-                        @include breakpoint-less(large) {
-                            background-color: $main-red;
-                            box-shadow: 0 0 15px $main-red;
-                        }
-                        input {
-                            cursor: pointer;
-                            font-weight: bold;
-                            transition: color 0.5s ease-in-out;
-                            @include breakpoint-less(large) {
-                                color: white;
-                            }
-                        }
-                        &::before,
-                        &::after {
-                            @include breakpoint-less(large) {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 10px;
-                            height: 10px;
-                            border-left: 3px solid $main-red;
-                            border-top: 3px solid $main-red;
-                            transition: all 0.5s ease-in-out 0s;
-                        }
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-                            width: 10px;
-                            height: 10px;
-                            border-right: 3px solid $main-red;
-                            border-bottom: 3px solid $main-red;
-                            transition: all 0.5s ease-in-out 0s;
-                        }
-                        &:hover {
-                            // color: white;
-                            background-color: $main-red;
-                            box-shadow: 0 0 15px $main-red;
-                            transition: all 0.4s ease-in-out 0.3s;
-                            input {
-                                color: white;
-                            }
-                            &::before,
-                            &::after {
-                                width: 100%;
-                                height: 100%;
-                                z-index: -1;
-                                transition: all 0.5s ease-in-out 0s;
-                            }
-                        }
-                    }
-                    &.required {
-                        position: relative;
-                        &::after {
-                            content: "\f069";
+
+                    &.required{
+                        &::before{
+                            content: '\f069';
                             font-family: "Font Awesome 5 Free";
                             font-weight: 900;
+                            color: $main-red;
+                            font-size: .85rem;
                             position: absolute;
                             top: 50%;
+                            right: -20px;
                             transform: translateY(-50%);
-                            right: -15px;
-                            color: $main-red;
-                            font-size: 0.7rem;
-                            @include breakpoint-less(large) {
-                                font-size: 0.5rem;
+                        }
+                    }
+                    &.msg{
+                        &::after{
+                            top: 10px;
+                        }
+                    }
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        padding: 10px 20px;
+                        font-size: 1.2em;
+                        outline: none;
+                        border: 2px solid rgba(black, 0.3);
+                        border-radius: 10px;
+                        // background-color: rgba(#fff, .75);
+                        background-color: transparent;
+                    }
+                    textarea{
+                        height: 150px;
+                        resize: none;
+                    }
+
+                    &.submit{
+                        input{
+                            background-color: $main-red;
+                            width: 50%;
+                            border-color: transparent;
+                            cursor: pointer;
+                            color: white;
+                            transition: .3s all ease-in-out;
+                            &:hover{
+                                box-shadow: 0 0 20px $main-red;
+                                border-color: $main-red;
+                                background-color: transparent;
+                                color: black;
+                                
                             }
                         }
                     }
-                    input,
-                    textarea {
-                        padding: 10px 20px;
-                        width: 100%;
-                        outline: none;
-                        font-size: 1.2rem;
-                        border: none;
-                        font-family: "assistant";
-                        background-color: transparent;
-                        color: white;
-                        @include breakpoint-less(large) {
+
+                    &.active{
+                        &::after{
+                            color: $main-red;
+                            top: -20px;
+                            right: 5px;
+                            // font-weight: 700;
                             font-size: 1rem;
-                            padding: 10px 10px 5px 10px;
+                            
                         }
-                    }
-                    textarea {
-                        resize: none;
-                        height: 170px;
                     }
                 }
             }
+        }
+    }
+
+    .custom-shape-divider-top-1601554207 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-top-1601554207 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 88px;
+    }
+
+    .custom-shape-divider-top-1601554207 .shape-fill {
+        fill: #ffffff;
+    }
+
+    /** For tablet devices **/
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .custom-shape-divider-top-1601554207 svg {
+            width: calc(100% + 1.3px);
+            height: 73px;
+        }
+    }
+
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        .custom-shape-divider-top-1601554207 svg {
+            width: calc(100% + 1.3px);
+            height: 49px;
         }
     }
 }
