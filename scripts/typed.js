@@ -27,7 +27,6 @@ $(document).ready(function () {
             ch_index -= 1;
             setTimeout(deleteText, delete_delay);
         }else{
-            console.log("deleteText -> ch_index", ch_index)
             text_index += 1;
             if (text_index >= texts.length){
                 text_index = 0;
