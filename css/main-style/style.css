@@ -719,10 +719,13 @@ header .social i:hover {
 
 .questions-and-answers .main-content h2 {
   font-size: 4em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content h2 {
+    font-size: 3em;
+  }
 }
 
 .questions-and-answers .main-content .QAA-breaker {
@@ -735,6 +738,12 @@ header .social i:hover {
   font-size: 3em;
 }
 
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-breaker i {
+    font-size: 2em;
+  }
+}
+
 .questions-and-answers .main-content .QAA-breaker::before, .questions-and-answers .main-content .QAA-breaker::after {
   content: "";
   position: absolute;
@@ -744,6 +753,12 @@ header .social i:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-breaker::before, .questions-and-answers .main-content .QAA-breaker::after {
+    height: 2.5px;
+  }
 }
 
 .questions-and-answers .main-content .QAA-breaker::before {
@@ -758,8 +773,20 @@ header .social i:hover {
   padding: 0 150px;
 }
 
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-wrapper {
+    padding: 0 50px;
+  }
+}
+
 .questions-and-answers .main-content .QAA-wrapper .QAA-item {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-wrapper .QAA-item {
+    margin-top: 15px;
+  }
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item-q {
@@ -768,6 +795,13 @@ header .social i:hover {
   cursor: pointer;
   padding: 0 20px;
   position: relative;
+  outline: none;
+}
+
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-wrapper .QAA-item-q {
+    font-size: 1.5em;
+  }
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item-q::before {
@@ -780,6 +814,12 @@ header .social i:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-wrapper .QAA-item-q::before {
+    font-size: 1.1rem;
+  }
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item.open .QAA-item-q::before {
@@ -796,6 +836,12 @@ header .social i:hover {
   padding: 0 20px;
   padding-bottom: 15px;
   display: none;
+}
+
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-wrapper .QAA-item-a {
+    font-size: 1.3em;
+  }
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item-a a {
