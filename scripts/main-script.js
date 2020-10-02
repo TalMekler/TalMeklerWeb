@@ -89,16 +89,41 @@ $(document).ready(function () {
     // Contact Form
     $(function () {
         var text_inputs = $(".contact-page .main-content .left form .text input, .contact-page .main-content .left form .text textarea");
-        
-        text_inputs.focus(function () { 
+
+        text_inputs.focus(function () {
             $(this).parent().addClass("active");
         });
-        text_inputs.focusout(function () { 
-            if($(this).val() == ""){
+        text_inputs.focusout(function () {
+            if ($(this).val() == "") {
                 $(this).parent().removeClass("active");
             }
         });
-        
-    })
 
+    })
+    // Open Answers -> Question and Answer page
+    $(function () {
+        function closeAll() {
+            $(".questions-and-answers .main-content .QAA-item .QAA-item-q").each(function () {
+                var parent = $(this).parent();
+                var answer = parent.children(".QAA-item-a");
+                parent.removeClass("open");
+                answer.slideUp();
+            })
+        }
+        $(".questions-and-answers .main-content .QAA-item .QAA-item-q").click(function () {
+            var parent = $(this).parent();
+            var openCheck = false;
+            if (!parent.hasClass("open")){
+                openCheck = true;
+            }
+            if(openCheck){
+                closeAll();
+                parent.addClass("open");
+                var answer = parent.children(".QAA-item-a");
+                answer.slideToggle();
+            }else{
+                closeAll();
+            }
+        })
+    })
 });
