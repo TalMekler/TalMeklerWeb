@@ -1,11 +1,11 @@
 .costumers-get {
     min-height: 100vh;
     padding: 50px 100px 25px 100px;
-    background: linear-gradient(180deg, #fff, #7FBEDF);
+    background: linear-gradient(180deg, #fff, #7fbedf);
     font-family: $rubik;
-    @include breakpoint-less(large){
+    @include breakpoint-less(large) {
         padding: 0 40px 25px 40px;
-        background: linear-gradient(180deg, #fff 20%, #7FBEDF);
+        background: linear-gradient(180deg, #fff 20%, #7fbedf);
     }
     &-wrapper {
         position: relative;
@@ -14,7 +14,7 @@
         row-gap: 100px;
         grid-template-columns: repeat(3, 1fr);
         direction: rtl;
-        @include breakpoint-less(large){
+        @include breakpoint-less(large) {
             grid-template-columns: repeat(1, 1fr);
             column-gap: 0;
             row-gap: 50px;
@@ -30,7 +30,7 @@
             width: 150px;
             height: 150px;
             margin: 0 auto;
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 width: 120px;
                 height: 120px;
             }
@@ -39,8 +39,8 @@
             font-size: 1.5em;
             line-height: 2em;
         }
-        .costumers-get-desc{
-            color: #707B7C;
+        .costumers-get-desc {
+            color: #707b7c;
             font-size: 1.1em;
         }
     }
