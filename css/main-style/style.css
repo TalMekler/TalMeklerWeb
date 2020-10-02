@@ -1004,7 +1004,9 @@ header .social i:hover {
 }
 
 .contact-page {
-  background: rgba(41, 128, 185, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fff), to(#7fbedf));
+  background: linear-gradient(180deg, #fff 1%, #7fbedf);
+  background-attachment: fixed;
   min-height: calc(100vh - 100px);
   position: relative;
   font-family: "Rubik", sans-serif;
