@@ -1006,7 +1006,6 @@ header .social i:hover {
 .contact-page {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#7fbedf));
   background: linear-gradient(180deg, #fff, #7fbedf);
-  background-attachment: fixed;
   min-height: calc(100vh - 100px);
   position: relative;
   font-family: "Rubik", sans-serif;
@@ -1021,6 +1020,12 @@ header .social i:hover {
           justify-content: center;
   /** For tablet devices **/
   /** For mobile devices **/
+}
+
+@media screen and (min-width: 999px) {
+  .contact-page {
+    background-attachment: fixed;
+  }
 }
 
 @media screen and (max-width: 999px) {
@@ -1211,8 +1216,8 @@ header .social i:hover {
   z-index: 2;
   pointer-events: none;
   font-size: 1.2em;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 @media screen and (max-width: 999px) {
@@ -1222,11 +1227,11 @@ header .social i:hover {
 }
 
 .contact-page .main-content .left form .input-div.required::before {
-  content: '\f069';
+  content: "\f069";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #E74C3C;
-  font-size: .85rem;
+  font-size: 0.85rem;
   position: absolute;
   top: 50%;
   right: -20px;
@@ -1267,8 +1272,8 @@ header .social i:hover {
   border-color: transparent;
   cursor: pointer;
   color: white;
-  -webkit-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .contact-page .main-content .left form .input-div.submit input:hover {

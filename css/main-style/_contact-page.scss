@@ -1,13 +1,14 @@
 .contact-page {
     background: linear-gradient(180deg, #fff, #7fbedf);
-    background-attachment: fixed;
     min-height: calc(100vh - 100px);
     position: relative;
     font-family: $rubik;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    @include breakpoint(large) {
+        background-attachment: fixed;
+    }
     @include breakpoint-less(large) {
         min-height: calc(100vh - 92px);
     }
@@ -18,7 +19,7 @@
         width: 100%;
         min-height: 100%;
         align-items: center;
-        @include breakpoint-less(large){
+        @include breakpoint-less(large) {
             flex-direction: column;
             margin-top: 50px;
             margin-bottom: 25px;
@@ -28,18 +29,18 @@
             height: 100%;
             width: 50%;
             text-align: center;
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 width: 85%;
             }
             h2 {
                 font-size: 2.5rem;
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     font-size: 1.5rem;
                 }
             }
             h1 {
                 font-size: 4rem;
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     font-size: 2.5rem;
                 }
             }
@@ -49,7 +50,7 @@
                 width: 35%;
                 margin: 0 auto;
                 margin-top: 50px;
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     margin-top: 25px;
                     width: 50%;
                 }
@@ -65,7 +66,7 @@
                         font-size: 3rem;
                         color: #ffffff;
                         z-index: 1;
-                        @include breakpoint-less(large){
+                        @include breakpoint-less(large) {
                             font-size: 2rem;
                         }
                     }
@@ -81,7 +82,7 @@
                         background-color: #000;
                         z-index: -1;
                         border-radius: 50%;
-                        @include breakpoint-less(large){
+                        @include breakpoint-less(large) {
                             width: 4rem;
                             height: 4rem;
                         }
@@ -105,13 +106,13 @@
             width: 50%;
             text-align: center;
 
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 margin-top: 50px;
                 width: 85%;
             }
             h3 {
                 font-size: 1.8rem;
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     font-size: 1.4rem;
                 }
             }
@@ -120,7 +121,7 @@
                 margin: 0 auto;
                 margin-top: 15px;
                 width: 50%;
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     width: 90%;
                 }
 
@@ -137,27 +138,27 @@
                         z-index: 2;
                         pointer-events: none;
                         font-size: 1.2em;
-                        transition: .3s all ease-in-out;
-                        @include breakpoint-less(large){
+                        transition: 0.3s all ease-in-out;
+                        @include breakpoint-less(large) {
                             font-size: 1rem;
                         }
                     }
 
-                    &.required{
-                        &::before{
-                            content: '\f069';
+                    &.required {
+                        &::before {
+                            content: "\f069";
                             font-family: "Font Awesome 5 Free";
                             font-weight: 900;
                             color: $main-red;
-                            font-size: .85rem;
+                            font-size: 0.85rem;
                             position: absolute;
                             top: 50%;
                             right: -20px;
                             transform: translateY(-50%);
                         }
                     }
-                    &.msg{
-                        &::after{
+                    &.msg {
+                        &::after {
                             top: 10px;
                         }
                     }
@@ -172,41 +173,39 @@
                         border-radius: 10px;
                         // background-color: rgba(#fff, .75);
                         background-color: transparent;
-                        @include breakpoint-less(large){
+                        @include breakpoint-less(large) {
                             font-size: 1rem;
                         }
                     }
-                    textarea{
+                    textarea {
                         height: 150px;
                         resize: none;
                     }
 
-                    &.submit{
-                        input{
+                    &.submit {
+                        input {
                             background-color: $main-red;
                             width: 50%;
                             border-color: transparent;
                             cursor: pointer;
                             color: white;
-                            transition: .3s all ease-in-out;
-                            &:hover{
+                            transition: 0.3s all ease-in-out;
+                            &:hover {
                                 box-shadow: 0 0 20px $main-red;
                                 border-color: $main-red;
                                 background-color: transparent;
                                 color: black;
-                                
                             }
                         }
                     }
 
-                    &.active{
-                        &::after{
+                    &.active {
+                        &::after {
                             color: $main-red;
                             top: -20px;
                             right: 5px;
                             // font-weight: 700;
                             font-size: 1rem;
-                            
                         }
                     }
                 }
