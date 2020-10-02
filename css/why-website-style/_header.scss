@@ -81,7 +81,7 @@ header {
             font-weight: 700;
             opacity: 1;
             transition: .3s ease-in-out;
-            font-family: $assistant;
+            font-family: $rubik;
         }
         @include breakpoint-less(large){
             display: none;

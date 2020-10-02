@@ -15,7 +15,7 @@ main {
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-family: "assistant";
+    font-family: $rubik;
     padding: 30px 0;
     z-index: 1;
     @include breakpoint-less(large) {
