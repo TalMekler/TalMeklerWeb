@@ -3,14 +3,22 @@
     padding: 50px 100px 25px 100px;
     background: linear-gradient(180deg, #fff, #7FBEDF);
     font-family: $rubik;
+    @include breakpoint-less(large){
+        padding: 0 40px 25px 40px;
+        background: linear-gradient(180deg, #fff 20%, #7FBEDF);
+    }
     &-wrapper {
         position: relative;
         display: grid;
         column-gap: 100px;
         row-gap: 100px;
         grid-template-columns: repeat(3, 1fr);
-        // grid-template-rows: repeat(auto, auto);
         direction: rtl;
+        @include breakpoint-less(large){
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 0;
+            row-gap: 50px;
+        }
     }
     .costumers-get-item {
         position: relative;
@@ -19,9 +27,13 @@
         justify-content: center;
         text-align: center;
         .costumers-get-img {
-            width: 150px !important;
-            height: 150px !important;
+            width: 150px;
+            height: 150px;
             margin: 0 auto;
+            @include breakpoint-less(large){
+                width: 120px;
+                height: 120px;
+            }
         }
         .costumers-get-title {
             font-size: 1.5em;
