@@ -1,6 +1,6 @@
 .third-page {
     direction: rtl;
-    padding-top: 30px;
+    // padding-top: 30px;
     position: relative;
     min-height: calc(100vh - 100px);
     @include breakpoint-less(large) {

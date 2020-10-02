@@ -693,7 +693,6 @@ header .social i:hover {
 
 .third-page {
   direction: rtl;
-  padding-top: 30px;
   position: relative;
   min-height: calc(100vh - 100px);
   /** For tablet devices **/
