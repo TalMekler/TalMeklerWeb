@@ -1030,6 +1030,8 @@ header .social i:hover {
 
 @media screen and (max-width: 999px) {
   .contact-page {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.3%, #fff), to(#7fbedf));
+    background: linear-gradient(180deg, #fff 0.3%, #7fbedf);
     min-height: calc(100vh - 92px);
   }
 }
@@ -1045,6 +1047,7 @@ header .social i:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 88px;
 }
 
 @media screen and (max-width: 999px) {
@@ -1055,6 +1058,18 @@ header .social i:hover {
             flex-direction: column;
     margin-top: 50px;
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .contact-page .main-content {
+    padding-top: 73px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-page .main-content {
+    padding-top: 49px;
   }
 }
 

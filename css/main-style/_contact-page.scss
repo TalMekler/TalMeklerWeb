@@ -10,6 +10,7 @@
         background-attachment: fixed;
     }
     @include breakpoint-less(large) {
+        background: linear-gradient(180deg, #fff .3%, #7fbedf);
         min-height: calc(100vh - 92px);
     }
     .main-content {
@@ -19,10 +20,17 @@
         width: 100%;
         min-height: 100%;
         align-items: center;
+        padding-top: 88px;
         @include breakpoint-less(large) {
             flex-direction: column;
             margin-top: 50px;
             margin-bottom: 25px;
+        }
+        @media screen and (max-width: 1023px) {
+            padding-top: 73px;
+        }
+        @media screen and (max-width: 767px) {
+            padding-top: 49px;
         }
 
         .right {
