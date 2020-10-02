@@ -614,16 +614,16 @@ header .social i:hover {
 .costumers-get {
   min-height: 100vh;
   padding: 50px 100px 25px 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#7FBEDF));
-  background: linear-gradient(180deg, #fff, #7FBEDF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#7fbedf));
+  background: linear-gradient(180deg, #fff, #7fbedf);
   font-family: "Rubik", sans-serif;
 }
 
 @media screen and (max-width: 999px) {
   .costumers-get {
     padding: 0 40px 25px 40px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #fff), to(#7FBEDF));
-    background: linear-gradient(180deg, #fff 20%, #7FBEDF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #fff), to(#7fbedf));
+    background: linear-gradient(180deg, #fff 20%, #7fbedf);
   }
 }
 
@@ -677,12 +677,18 @@ header .social i:hover {
 
 .costumers-get .costumers-get-item .costumers-get-title {
   font-size: 1.5em;
-  line-height: 2em;
+  padding-bottom: .2em;
 }
 
 .costumers-get .costumers-get-item .costumers-get-desc {
-  color: #707B7C;
+  color: #707b7c;
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 999px) {
+  .costumers-get .costumers-get-item .costumers-get-desc {
+    font-size: 1em;
+  }
 }
 
 .third-page {
