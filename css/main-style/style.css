@@ -41,6 +41,10 @@ a {
   color: black;
 }
 
+.english {
+  font-family: "Poppins", sans-serif;
+}
+
 .clr-red {
   color: #E74C3C;
 }
@@ -605,6 +609,55 @@ header .social i:hover {
   z-index: -1;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
+}
+
+.costumers-get {
+  min-height: 100vh;
+  padding: 50px 100px 25px 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#7FBEDF));
+  background: linear-gradient(180deg, #fff, #7FBEDF);
+  font-family: "Assistant", sans-serif;
+}
+
+.costumers-get-wrapper {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+  row-gap: 100px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  direction: rtl;
+}
+
+.costumers-get .costumers-get-item {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.costumers-get .costumers-get-item .costumers-get-img {
+  width: 150px !important;
+  height: 150px !important;
+  margin: 0 auto;
+}
+
+.costumers-get .costumers-get-item .costumers-get-title {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.costumers-get .costumers-get-item .costumers-get-desc {
+  color: #707B7C;
+  font-size: 1.1em;
 }
 
 .second-page {

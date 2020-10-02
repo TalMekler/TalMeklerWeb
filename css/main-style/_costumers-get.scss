@@ -1,0 +1,35 @@
+.costumers-get {
+    min-height: 100vh;
+    padding: 50px 100px 25px 100px;
+    background: linear-gradient(180deg, #fff, #7FBEDF);
+    font-family: $assistant;
+    &-wrapper {
+        position: relative;
+        display: grid;
+        column-gap: 100px;
+        row-gap: 100px;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(auto, auto);
+        direction: rtl;
+    }
+    .costumers-get-item {
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .costumers-get-img {
+            width: 150px !important;
+            height: 150px !important;
+            margin: 0 auto;
+        }
+        .costumers-get-title {
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+        .costumers-get-desc{
+            color: #707B7C;
+            font-size: 1.1em;
+        }
+    }
+}
