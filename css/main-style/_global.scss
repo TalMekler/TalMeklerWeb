@@ -40,7 +40,7 @@ section {
     transition: all 0.3s ease-in-out;
     font-size: 1.3em;
     font-weight: 700;
-    font-family: $assistant;
+    font-family: $rubik;
 
     @include breakpoint-less(large) {
         font-size: 1em;

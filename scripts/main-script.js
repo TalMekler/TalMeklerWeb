@@ -93,11 +93,9 @@ $(document).ready(function () {
             }
         }
 
-        show_section(".second-page");
         show_section(".third-page");
         show_section(".contact-page");
         $(window).scroll(function () {
-            show_section(".second-page");
             show_section(".third-page");
             show_section(".contact-page");
         });
