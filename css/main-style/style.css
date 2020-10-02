@@ -696,13 +696,14 @@ header .social i:hover {
   padding-top: 30px;
   position: relative;
   min-height: calc(100vh - 100px);
+  /** For tablet devices **/
+  /** For mobile devices **/
 }
 
 @media screen and (max-width: 999px) {
   .third-page {
     padding: 0;
     padding-bottom: 30px;
-    margin-top: 10%;
     min-height: calc(100vh - 92px);
   }
 }
@@ -725,8 +726,8 @@ header .social i:hover {
 
 @media screen and (max-width: 999px) {
   .third-page::before {
-    -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
   }
 }
 
@@ -750,6 +751,7 @@ header .social i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 88px;
 }
 
 @media screen and (max-width: 999px) {
@@ -759,6 +761,18 @@ header .social i:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .third-page .main-content {
+    padding-top: 73px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .third-page .main-content {
+    padding-top: 49px;
   }
 }
 
@@ -772,16 +786,16 @@ header .social i:hover {
 @media screen and (max-width: 999px) {
   .third-page .main-content .in-web-desc {
     width: 90%;
-    -webkit-transition: right .4s ease-in-out, opacity .4s ease-in-out;
-    transition: right .4s ease-in-out, opacity .4s ease-in-out;
+    -webkit-transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
   }
 }
 
 .third-page .main-content .in-web-desc.active {
   right: 0%;
   opacity: 1;
-  -webkit-transition: right .8s ease-in-out, opacity .95s ease-in;
-  transition: right .8s ease-in-out, opacity .95s ease-in;
+  -webkit-transition: right 0.8s ease-in-out, opacity 0.95s ease-in;
+  transition: right 0.8s ease-in-out, opacity 0.95s ease-in;
 }
 
 @media screen and (max-width: 999px) {
@@ -859,7 +873,7 @@ header .social i:hover {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 15px;
-  color: #2ECC71;
+  color: #2ecc71;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -891,8 +905,8 @@ header .social i:hover {
   .third-page .main-content .codes-text {
     width: 90%;
     margin-top: 100px;
-    -webkit-transition: left .7s ease-in-out, opacity .7s ease-in-out;
-    transition: left .7s ease-in-out, opacity .7s ease-in-out;
+    -webkit-transition: left 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    transition: left 0.7s ease-in-out, opacity 0.7s ease-in-out;
   }
 }
 
@@ -955,26 +969,38 @@ header .social i:hover {
   font-family: "Poppins", sans-serif;
 }
 
-.third-page .custom-shape-divider-bottom-1600873633 {
+.third-page .custom-shape-divider-top-1601554207 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
-.third-page .custom-shape-divider-bottom-1600873633 svg {
+.third-page .custom-shape-divider-top-1601554207 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 151px;
+  height: 88px;
 }
 
-.third-page .custom-shape-divider-bottom-1600873633 .shape-fill {
-  fill: rgba(41, 128, 185, 0.7);
+.third-page .custom-shape-divider-top-1601554207 .shape-fill {
+  fill: #7fbedf;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .third-page .custom-shape-divider-top-1601554207 svg {
+    width: calc(100% + 1.3px);
+    height: 73px;
+  }
+}
+
+@media (max-width: 767px) {
+  .third-page .custom-shape-divider-top-1601554207 svg {
+    width: calc(100% + 1.3px);
+    height: 49px;
+  }
 }
 
 .contact-page {
