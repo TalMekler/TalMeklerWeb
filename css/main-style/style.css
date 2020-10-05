@@ -1238,6 +1238,7 @@ header .social i:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ecfffb;
+  font-family: "Rubik", sans-serif;
 }
 
 .mail-send-page .text {
