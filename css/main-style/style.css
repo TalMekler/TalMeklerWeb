@@ -1223,6 +1223,85 @@ header .social i:hover {
   }
 }
 
+.mail-send-page {
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ecfffb;
+}
+
+.mail-send-page .text {
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 5vh 5vw;
+  background-color: #b4f1f1;
+  max-width: 50vw;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 999px) {
+  .mail-send-page .text {
+    max-width: 100vw;
+  }
+}
+
+.mail-send-page .text h2 {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 999px) {
+  .mail-send-page .text h2 {
+    font-size: 2em;
+  }
+}
+
+.mail-send-page .text p {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 999px) {
+  .mail-send-page .text p {
+    font-size: 1.2em;
+  }
+}
+
+.mail-send-page .text p.back {
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 999px) {
+  .mail-send-page .text p.back {
+    font-size: 1em;
+  }
+}
+
+.mail-send-page .text p.back-click {
+  display: none;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 999px) {
+  .mail-send-page .text p.back-click {
+    font-size: .8em;
+  }
+}
+
+.mail-send-page .text p.back-click a {
+  text-decoration: underline;
+  color: #107a8b;
+}
+
 footer {
   padding: 5px 100px;
   background-color: #fff;
