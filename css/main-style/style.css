@@ -685,12 +685,6 @@ header .social i:hover {
   font-size: 1.1em;
 }
 
-@media screen and (max-width: 999px) {
-  .costumers-get .costumers-get-item .costumers-get-desc {
-    font-size: 1em;
-  }
-}
-
 .questions-and-answers {
   direction: rtl;
   font-family: "Rubik", sans-serif;
@@ -781,6 +775,12 @@ header .social i:hover {
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 999px) {
+  .questions-and-answers .main-content .QAA-wrapper .QAA-item {
+    margin-top: 2.5em;
+  }
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item-q {
@@ -1097,6 +1097,12 @@ header .social i:hover {
   width: 100%;
   position: relative;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 999px) {
+  .contact-page .main-content .left form .input-div {
+    margin-top: 2.5em;
+  }
 }
 
 .contact-page .main-content .left form .input-div::after {
