@@ -59,6 +59,9 @@
             }
             .QAA-item{
                 margin-top: 30px;
+                @include breakpoint-less(large){
+                    margin-top: 2.5em;
+                }
                 &-q{
                     font-weight: 500;
                     // width: fit-content;

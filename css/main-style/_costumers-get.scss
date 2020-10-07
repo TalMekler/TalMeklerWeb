@@ -42,9 +42,6 @@
         .costumers-get-desc {
             color: #707b7c;
             font-size: 1.1em;
-            @include breakpoint-less(large){
-                font-size: 1em;
-            }
         }
     }
 }

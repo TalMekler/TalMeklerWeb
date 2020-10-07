@@ -137,6 +137,9 @@
                     width: 100%;
                     position: relative;
                     margin-top: 20px;
+                    @include breakpoint-less(large){
+                        margin-top: 2.5em;
+                    }
                     &::after {
                         content: attr(data-title);
                         position: absolute;
