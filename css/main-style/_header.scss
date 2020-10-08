@@ -118,6 +118,7 @@ header {
             }
 
             &:hover {
+                transform: scaleX(1);
                 &::before {
                     @media screen and (max-width: 1050px) {
                         display: none;

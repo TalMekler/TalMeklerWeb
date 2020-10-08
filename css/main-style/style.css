@@ -358,6 +358,11 @@ header nav .nav-item::before {
   transition: all 0.3s ease-in-out;
 }
 
+header nav .nav-item:hover {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 @media screen and (max-width: 1050px) {
   header nav .nav-item:hover::before {
     display: none;
