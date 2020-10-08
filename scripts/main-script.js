@@ -31,8 +31,8 @@ $(document).ready(function () {
             if ($(window).width() < 999) {
                 header_height = 92;
             }
-            if (window.location.href.indexOf("#") > -1 && $(this).hasClass("go-to-top")) {
-                window.location.href = 'index.html';
+            if (window.location.href.indexOf("#") > -1) {
+                window.location.href = '/';
                 return true
             }
             var firstSecCheck = $(this.hash).attr("data-first");
