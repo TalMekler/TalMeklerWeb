@@ -27,18 +27,44 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script src="scripts/main-script.js"></script>
     <script src="scripts/typed.js"></script>
+    <script src="scripts/open-nav-bar.js"></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a class="scroll-link go-to-top" href="#first-page">
-                <div class="logo-text">
-                    <h1><span>Tal Mekler</span> | <span class="clr-blue">Developer</span></h1>
-                </div>
+                <svg width="168" height="102" viewBox="0 0 168 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="TMD-Logo">
+                        <ellipse class="logo-svg-path ellipse" cx="84" cy="77" rx="84" ry="10" />
+                        <path class="logo-svg-path t" id="T"
+                            d="M51.556 27.264V36.58H38.908V75H27.28V36.58H14.632V27.264H51.556Z" />
+                        <path class="logo-svg-path m" id="M"
+                            d="M105.276 27.264V75H93.648V46.372L82.972 75H73.588L62.844 46.304V75H51.216V27.264H64.952L78.348 60.312L91.608 27.264H105.276Z" />
+                        <path class="logo-svg-path d" id="D"
+                            d="M123.1 27.264C128.132 27.264 132.529 28.2613 136.292 30.256C140.055 32.2507 142.956 35.0613 144.996 38.688C147.081 42.2693 148.124 46.4173 148.124 51.132C148.124 55.8013 147.081 59.9493 144.996 63.576C142.956 67.2027 140.032 70.0133 136.224 72.008C132.461 74.0027 128.087 75 123.1 75H105.216V27.264H123.1ZM122.352 64.936C126.749 64.936 130.172 63.7347 132.62 61.332C135.068 58.9293 136.292 55.5293 136.292 51.132C136.292 46.7347 135.068 43.312 132.62 40.864C130.172 38.416 126.749 37.192 122.352 37.192H116.844V64.936H122.352Z" />
+                    </g>
+                </svg>
             </a>
         </div>
-        <div class="page-name"></div>
+        <div class="nav-bar-btns">
+            <i class="fas fa-bars open-btn"></i>
+        </div>
+        <nav>
+            <i class="fas fa-times close-btn"></i>
+            <a href="#first-page" class="scroll-link go-to-top nav-item">
+                בית
+            </a>
+            <a href="#costumers-get" class="scroll-link nav-item">
+                מה אתם מקבלים
+            </a>
+            <a href="#QaA" class="scroll-link nav-item">
+                <div>שאלות ותשובות</div>
+            </a>
+            <a href="#contact-us" class="scroll-link nav-item">
+                <div>צרו קשר</div>
+            </a>
+        </nav>
         <div class="social">
             <a href="https://bit.ly/3n4obNz" target="_blank" rel="nofollow">
                 <i class="fab fa-facebook-square"></i>
@@ -61,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="costumers-get">
+        <section id="costumers-get" class="costumers-get">
             <div class="costumers-get-wrapper">
                 <div class="costumers-get-item">
                     <img class="costumers-get-img" src="imgs/costumers-get-SVG/responsive.svg" alt="responsive website">
@@ -69,21 +95,24 @@
                         אתר רספונסיבי
                     </h3>
                     <p class="costumers-get-desc">
-                        האתרים מותאמים לכל סוגי הפלטפורמות: דסקטופ, טאבלט ומובייל וכך הלקוחות שלכם יוכלו לגלוש בנוחות מכל מכשיר שיש ברשותם.
+                        האתרים מותאמים לכל סוגי הפלטפורמות: דסקטופ, טאבלט ומובייל וכך הלקוחות שלכם יוכלו לגלוש בנוחות
+                        מכל מכשיר שיש ברשותם.
                     </p>
                 </div>
                 <div class="costumers-get-item">
                     <img class="costumers-get-img" src="imgs/costumers-get-SVG/paint-palette.svg" alt="Uniqe Design">
                     <h3 class="costumers-get-title">עיצוב ייחודי</h3>
                     <p class="costumers-get-desc">
-                        כל אתר מקבל עיצוב ייחודי משלו. עיצוב האתר מותאם על בסיס הצרכים של הלקוחות. קיימת אפשרות להביא עיצוב קיים.
+                        כל אתר מקבל עיצוב ייחודי משלו. עיצוב האתר מותאם על בסיס הצרכים של הלקוחות. קיימת אפשרות להביא
+                        עיצוב קיים.
                     </p>
                 </div>
                 <div class="costumers-get-item">
                     <img class="costumers-get-img" src="imgs/costumers-get-SVG/salary.svg" alt="Low Cost">
                     <h3 class="costumers-get-title">מחירים נוחים</h3>
                     <p class="costumers-get-desc">
-                        המחירים הינם מחירים המתחרים בשוק. המחיר יקבע בהתאם למצב השוק וצרכי הלקוח תוך הבנה שמדובר בעסקים קטנים ועצמאיים.
+                        המחירים הינם מחירים המתחרים בשוק. המחיר יקבע בהתאם למצב השוק וצרכי הלקוח תוך הבנה שמדובר בעסקים
+                        קטנים ועצמאיים.
                     </p>
                 </div>
                 <div class="costumers-get-item">
@@ -92,7 +121,8 @@
                         אתר מהיר ובטוח
                     </h3>
                     <p class="costumers-get-desc">
-                        זמן טעינת האתר יהיה 4 שניות לכל היותר. בנוסף האתר יותאם לעבוד בפרוטוקול <span class="english">HTTPS</span> כדי שישאר מאובטח.
+                        זמן טעינת האתר יהיה 4 שניות לכל היותר. בנוסף האתר יותאם לעבוד בפרוטוקול <span
+                            class="english">HTTPS</span> כדי שישאר מאובטח.
                     </p>
                 </div>
                 <div class="costumers-get-item">
@@ -106,12 +136,13 @@
                     <img class="costumers-get-img" src="imgs/costumers-get-SVG/calendar.svg" alt="Warranty card">
                     <h3 class="costumers-get-title">אחריות מלאה</h3>
                     <p class="costumers-get-desc">
-                        הרגשתם שמשהו חסר? רוצים לשנות חלק באתר? מסיום בניית האתר תקבלו אחריות למשך חודש לטובת שינויים אלה!
+                        הרגשתם שמשהו חסר? רוצים לשנות חלק באתר? מסיום בניית האתר תקבלו אחריות למשך חודש לטובת שינויים
+                        אלה!
                     </p>
                 </div>
             </div>
         </section>
-        <section class="questions-and-answers">
+        <section id="QaA" class="questions-and-answers">
             <div class="custom-shape-divider-top-1601554207">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -129,7 +160,8 @@
                     <div class="QAA-item">
                         <div class="QAA-item-q">אז... איך מתחילים?</div>
                         <div class="QAA-item-a">
-                            פשוט מאוד! כדי להתחיל את התהליך הדבר היחיד שצריך לעשות הוא ליצור קשר ולהיות זמינים לשיחה ואז כבר אדריך אתכם בשלבים.
+                            פשוט מאוד! כדי להתחיל את התהליך הדבר היחיד שצריך לעשות הוא ליצור קשר ולהיות זמינים לשיחה ואז
+                            כבר אדריך אתכם בשלבים.
                         </div>
                     </div>
                     <div class="QAA-item">
@@ -137,7 +169,7 @@
                             למה בכלל אני צריך אתר? במה הוא יכול לתרום לי?
                         </div>
                         <div class="QAA-item-a">
-                            למה צריך אתר? יש המון סיבות! 
+                            למה צריך אתר? יש המון סיבות!
                             <br>
                             קיבצתי מספר סיבות ואת ההסבר שלהם ממש פה - <a href="/why-website" class="bold">כנסו לראות</a>
                         </div>
@@ -147,7 +179,8 @@
                             מה המחיר לאתר?
                         </div>
                         <div class="QAA-item-a">
-                            אין מחיר קבוע לכל אתר. המחיר נקבע בהתאם למורכבות בניית האתר וכן בהתאם לשוק. אך אל דאגה! המחיר שתקבלו יהיה מחיר הוגן תוך הבנה שאתם בעלי עסק קטן ועצמאיים.
+                            אין מחיר קבוע לכל אתר. המחיר נקבע בהתאם למורכבות בניית האתר וכן בהתאם לשוק. אך אל דאגה!
+                            המחיר שתקבלו יהיה מחיר הוגן תוך הבנה שאתם בעלי עסק קטן ועצמאיים.
                         </div>
                     </div>
                     <div class="QAA-item">
@@ -155,7 +188,8 @@
                             איך משתמשים באחריות?
                         </div>
                         <div class="QAA-item-a">
-                            מרגע סיום בניית האתר אתם מקבלים ממני אחריות למשך 30 ימים / 5 פעמים לביצוע תיקונים במידת הצורך או שיפוצים קטנים.
+                            מרגע סיום בניית האתר אתם מקבלים ממני אחריות למשך 30 ימים / 5 פעמים לביצוע תיקונים במידת
+                            הצורך או שיפוצים קטנים.
                         </div>
                     </div>
                     <div class="QAA-item">
@@ -185,7 +219,8 @@
                     <h1>צרו קשר!</h1>
                     <div class="social">
                         <div class="social-item">
-                            <a href="https://wa.me/9720546833151?text=היי%20טל,%20אני%20רוצה%20ליצור%20איתך%20קשר%20לגבי%20אתר%20לעסק.">
+                            <a
+                                href="https://wa.me/9720546833151?text=היי%20טל,%20אני%20רוצה%20ליצור%20איתך%20קשר%20לגבי%20אתר%20לעסק.">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
