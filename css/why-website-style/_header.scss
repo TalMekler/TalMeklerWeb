@@ -1,105 +1,150 @@
 header {
-    padding: 30px 150px;
+    padding: 10px 150px;
     position: fixed;
+    background-color: white;
+    z-index: 11111;
     width: 100vw;
-    background-color: black;
-    z-index: 111;
+    transition: background 0.5s ease-in-out;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
     @include breakpoint-less(large) {
-        padding: 30px;
-        padding-left: 15px;
+        padding: 15px 30px;
         z-index: 2;
-        // vertical-align: middle;
+        background-color: rgba(white, 0.95);
+        box-shadow: 0 0 5px black;
     }
-    .logo {
-        // flex: 1;
-        h1 {
-            color: white;
-        }
-        .clr-blue {
-            color: $main-red;
-        }
-        &-text {
-            &::before {
-                color: white;
-                
-            }
-        }
+    &.page-down {
+        background-color: rgba(white, 0.95);
+        box-shadow: 0 0 5px black;
+        z-index: 9999999;
     }
     .logo {
         width: fit-content;
         cursor: pointer;
-        &-text {
-            display: flex;
-            align-items: center;
-            position: relative;
-            @include breakpoint-less(large) {
-                // margin: 0 auto;
-            }
-            h1 {
-                font-size: 1.7rem;
-                line-height: 2.5rem;
-                font-family: $poppins;
-                font-weight: 700;
-                letter-spacing: 3px;
-                transition: color 0.5s ease-in-out 0.1s;
-                @include breakpoint-less(large) {
-                    letter-spacing: 1px;
-                    font-size: 1.4rem;
-                    line-height: 2rem;
+        // flex: 1;
+        svg {
+            cursor: pointer;
+            .logo-svg-path {
+                fill: $main-blue;
+                cursor: pointer;
+                &.m {
+                    fill-opacity: 0.8;
                 }
-                .clr-blue {
-                    transition: color 0.5s ease-in-out 0.1s;
-                    @include breakpoint-less(large) {
-                        color: $main-red;
+                &.d {
+                    fill-opacity: 0.6;
+                }
+                &.ellipse {
+                    fill-opacity: 0.4;
+                }
+            }
+
+            @include breakpoint-less(large) {
+                width: 130px;
+                height: 79px;
+            }
+        }
+        @media screen and (max-width: 1050px) {
+            flex: 1;
+        }
+    }
+    .nav-bar-btns{
+        display: none;
+        cursor: pointer;
+        @media screen and (max-width: 1050px) {
+            display: inline-block;
+            font-size: 1.4em;
+        }
+    }
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        font-family: $rubik;
+        font-size: 1.1em;
+        flex: 1;
+        transform: translateX(-15%);
+        i{
+            display: none;
+            cursor: pointer;
+            font-size: 1.4em;
+            position: absolute;
+            top: 2em;
+            right: 2em;
+            &::before{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 1050px) {
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(#fff, .9);
+            transform-origin: top;
+            transform: scaleY(0);
+            transition: transform .4s ease-in-out;
+        }
+        &.open{
+            width: 100vw;
+            transform: scaleY(1);
+            padding-top: 7em;
+            i{
+                &::before{
+                    display: block;
+                }
+            }
+        }
+        .nav-item {
+            cursor: pointer;
+            font-weight: 700;
+            position: relative;
+            &:not(:first-child) {
+                margin-right: 35px;
+            }
+            @media screen and (max-width: 1050px) {
+                width: 100vw;
+                text-align: center;
+                font-size: 1.4em;
+                margin-top: 2.5em;
+            }
+            &::before {
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: black;
+                transform: scaleX(0);
+                position: absolute;
+                bottom: -1px;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover {
+                &::before {
+                    transform: scaleX(1);
+                    @media screen and (max-width: 1050px) {
+                        transform: scaleX(0);
                     }
                 }
             }
-            &::before {
-                content: "\f120";
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                font-size: 2.5rem;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: -60px;
-                transition: color 0.5s ease-in-out 0.1s;
-                @include breakpoint-less(large){
-                    display: none;
-                }
-            }
+
         }
     }
-    .page-name{
-        a{
-            color: $main-blue;
-            font-size: 1.3em;
-            letter-spacing: 3px;
-            font-weight: 700;
-            opacity: 1;
-            transition: .3s ease-in-out;
-            font-family: $rubik;
-        }
-        @include breakpoint-less(large){
-            display: none;
-        }
-    }
-    .social{
-        i{
+    .social {
+        i {
             cursor: pointer;
             font-size: 1.7em;
-            color: rgba($color: white, $alpha: .6);
-            transition: .2s all ease-in-out;
-            &:hover{
-                color: white;
+            color: rgba($color: black, $alpha: 0.6);
+            transition: 0.2s all ease-in-out;
+            &:hover {
+                color: black;
             }
-            @include breakpoint-less(large){
-                font-size: 1.4em;
-                color: #fff;
+
+            @media screen and (max-width: 1050px) {
+                display: none;
             }
+            
         }
     }
 }
