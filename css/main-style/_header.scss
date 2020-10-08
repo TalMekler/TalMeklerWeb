@@ -23,7 +23,7 @@ header {
     .logo {
         width: fit-content;
         cursor: pointer;
-        // flex: 1;
+        z-index: 99999999999999999;
         svg {
             .logo-svg-path {
                 fill: $main-blue;

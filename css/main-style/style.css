@@ -219,6 +219,7 @@ header .logo {
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
+  z-index: 99999999999999999;
 }
 
 header .logo svg .logo-svg-path {
