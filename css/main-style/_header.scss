@@ -117,12 +117,12 @@ header {
                 position: absolute;
                 bottom: -1px;
                 transition: all 0.3s ease-in-out;
-                &:hover {
+            }
+            &:hover {
+                &::before {
                     transform: scaleX(1);
-                    &::before {
-                        @media screen and (max-width: 1050px) {
-                            display: none;
-                        }
+                    @media screen and (max-width: 1050px) {
+                        transform: scaleX(0);
                     }
                 }
             }

@@ -360,14 +360,15 @@ header nav .nav-item::before {
   transition: all 0.3s ease-in-out;
 }
 
-header nav .nav-item::before:hover {
+header nav .nav-item:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
 @media screen and (max-width: 1050px) {
-  header nav .nav-item::before:hover::before {
-    display: none;
+  header nav .nav-item:hover::before {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
 }
 
