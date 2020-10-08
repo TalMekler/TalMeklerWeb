@@ -117,16 +117,16 @@ header {
                 position: absolute;
                 bottom: -1px;
                 transition: all 0.3s ease-in-out;
-            }
-
-            &:hover {
-                transform: scaleX(1);
-                &::before {
-                    @media screen and (max-width: 1050px) {
-                        display: none;
+                &:hover {
+                    transform: scaleX(1);
+                    &::before {
+                        @media screen and (max-width: 1050px) {
+                            display: none;
+                        }
                     }
                 }
             }
+
         }
     }
     .social {
