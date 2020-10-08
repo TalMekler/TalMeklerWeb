@@ -254,6 +254,7 @@ header .logo svg .logo-svg-path.ellipse {
 
 header .nav-bar-btns {
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1050px) {
@@ -282,10 +283,11 @@ header nav {
 
 header nav i {
   display: none;
+  cursor: pointer;
   font-size: 1.4em;
   position: absolute;
   top: 2em;
-  left: 2em;
+  right: 2em;
 }
 
 header nav i::before {

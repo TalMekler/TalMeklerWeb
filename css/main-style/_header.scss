@@ -49,6 +49,7 @@ header {
     }
     .nav-bar-btns{
         display: none;
+        cursor: pointer;
         @media screen and (max-width: 1050px) {
             display: inline-block;
             font-size: 1.4em;
@@ -63,10 +64,11 @@ header {
         transform: translateX(-15%);
         i{
             display: none;
+            cursor: pointer;
             font-size: 1.4em;
             position: absolute;
             top: 2em;
-            left: 2em;
+            right: 2em;
             &::before{
                 display: none;
             }
