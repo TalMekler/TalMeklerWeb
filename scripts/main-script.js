@@ -31,7 +31,7 @@ $(document).ready(function () {
             if ($(window).width() < 999) {
                 header_height = 92;
             }
-            if (window.location.href.indexOf("#") > -1) {
+            if (window.location.href.indexOf("#") > -1 && $(this).hasClass("go-to-top")){
                 window.location.href = '/';
                 return true
             }
