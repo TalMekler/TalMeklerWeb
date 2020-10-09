@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("header nav").addClass("open");
     });
     //close nav bar
-    $("header nav i.fa-times.close-btn").click(function () {
+    $("i.fa-times.close-btn").click(function () {
         $("html").css("overflow", "visible");
         $("html").css("overflow-x", "hidden");
         $("header nav").removeClass("open");
