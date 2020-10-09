@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
 // Fonts
-$poppins: 'Poppins', sans-serif;
-$rubik: 'Rubik', sans-serif;
+$poppins: "Poppins", sans-serif;
+$rubik: "Rubik", sans-serif;
 
 // Colors
-$main-blue: #2980B9;
-$main-red: #E74C3C;
+$main-blue: #2980b9;
+$main-red: #e74c3c;
 
 // Breakpoints
 $breakpoints: (
@@ -34,13 +34,13 @@ $breakpoints: (
 
 // Keyframes
 @keyframes blink {
-    0%{
+    0% {
         border-left-color: black;
     }
-    50%{
+    50% {
         border-left-color: transparent;
     }
-    100%{
+    100% {
         border-left-color: black;
     }
 }

@@ -46,11 +46,11 @@ a {
 }
 
 .clr-red {
-  color: #E74C3C;
+  color: #e74c3c;
 }
 
 .clr-blue {
-  color: #2980B9;
+  color: #2980b9;
 }
 
 .bold {
@@ -223,7 +223,7 @@ header .logo {
 }
 
 header .logo svg .logo-svg-path {
-  fill: #2980B9;
+  fill: #2980b9;
 }
 
 header .logo svg .logo-svg-path.m {
@@ -311,10 +311,10 @@ header nav i::before {
             transform-origin: top;
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-    transition: -webkit-transform .4s ease-in-out;
-    transition: transform .4s ease-in-out;
-    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   }
 }
 
@@ -510,7 +510,7 @@ header .social i:hover {
 }
 
 .first-page .main-content .text h1 #typed {
-  color: #2980B9;
+  color: #2980b9;
   width: 0px;
   border-left: 3px solid black;
   padding-left: 5px;
@@ -584,7 +584,7 @@ header .social i:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin: 40px 0 0 auto;
-  color: #2980B9;
+  color: #2980b9;
   font-size: 1.4rem;
   position: relative;
   display: -webkit-box;
@@ -614,9 +614,9 @@ header .social i:hover {
     font-size: 1.3rem;
     margin: 35px auto 0 auto;
     color: white;
-    background-color: #2980B9;
-    -webkit-box-shadow: 0 0 15px #2980B9;
-            box-shadow: 0 0 15px #2980B9;
+    background-color: #2980b9;
+    -webkit-box-shadow: 0 0 15px #2980b9;
+            box-shadow: 0 0 15px #2980b9;
   }
 }
 
@@ -627,8 +627,8 @@ header .social i:hover {
   left: 0;
   width: 10px;
   height: 10px;
-  border-left: 3px solid #2980B9;
-  border-top: 3px solid #2980B9;
+  border-left: 3px solid #2980b9;
+  border-top: 3px solid #2980b9;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -640,17 +640,17 @@ header .social i:hover {
   right: 0;
   width: 10px;
   height: 10px;
-  border-right: 3px solid #2980B9;
-  border-bottom: 3px solid #2980B9;
+  border-right: 3px solid #2980b9;
+  border-bottom: 3px solid #2980b9;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
 
 .first-page .main-content .text a:hover {
   color: white;
-  background-color: #2980B9;
-  -webkit-box-shadow: 0 0 15px #2980B9;
-          box-shadow: 0 0 15px #2980B9;
+  background-color: #2980b9;
+  -webkit-box-shadow: 0 0 15px #2980b9;
+          box-shadow: 0 0 15px #2980b9;
   -webkit-transition: all 0.4s ease-in-out 0.3s;
   transition: all 0.4s ease-in-out 0.3s;
 }
@@ -729,7 +729,7 @@ header .social i:hover {
 
 .costumers-get .costumers-get-item .costumers-get-title {
   font-size: 1.5em;
-  padding-bottom: .2em;
+  padding-bottom: 0.2em;
 }
 
 .costumers-get .costumers-get-item .costumers-get-desc {
@@ -795,7 +795,7 @@ header .social i:hover {
   position: absolute;
   height: 4px;
   width: 35vw;
-  background-color: #2980B9;
+  background-color: #2980b9;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -851,7 +851,7 @@ header .social i:hover {
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item-q::before {
-  content: '\f067';
+  content: "\f067";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
@@ -869,7 +869,7 @@ header .social i:hover {
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item.open .QAA-item-q::before {
-  content: '\f068';
+  content: "\f068";
 }
 
 .questions-and-answers .main-content .QAA-wrapper .QAA-item-a {
@@ -1180,7 +1180,7 @@ header .social i:hover {
   content: "\f069";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #E74C3C;
+  color: #e74c3c;
   font-size: 0.85rem;
   position: absolute;
   top: 50%;
@@ -1217,7 +1217,7 @@ header .social i:hover {
 }
 
 .contact-page .main-content .left form .input-div.submit input {
-  background-color: #E74C3C;
+  background-color: #e74c3c;
   width: 50%;
   border-color: transparent;
   cursor: pointer;
@@ -1227,15 +1227,15 @@ header .social i:hover {
 }
 
 .contact-page .main-content .left form .input-div.submit input:hover {
-  -webkit-box-shadow: 0 0 20px #E74C3C;
-          box-shadow: 0 0 20px #E74C3C;
-  border-color: #E74C3C;
+  -webkit-box-shadow: 0 0 20px #e74c3c;
+          box-shadow: 0 0 20px #e74c3c;
+  border-color: #e74c3c;
   background-color: transparent;
   color: black;
 }
 
 .contact-page .main-content .left form .input-div.active::after {
-  color: #E74C3C;
+  color: #e74c3c;
   top: -20px;
   right: 5px;
   font-size: 1rem;
@@ -1346,7 +1346,7 @@ header .social i:hover {
 
 @media screen and (max-width: 999px) {
   .mail-send-page .text p.back-click {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -1375,7 +1375,7 @@ footer {
     gap: 10px;
     text-align: center;
     padding: 5px 0;
-    font-size: .85em;
+    font-size: 0.85em;
   }
 }
 
@@ -1387,12 +1387,12 @@ footer .copyright {
 
 footer .copyright a {
   color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 footer .copyright a:hover {
-  color: #2980B9;
+  color: #2980b9;
 }
 
 footer .social i {

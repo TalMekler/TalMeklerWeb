@@ -18,7 +18,7 @@
             // width: fit-content;
             // margin: 0 auto;
             text-align: center;
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 font-size: 3em;
             }
         }
@@ -28,7 +28,7 @@
             position: relative;
             i {
                 font-size: 3em;
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     font-size: 2em;
                 }
             }
@@ -41,7 +41,7 @@
                 background-color: $main-blue;
                 top: 50%;
                 transform: translateY(-50%);
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     height: 2.5px;
                 }
             }
@@ -52,17 +52,17 @@
                 left: 10vw;
             }
         }
-        .QAA-wrapper{
+        .QAA-wrapper {
             padding: 0 150px;
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 padding: 0 50px;
             }
-            .QAA-item{
+            .QAA-item {
                 margin-top: 30px;
-                @include breakpoint-less(large){
+                @include breakpoint-less(large) {
                     margin-top: 2.5em;
                 }
-                &-q{
+                &-q {
                     font-weight: 500;
                     // width: fit-content;
                     font-size: 1.8em;
@@ -70,11 +70,11 @@
                     padding: 0 20px;
                     position: relative;
                     outline: none;
-                    @include breakpoint-less(large){
+                    @include breakpoint-less(large) {
                         font-size: 1.5em;
                     }
-                    &::before{
-                        content: '\f067';
+                    &::before {
+                        content: "\f067";
                         font-family: "Font Awesome 5 Free";
                         font-weight: 900;
                         position: absolute;
@@ -82,20 +82,19 @@
                         right: -10px;
                         top: 50%;
                         transform: translateY(-50%);
-                        @include breakpoint-less(large){
+                        @include breakpoint-less(large) {
                             font-size: 1.1rem;
                         }
                     }
-
                 }
-                &.open{
-                    .QAA-item-q{
-                        &::before{
-                            content: '\f068';
+                &.open {
+                    .QAA-item-q {
+                        &::before {
+                            content: "\f068";
                         }
                     }
                 }
-                &-a{
+                &-a {
                     width: fit-content;
                     font-weight: 400;
                     font-size: 1.5em;
@@ -103,13 +102,13 @@
                     padding: 0 20px;
                     padding-bottom: 15px;
                     display: none;
-                    @include breakpoint-less(large){
+                    @include breakpoint-less(large) {
                         font-size: 1.3em;
                     }
 
-                    a{
+                    a {
                         color: #3e4a61;
-                        &:hover{
+                        &:hover {
                             color: #000;
                         }
                     }
@@ -117,7 +116,6 @@
             }
         }
     }
-
 
     .custom-shape-divider-top-1601554207 {
         position: absolute;

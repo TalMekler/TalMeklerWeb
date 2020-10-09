@@ -10,7 +10,7 @@
         background-attachment: fixed;
     }
     @include breakpoint-less(large) {
-        background: linear-gradient(180deg, #fff .3%, #7fbedf);
+        background: linear-gradient(180deg, #fff 0.3%, #7fbedf);
         min-height: calc(100vh - 92px);
     }
     .main-content {
@@ -137,7 +137,7 @@
                     width: 100%;
                     position: relative;
                     margin-top: 20px;
-                    @include breakpoint-less(large){
+                    @include breakpoint-less(large) {
                         margin-top: 2.5em;
                     }
                     &::after {
