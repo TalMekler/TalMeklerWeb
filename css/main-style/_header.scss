@@ -62,7 +62,7 @@ header {
         font-family: $rubik;
         font-size: 1.1em;
         flex: 1;
-        z-index: 1001;
+        
         transform: translateX(-15%);
         i {
             display: none;
@@ -83,7 +83,7 @@ header {
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba(#fff, 0.9);
+            background-color: rgba(#fff, 0.6);
             transform-origin: top;
             transform: scaleY(0);
             transition: transform 0.4s ease-in-out;
@@ -92,6 +92,8 @@ header {
             width: 100vw;
             transform: scaleY(1);
             padding-top: 7em;
+            z-index: 1001;
+            backdrop-filter: blur(5px);
             i {
                 &::before {
                     display: block;

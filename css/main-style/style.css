@@ -280,7 +280,6 @@ header nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  z-index: 1001;
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
 }
@@ -310,7 +309,7 @@ header nav i::before {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.6);
     -webkit-transform-origin: top;
             transform-origin: top;
     -webkit-transform: scaleY(0);
@@ -327,6 +326,9 @@ header nav.open {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
   padding-top: 7em;
+  z-index: 1001;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 header nav.open i::before {
