@@ -20,11 +20,11 @@ a {
 }
 
 .clr-red {
-  color: #E74C3C;
+  color: #e74c3c;
 }
 
 .clr-blue {
-  color: #2980B9;
+  color: #2980b9;
 }
 
 .bold {
@@ -50,11 +50,11 @@ a {
 
 .leave-details a {
   padding: 15px 40px;
-  background-color: #E74C3C;
+  background-color: #e74c3c;
   border-radius: 30px;
   font-size: 1.3em;
-  -webkit-box-shadow: 0 0 15px #E74C3C;
-          box-shadow: 0 0 15px #E74C3C;
+  -webkit-box-shadow: 0 0 15px #e74c3c;
+          box-shadow: 0 0 15px #e74c3c;
   color: white;
 }
 
@@ -118,7 +118,7 @@ header .logo svg {
 }
 
 header .logo svg .logo-svg-path {
-  fill: #2980B9;
+  fill: #2980b9;
   cursor: pointer;
 }
 
@@ -388,7 +388,7 @@ footer {
     gap: 10px;
     text-align: center;
     padding: 5px 0;
-    font-size: .85em;
+    font-size: 0.85em;
   }
 }
 
@@ -400,12 +400,12 @@ footer .copyright {
 
 footer .copyright a {
   color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 footer .copyright a:hover {
-  color: #2980B9;
+  color: #2980b9;
 }
 
 footer .social i {

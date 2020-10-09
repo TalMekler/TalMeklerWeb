@@ -29,17 +29,17 @@ a {
 .leave-details {
     width: fit-content;
     margin: 50px auto 0 auto;
-    @include breakpoint-less(large){
+    @include breakpoint-less(large) {
         margin: 25px auto 0 auto;
     }
-    a{
+    a {
         padding: 15px 40px;
         background-color: $main-red;
         border-radius: 30px;
         font-size: 1.3em;
         box-shadow: 0 0 15px $main-red;
         color: white;
-        @include breakpoint-less(large){
+        @include breakpoint-less(large) {
             padding: 10px 30px;
             font-size: 1em;
         }
