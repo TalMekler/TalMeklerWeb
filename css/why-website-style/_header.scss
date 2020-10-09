@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+
     @include breakpoint-less(large) {
         padding: 15px 30px;
         z-index: 2;
@@ -16,7 +17,8 @@ header {
         box-shadow: 0 0 5px black;
     }
     &.page-down {
-        background-color: rgba(white, 0.95);
+        background-color: rgba(white, 0.8);
+        backdrop-filter: blur(5px);
         box-shadow: 0 0 5px black;
         z-index: 9999999;
     }

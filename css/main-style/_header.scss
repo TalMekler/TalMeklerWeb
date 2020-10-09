@@ -16,7 +16,8 @@ header {
         box-shadow: 0 0 5px black;
     }
     &.page-down {
-        background-color: rgba(white, 0.95);
+        background-color: rgba(white, 0.8);
+        backdrop-filter: blur(5px);
         box-shadow: 0 0 5px black;
         z-index: 9999999;
     }
