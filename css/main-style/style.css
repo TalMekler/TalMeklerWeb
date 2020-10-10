@@ -2,24 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 @-webkit-keyframes blink {
   0% {
-    border-left-color: black;
+    border-left-color: white;
   }
   50% {
     border-left-color: transparent;
   }
   100% {
-    border-left-color: black;
+    border-left-color: white;
   }
 }
 @keyframes blink {
   0% {
-    border-left-color: black;
+    border-left-color: white;
   }
   50% {
     border-left-color: transparent;
   }
   100% {
-    border-left-color: black;
+    border-left-color: white;
   }
 }
 
@@ -46,11 +46,20 @@ a {
 }
 
 .clr-red {
-  color: #e74c3c;
+  color: #d72323;
 }
 
 .clr-blue {
   color: #2980b9;
+}
+
+.clr-purple {
+  color: #6C3483;
+}
+
+.bright {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
 }
 
 .bold {
@@ -207,15 +216,6 @@ header {
   }
 }
 
-header.page-down {
-  background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
-  z-index: 1000;
-}
-
 header .logo {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -225,19 +225,19 @@ header .logo {
 }
 
 header .logo svg .logo-svg-path {
-  fill: #2980b9;
+  fill: #6C3483;
 }
 
 header .logo svg .logo-svg-path.m {
-  fill-opacity: 0.8;
+  fill-opacity: 0.85;
 }
 
 header .logo svg .logo-svg-path.d {
-  fill-opacity: 0.6;
+  fill-opacity: 0.7;
 }
 
 header .logo svg .logo-svg-path.ellipse {
-  fill-opacity: 0.4;
+  fill-opacity: 0;
 }
 
 @media screen and (max-width: 999px) {
@@ -339,6 +339,7 @@ header nav .nav-item {
   cursor: pointer;
   font-weight: 700;
   position: relative;
+  color: black;
 }
 
 header nav .nav-item:not(:first-child) {
@@ -382,19 +383,44 @@ header nav .nav-item:hover::before {
 header .social i {
   cursor: pointer;
   font-size: 1.7em;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
 header .social i:hover {
-  color: black;
+  color: white;
 }
 
 @media screen and (max-width: 1050px) {
   header .social i {
     display: none;
   }
+}
+
+header.page-down {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  z-index: 1000;
+}
+
+header.page-down nav .nav-item {
+  color: black;
+}
+
+header.page-down nav .nav-item::before {
+  background-color: black;
+}
+
+header.page-down .social i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+header.page-down .social i:hover {
+  color: black;
 }
 
 .first-page {
@@ -407,6 +433,9 @@ header .social i:hover {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  background-color: white;
+  background-attachment: fixed;
+  color: black;
 }
 
 .first-page::before {
@@ -417,7 +446,7 @@ header .social i:hover {
   position: absolute;
   -webkit-clip-path: circle(0% at 100% 0%);
           clip-path: circle(0% at 100% 0%);
-  background-color: rgba(41, 128, 185, 0.7);
+  background-color: #6C3483;
   opacity: 0;
   z-index: 1;
   -webkit-transition: all 1.2s ease-in-out;
@@ -516,9 +545,11 @@ header .social i:hover {
 }
 
 .first-page .main-content .text h1 #typed {
-  color: #2980b9;
+  color: #6C3483;
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
   width: 0px;
-  border-left: 3px solid black;
+  border-left: 3px solid white;
   padding-left: 5px;
   -webkit-animation: blink 750ms infinite;
           animation: blink 750ms infinite;
@@ -590,8 +621,10 @@ header .social i:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin: 40px 0 0 auto;
-  color: #2980b9;
   font-size: 1.4rem;
+  background-color: transparent;
+  color: #FF5733;
+  border: 2px solid #FF5733;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,6 +636,7 @@ header .social i:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px 30px;
+  border-radius: 30px;
   overflow: hidden;
   z-index: 1;
   -webkit-transition: all 0.4s ease-in-out;
@@ -619,54 +653,17 @@ header .social i:hover {
   .first-page .main-content .text a {
     font-size: 1.3rem;
     margin: 35px auto 0 auto;
-    color: white;
-    background-color: #2980b9;
-    -webkit-box-shadow: 0 0 15px #2980b9;
-            box-shadow: 0 0 15px #2980b9;
+    color: black;
+    background-color: #FF5733;
   }
 }
 
-.first-page .main-content .text a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-left: 3px solid #2980b9;
-  border-top: 3px solid #2980b9;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.first-page .main-content .text a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  border-right: 3px solid #2980b9;
-  border-bottom: 3px solid #2980b9;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
 .first-page .main-content .text a:hover {
-  color: white;
-  background-color: #2980b9;
-  -webkit-box-shadow: 0 0 15px #2980b9;
-          box-shadow: 0 0 15px #2980b9;
-  -webkit-transition: all 0.4s ease-in-out 0.3s;
-  transition: all 0.4s ease-in-out 0.3s;
-}
-
-.first-page .main-content .text a:hover::before, .first-page .main-content .text a:hover::after {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  background-color: #FF5733;
+  color: black;
+  border-color: transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .costumers-get {
@@ -939,8 +936,8 @@ header .social i:hover {
 }
 
 .contact-page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#7fbedf));
-  background: linear-gradient(180deg, #fff, #7fbedf);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fbffa3));
+  background: linear-gradient(180deg, #fff, #fbffa3);
   min-height: calc(100vh - 100px);
   position: relative;
   font-family: "Rubik", sans-serif;
@@ -957,16 +954,10 @@ header .social i:hover {
   /** For mobile devices **/
 }
 
-@media screen and (min-width: 999px) {
-  .contact-page {
-    background-attachment: fixed;
-  }
-}
-
 @media screen and (max-width: 999px) {
   .contact-page {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.3%, #fff), to(#7fbedf));
-    background: linear-gradient(180deg, #fff 0.3%, #7fbedf);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.3%, #fff), to(#fbffa3));
+    background: linear-gradient(180deg, #fff 0.3%, #fbffa3);
     min-height: calc(100vh - 92px);
   }
 }
@@ -1186,7 +1177,7 @@ header .social i:hover {
   content: "\f069";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #e74c3c;
+  color: #d72323;
   font-size: 0.85rem;
   position: absolute;
   top: 50%;
@@ -1223,7 +1214,7 @@ header .social i:hover {
 }
 
 .contact-page .main-content .left form .input-div.submit input {
-  background-color: #e74c3c;
+  background-color: #427a5b;
   width: 50%;
   border-color: transparent;
   cursor: pointer;
@@ -1233,15 +1224,13 @@ header .social i:hover {
 }
 
 .contact-page .main-content .left form .input-div.submit input:hover {
-  -webkit-box-shadow: 0 0 20px #e74c3c;
-          box-shadow: 0 0 20px #e74c3c;
-  border-color: #e74c3c;
+  border-color: #427a5b;
   background-color: transparent;
   color: black;
 }
 
 .contact-page .main-content .left form .input-div.active::after {
-  color: #e74c3c;
+  color: #d72323;
   top: -20px;
   right: 5px;
   font-size: 1rem;

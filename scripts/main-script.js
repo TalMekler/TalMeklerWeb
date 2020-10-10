@@ -21,17 +21,10 @@ $(document).ready(function () {
     })
     // Smooth Scroll
     $(function () {
-        var header_height = 100;
-        if ($(window).width() < 999) {
-            header_height = 92;
-        }
         $(".scroll-link").click(function (e) {
+            var header_height = $("header").height() + parseInt($("header").css("padding-top").split("px")[0]) + parseInt($("header").css("padding-bottom").split("px")[0]);
             e.preventDefault();
-            var header_height = 100;
-            if ($(window).width() < 999) {
-                header_height = 92;
-            }
-            if (window.location.href.indexOf("#") > -1 && $(this).hasClass("go-to-top")){
+            if (window.location.href.indexOf("#") > -1 && $(this).hasClass("go-to-top")) {
                 window.location.href = '/';
                 return true
             }
@@ -113,15 +106,15 @@ $(document).ready(function () {
         $(".questions-and-answers .main-content .QAA-item .QAA-item-q").click(function () {
             var parent = $(this).parent();
             var openCheck = false;
-            if (!parent.hasClass("open")){
+            if (!parent.hasClass("open")) {
                 openCheck = true;
             }
-            if(openCheck){
+            if (openCheck) {
                 closeAll();
                 parent.addClass("open");
                 var answer = parent.children(".QAA-item-a");
                 answer.slideToggle();
-            }else{
+            } else {
                 closeAll();
             }
         })

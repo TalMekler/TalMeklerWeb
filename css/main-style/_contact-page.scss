@@ -1,16 +1,16 @@
 .contact-page {
-    background: linear-gradient(180deg, #fff, #7fbedf);
+    // background: linear-gradient(180deg, #fff, #7fbedf);
+    background: linear-gradient(180deg, #fff, #fbffa3);
     min-height: calc(100vh - 100px);
     position: relative;
     font-family: $rubik;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include breakpoint(large) {
-        background-attachment: fixed;
-    }
+
     @include breakpoint-less(large) {
-        background: linear-gradient(180deg, #fff 0.3%, #7fbedf);
+        // background: linear-gradient(180deg, #fff 0.3%, #7fbedf);
+        background: linear-gradient(180deg, #fff 0.3%, #fbffa3);
         min-height: calc(100vh - 92px);
     }
     .main-content {
@@ -195,15 +195,14 @@
 
                     &.submit {
                         input {
-                            background-color: $main-red;
+                            background-color: #427a5b;
                             width: 50%;
                             border-color: transparent;
                             cursor: pointer;
                             color: white;
                             transition: 0.3s all ease-in-out;
                             &:hover {
-                                box-shadow: 0 0 20px $main-red;
-                                border-color: $main-red;
+                                border-color: #427a5b;
                                 background-color: transparent;
                                 color: black;
                             }

@@ -7,7 +7,11 @@ $rubik: "Rubik", sans-serif;
 
 // Colors
 $main-blue: #2980b9;
-$main-red: #e74c3c;
+// $main-red: #e74c3c;
+$main-red: #d72323;
+$main-orange: #FF5733;
+// $main-purple: #AF7AC5;
+$main-purple: #6C3483;
 
 // Breakpoints
 $breakpoints: (
@@ -35,12 +39,12 @@ $breakpoints: (
 // Keyframes
 @keyframes blink {
     0% {
-        border-left-color: black;
+        border-left-color: white;
     }
     50% {
         border-left-color: transparent;
     }
     100% {
-        border-left-color: black;
+        border-left-color: white;
     }
 }

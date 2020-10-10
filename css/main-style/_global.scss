@@ -21,6 +21,12 @@ a {
 .clr-blue {
     color: $main-blue;
 }
+.clr-purple{
+    color: $main-purple;
+}
+.bright{
+    filter: brightness(1.5);
+}
 .bold {
     font-weight: bold;
 }
