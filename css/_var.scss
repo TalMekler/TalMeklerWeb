@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+// Fonts
+$poppins: "Poppins", sans-serif;
+$rubik: "Rubik", sans-serif;
+
+// Colors
+$purple: #7510f7;
+$dark-blue: #141c3a;
+
+// Breakpoints
+$breakpoints: (
+    mobile: 767px,
+    tablet: 1023px,
+);
+
+@mixin breakpoint($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width: $breakpoint-value) {
+        @content;
+    }
+}
+@mixin breakpoint-less($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (max-width: $breakpoint-value) {
+        @content;
+    }
+}
+
+// Keyframes
+@keyframes blink {
+    0% {
+        border-left-color: white;
+    }
+    50% {
+        border-left-color: transparent;
+    }
+    100% {
+        border-left-color: white;
+    }
+}

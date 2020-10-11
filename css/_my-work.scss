@@ -1,0 +1,74 @@
+main .my-work {
+    width: 100vw;
+    background-color: transparent;
+    margin-top: -10em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+    .works-wrapper{
+        display: flex;
+        direction: rtl;
+        width: 70vw;
+        border-radius: 10px;
+        background-color: #ffffff;
+        position: relative;
+        @include breakpoint-less(mobile){
+            width: 90vw;
+            flex-direction: column;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 10em;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 0 3px $dark-blue;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        .work-div{
+            padding: 2em 4em;
+            width: 50%;
+            text-align: center;
+            @include breakpoint-less(tablet){
+                padding: 2em 1.5em;
+            }
+            @include breakpoint-less(mobile){
+                width: 100%;
+            }
+            img{
+                height: 70px;
+                margin-bottom: 2em;
+            }
+            h3{
+                font-size: 2em;
+                margin-bottom: .8em;
+            }
+            p.desc{
+                font-size: 1.1em;
+                margin-bottom: .5em;
+            }
+            .tools-list{
+                list-style: none;
+
+                li{
+                    padding-bottom: .3em;
+                }
+            }
+            .reg-title{
+                font-size: 1.1em;
+                color: $purple;
+    
+            }
+            &.design{
+                border-left: 2px solid rgba($dark-blue, .3);
+                @include breakpoint-less(mobile){
+                    border-left: none;
+                    border-bottom: 2px solid rgba($dark-blue, .3);
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+section.contact-us {
+    background-color: $purple;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+
+    .contact-element {
+        background-color: $dark-blue;
+        color: white;
+        padding: 3.5em 1.25em;
+        width: 75vw;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-around;
+        transform: translateY(-40%);
+
+        @include breakpoint-less(mobile) {
+            flex-direction: column;
+            justify-content: center;
+            width: 85vw;
+        }
+        .right,
+        .middle,
+        .left {
+            color: white;
+            width: 33%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include breakpoint-less(mobile) {
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                color: white;
+            }
+        }
+        .right {
+            p {
+                font-size: 2em;
+                font-weight: 700;
+            }
+        }
+        .middle {
+            p {
+                font-size: 1.1em;
+                font-weight: 300;
+                @include breakpoint-less(mobile) {
+                    font-size: 1em;
+                }
+            }
+            @include breakpoint-less(mobile) {
+                margin-top: 1em;
+            }
+        }
+        .left {
+            a {
+                font-size: 1.1em;
+                color: white;
+                border: 1.5px solid $purple;
+                padding: 1em 4em;
+                border-radius: 30px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: $purple;
+                }
+                @include breakpoint-less(mobile) {
+                    font-size: 1em;
+                    padding: 0.8em 1.8em;
+                }
+            }
+            @include breakpoint-less(mobile) {
+                margin-top: 1.3em;
+            }
+        }
+    }
+}
