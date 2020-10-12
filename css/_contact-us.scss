@@ -12,7 +12,7 @@ section.contact-us {
         border-radius: 12px;
         display: flex;
         justify-content: space-around;
-        transform: translateY(-40%);
+        transform: translateY(-50%);
 
         @include breakpoint-less(mobile) {
             flex-direction: column;

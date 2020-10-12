@@ -443,8 +443,8 @@ section.contact-us .contact-element {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @media screen and (max-width: 767px) {
