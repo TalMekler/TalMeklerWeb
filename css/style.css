@@ -559,7 +559,7 @@ main.contact-page .avatar svg {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  width: 100px;
+  width: 130px;
 }
 
 main.contact-page .avatar svg circle {
@@ -568,7 +568,7 @@ main.contact-page .avatar svg circle {
 
 @media screen and (max-width: 767px) {
   main.contact-page .avatar svg {
-    width: 85px;
+    width: 90px;
   }
 }
 
@@ -666,6 +666,29 @@ main.contact-page .form-wrapper form .input-div input[type="submit"] {
 main.contact-page .form-wrapper form .input-div input[type="submit"]:hover {
   color: white;
   background-color: #7510f7;
+}
+
+main.mail-sent .mail-sent-text {
+  direction: rtl;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+main.mail-sent .mail-sent-text p.reg-text {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+main.mail-sent .mail-sent-text p.timer-wrapper span.if-error {
+  display: none;
+}
+
+main.mail-sent .mail-sent-text p.timer-wrapper span.if-error a {
+  text-decoration: underline;
+}
+
+main.mail-sent .mail-sent-text p.timer-wrapper span.if-error.show {
+  display: block;
 }
 
 footer {

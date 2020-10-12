@@ -9,13 +9,13 @@ main.contact-page{
         transform: translate(-50%, -50%);
         svg {
             width: fit-content;
-            width: 100px;
+            width: 130px;
     
             circle{
                 fill: $purple;
             }
             @include breakpoint-less(mobile){
-                width: 85px;
+                width: 90px;
             }
         }
     }

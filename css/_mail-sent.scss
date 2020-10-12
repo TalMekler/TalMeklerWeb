@@ -1,0 +1,24 @@
+main.mail-sent{
+    .mail-sent-text{
+        direction: rtl;
+        margin-top: 10rem;
+        text-align: center;
+
+        p.reg-text{
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+        p.timer-wrapper{
+            
+            span.if-error{
+                display: none;
+                a{
+                    text-decoration: underline;
+                }
+                &.show{
+                    display: block;
+                }
+            }
+        }
+    }
+}
