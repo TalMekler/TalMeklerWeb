@@ -12,6 +12,7 @@ main .hero {
         align-items: center;
         position: relative;
         transform: translateY(-50%);
+        animation: fadeIn-from-top-Ycontroll .75s ease-in-out forwards;
         @include breakpoint-less(mobile){
             padding: 0 2em;
         }
@@ -54,5 +55,6 @@ main .hero {
         left: 50%;
         transform: translateX(-50%);
         width: clamp(310px, 75vw, 689px);
+        animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
     }
 }

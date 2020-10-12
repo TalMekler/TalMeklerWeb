@@ -75,6 +75,32 @@
   }
 }
 
+@-webkit-keyframes fadeIn-from-top-Ycontroll {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-65%);
+            transform: translateY(-65%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@keyframes fadeIn-from-top-Ycontroll {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-65%);
+            transform: translateY(-65%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
 @-webkit-keyframes fadeIn-from-bot {
   0% {
     opacity: 0;
@@ -98,6 +124,32 @@
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn-from-bot-Xcontroll {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(15%) translateX(-50%);
+            transform: translateY(15%) translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) translateX(-50%);
+            transform: translateY(0) translateX(-50%);
+  }
+}
+
+@keyframes fadeIn-from-bot-Xcontroll {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(15%) translateX(-50%);
+            transform: translateY(15%) translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) translateX(-50%);
+            transform: translateY(0) translateX(-50%);
   }
 }
 
@@ -227,6 +279,8 @@ main .hero .start-page {
   position: relative;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-animation: fadeIn-from-top-Ycontroll .75s ease-in-out forwards;
+          animation: fadeIn-from-top-Ycontroll .75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 767px) {
@@ -289,6 +343,8 @@ main .hero .all-platforms {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: clamp(310px, 75vw, 689px);
+  -webkit-animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
+          animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
 }
 
 main .about-me {

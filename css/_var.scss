@@ -62,6 +62,16 @@ $breakpoints: (
         transform: translate(-50%, -50%);
     }
 }
+@keyframes fadeIn-from-top-Ycontroll{
+    0%{
+        opacity: 0;
+        transform: translateY(-65%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
 @keyframes fadeIn-from-bot{
     0%{
         opacity: 0;
@@ -70,5 +80,15 @@ $breakpoints: (
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes fadeIn-from-bot-Xcontroll{
+    0%{
+        opacity: 0;
+        transform: translateY(15%) translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
     }
 }
