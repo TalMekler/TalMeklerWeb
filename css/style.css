@@ -23,6 +23,84 @@
   }
 }
 
+@-webkit-keyframes fadeIn-from-top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn-from-top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn-from-top-avatar {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -65%);
+            transform: translate(-50%, -65%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fadeIn-from-top-avatar {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -65%);
+            transform: translate(-50%, -65%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes fadeIn-from-bot {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn-from-bot {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -553,6 +631,8 @@ main.contact-page .avatar {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-animation: fadeIn-from-top-avatar .75s ease-in-out forwards;
+          animation: fadeIn-from-top-avatar .75s ease-in-out forwards;
 }
 
 main.contact-page .avatar svg {
@@ -585,6 +665,8 @@ main.contact-page .form-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
 }
 
 main.contact-page .form-wrapper h2 {
@@ -672,6 +754,8 @@ main.mail-sent .mail-sent-text {
   direction: rtl;
   margin-top: 10rem;
   text-align: center;
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
 }
 
 main.mail-sent .mail-sent-text p.reg-text {
@@ -689,6 +773,8 @@ main.mail-sent .mail-sent-text p.timer-wrapper span.if-error a {
 
 main.mail-sent .mail-sent-text p.timer-wrapper span.if-error.show {
   display: block;
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
 }
 
 footer {

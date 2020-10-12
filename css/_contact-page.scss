@@ -7,6 +7,7 @@ main.contact-page{
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+        animation: fadeIn-from-top-avatar .75s ease-in-out forwards;
         svg {
             width: fit-content;
             width: 130px;
@@ -25,6 +26,7 @@ main.contact-page{
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation: fadeIn-from-bot .75s ease-in-out forwards;
         
         h2{
             font-size: 3em;

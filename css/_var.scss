@@ -42,3 +42,33 @@ $breakpoints: (
         border-left-color: white;
     }
 }
+@keyframes fadeIn-from-top{
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn-from-top-avatar{
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -65%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes fadeIn-from-bot{
+    0%{
+        opacity: 0;
+        transform: translateY(15%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

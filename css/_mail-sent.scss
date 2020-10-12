@@ -3,6 +3,7 @@ main.mail-sent{
         direction: rtl;
         margin-top: 10rem;
         text-align: center;
+        animation: fadeIn-from-bot .75s ease-in-out forwards;
 
         p.reg-text{
             font-size: 3em;
@@ -17,6 +18,7 @@ main.mail-sent{
                 }
                 &.show{
                     display: block;
+                    animation: fadeIn-from-bot .75s ease-in-out forwards;
                 }
             }
         }
