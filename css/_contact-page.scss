@@ -15,7 +15,7 @@ main.contact-page{
                 fill: $purple;
             }
             @include breakpoint-less(mobile){
-                width: 130px;
+                width: 85px;
             }
         }
     }

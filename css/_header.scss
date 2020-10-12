@@ -9,9 +9,10 @@ header{
     }
     .logo{
         height: 100px;
-
+        width: 140px;
         @include breakpoint-less(mobile){
             height: 50px;
+            width: 70px;
         }
         svg{
             height: 100%;
