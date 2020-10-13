@@ -22,7 +22,7 @@ $(document).ready(function () {
     }else{
         sections.each(function(){
             section_children = $(this).children();
-            section_children.css("opacity", 1);
+            section_children.addClass('show');
         })
     }
         
