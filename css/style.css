@@ -345,6 +345,8 @@ main .hero .start-page p {
     font-size: 1em;
     text-align: center;
     margin-bottom: 1.3em;
+    -webkit-animation: fadeIn-from-top .75s ease-in-out forwards;
+            animation: fadeIn-from-top .75s ease-in-out forwards;
   }
 }
 
@@ -367,6 +369,8 @@ main .hero .start-page svg circle {
 @media screen and (max-width: 767px) {
   main .hero .start-page svg {
     width: 130px;
+    -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+            animation: fadeIn-from-bot .75s ease-in-out forwards;
   }
 }
 
@@ -380,6 +384,13 @@ main .hero .all-platforms {
   opacity: 0;
   -webkit-animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards .5s;
           animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards .5s;
+}
+
+@media screen and (max-width: 767px) {
+  main .hero .all-platforms {
+    -webkit-animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
+            animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
+  }
 }
 
 main .about-me {

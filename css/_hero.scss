@@ -36,6 +36,7 @@ main .hero {
                 font-size: 1em;
                 text-align: center;
                 margin-bottom: 1.3em;
+                animation: fadeIn-from-top .75s ease-in-out forwards;
             }
         }
         svg {
@@ -51,6 +52,7 @@ main .hero {
             }
             @include breakpoint-less(mobile){
                 width: 130px;
+                animation: fadeIn-from-bot .75s ease-in-out forwards;
             }
         }
     }
@@ -62,5 +64,8 @@ main .hero {
         width: clamp(310px, 75vw, 689px);
         opacity: 0;
         animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards .5s;
+        @include breakpoint-less(mobile){
+            animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
+        }
     }
 }
