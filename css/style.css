@@ -272,6 +272,26 @@ header * {
   color: #7510f7;
 }
 
+header .btn a {
+  padding: .75em 2.5em;
+  border: 2px solid #7510f7;
+  border-radius: 30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header .btn a:hover {
+  background-color: #7510f7;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  header .btn a {
+    font-size: .9em;
+    padding: .5em 2em;
+  }
+}
+
 main .hero {
   min-height: 100vh;
   margin-top: 2em;

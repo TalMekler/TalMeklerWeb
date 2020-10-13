@@ -29,4 +29,20 @@ header{
     *{
         color: $purple;
     }
+    .btn{
+        a{
+            padding: .75em 2.5em;
+            border: 2px solid $purple;
+            border-radius: 30px;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: $purple;
+                color: white;
+            }
+            @include breakpoint-less(mobile){
+                font-size: .9em;
+                padding: .5em 2em;
+            }
+        }
+    }
 }
