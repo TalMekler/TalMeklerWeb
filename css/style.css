@@ -279,8 +279,6 @@ main .hero .start-page {
   position: relative;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-animation: fadeIn-from-top-Ycontroll .75s ease-in-out forwards;
-          animation: fadeIn-from-top-Ycontroll .75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 767px) {
@@ -295,6 +293,8 @@ main .hero .start-page h1 {
   width: fit-content;
   font-size: 3em;
   padding-bottom: 0.3em;
+  -webkit-animation: fadeIn-from-top .75s ease-in-out forwards;
+          animation: fadeIn-from-top .75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 767px) {
@@ -307,6 +307,9 @@ main .hero .start-page p {
   direction: rtl;
   font-size: 1.3em;
   margin-bottom: 0.5em;
+  opacity: 0;
+  -webkit-animation: fadeIn-from-top .75s ease-in-out forwards .25s;
+          animation: fadeIn-from-top .75s ease-in-out forwards .25s;
 }
 
 @media screen and (max-width: 767px) {
@@ -324,6 +327,9 @@ main .hero .start-page svg {
   width: 200px;
   margin: 0 auto;
   margin-top: 30px;
+  opacity: 0;
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
+          animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
 }
 
 main .hero .start-page svg circle {
@@ -343,8 +349,9 @@ main .hero .all-platforms {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: clamp(310px, 75vw, 689px);
-  -webkit-animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
-          animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
+  opacity: 0;
+  -webkit-animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards .5s;
+          animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards .5s;
 }
 
 main .about-me {

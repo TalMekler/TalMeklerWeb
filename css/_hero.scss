@@ -12,7 +12,6 @@ main .hero {
         align-items: center;
         position: relative;
         transform: translateY(-50%);
-        animation: fadeIn-from-top-Ycontroll .75s ease-in-out forwards;
         @include breakpoint-less(mobile){
             padding: 0 2em;
         }
@@ -20,6 +19,7 @@ main .hero {
             width: fit-content;
             font-size: 3em;
             padding-bottom: 0.3em;
+            animation: fadeIn-from-top .75s ease-in-out forwards;
             @include breakpoint-less(mobile){
                 font-size: 2em;
             }
@@ -29,6 +29,8 @@ main .hero {
             direction: rtl;
             font-size: 1.3em;
             margin-bottom: 0.5em;
+            opacity: 0;
+            animation: fadeIn-from-top .75s ease-in-out forwards .25s;
             @include breakpoint-less(mobile){
                 font-size: 1em;
                 text-align: center;
@@ -40,6 +42,8 @@ main .hero {
             width: 200px;
             margin: 0 auto;
             margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
 
             circle{
                 fill: $purple;
@@ -55,6 +59,7 @@ main .hero {
         left: 50%;
         transform: translateX(-50%);
         width: clamp(310px, 75vw, 689px);
-        animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
+        opacity: 0;
+        animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards .5s;
     }
 }
