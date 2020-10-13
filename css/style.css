@@ -274,7 +274,7 @@ header * {
 
 main .hero {
   min-height: 100vh;
-  padding-top: 2em;
+  margin-top: 2em;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +309,8 @@ main .hero .start-page {
 
 @media screen and (max-width: 767px) {
   main .hero .start-page {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
     padding: 0 2em;
   }
 }
@@ -534,6 +536,158 @@ main .my-work .works-wrapper .work-div.design {
     border-left: none;
     border-bottom: 2px solid rgba(20, 28, 58, 0.3);
   }
+}
+
+section.testimonials {
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10em;
+}
+
+section.testimonials h3.title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.5em;
+  opacity: 0;
+}
+
+section.testimonials h3.title.show {
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
+}
+
+section.testimonials .testimonials-view {
+  width: 40vw;
+  overflow: hidden;
+  margin-top: 1.5em;
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  section.testimonials .testimonials-view {
+    width: 90vw;
+  }
+}
+
+section.testimonials .testimonials-view.show {
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
+}
+
+section.testimonials .testimonials-wrapper {
+  position: relative;
+  width: calc(40vw * 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  section.testimonials .testimonials-wrapper {
+    width: calc(90vw * 2);
+  }
+}
+
+section.testimonials .testimonials-wrapper .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 1.8em 3em 2.5em 3em;
+}
+
+section.testimonials .testimonials-wrapper .testimonial .img {
+  position: relative;
+  margin-bottom: 1.5em;
+  width: 100px;
+  height: 100px;
+}
+
+section.testimonials .testimonials-wrapper .testimonial .img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+section.testimonials .testimonials-wrapper .testimonial p.text {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+section.testimonials .testimonials-wrapper .testimonial p.text::before, section.testimonials .testimonials-wrapper .testimonial p.text::after {
+  font-size: 1.15em;
+  font-weight: 900;
+}
+
+section.testimonials .testimonials-wrapper .testimonial p.text::before {
+  content: "'' ";
+}
+
+section.testimonials .testimonials-wrapper .testimonial p.text::after {
+  content: " ''";
+}
+
+section.testimonials .testimonials-wrapper .testimonial .profile__name {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+section.testimonials .testimonials-wrapper .testimonial .profile__desc {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+section.testimonials .points {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+section.testimonials .points .point {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #7510f7;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  -webkit-transition: background-color .75s ease-in-out;
+  transition: background-color .75s ease-in-out;
+}
+
+section.testimonials .points .point:not(:last-child) {
+  margin-left: .5em;
+}
+
+section.testimonials .points .point.active {
+  background-color: #7510f7;
 }
 
 main .questions-and-answers {

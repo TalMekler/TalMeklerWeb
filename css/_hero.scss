@@ -1,6 +1,6 @@
 main .hero {
     min-height: 100vh;
-    padding-top: 2em;
+    margin-top: 2em;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,7 @@ main .hero {
         position: relative;
         transform: translateY(-50%);
         @include breakpoint-less(mobile){
+            transform: translateY(-25%);
             padding: 0 2em;
         }
         h1 {
