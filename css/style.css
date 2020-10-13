@@ -560,8 +560,8 @@ main .questions-and-answers h3 {
 }
 
 main .questions-and-answers h3.show {
-  -webkit-animation: fadeIn-from-top .75s ease-in-out forwards;
-          animation: fadeIn-from-top .75s ease-in-out forwards;
+  -webkit-animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+          animation: fadeIn-from-bot 0.75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 767px) {
@@ -576,8 +576,8 @@ main .questions-and-answers .qaa-wrapper {
 }
 
 main .questions-and-answers .qaa-wrapper.show {
-  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
-          animation: fadeIn-from-bot .75s ease-in-out forwards;
+  -webkit-animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+          animation: fadeIn-from-bot 0.75s ease-in-out forwards;
 }
 
 main .questions-and-answers .qaa-wrapper .qaa {
@@ -602,7 +602,7 @@ main .questions-and-answers .qaa-wrapper .qaa__question {
 }
 
 main .questions-and-answers .qaa-wrapper .qaa__question::before {
-  content: '\f067';
+  content: "\f067";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
@@ -610,7 +610,7 @@ main .questions-and-answers .qaa-wrapper .qaa__question::before {
   top: 50%;
   -webkit-transform: translate(15px, -50%);
           transform: translate(15px, -50%);
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 main .questions-and-answers .qaa-wrapper .qaa__answer {
@@ -625,7 +625,7 @@ main .questions-and-answers .qaa-wrapper .qaa__answer {
 }
 
 main .questions-and-answers .qaa-wrapper .qaa.open .qaa__question::before {
-  content: '\f068';
+  content: "\f068";
 }
 
 section.contact-us {
