@@ -6,7 +6,7 @@ $(document).ready(function () {
         show_sec_span.text(sec_left);
     }
     function goToHome(){
-        window.location.href = "https://talmekler.com";
+        window.location.href = "/";
         if_error.show();
     }
 
