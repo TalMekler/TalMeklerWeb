@@ -656,8 +656,8 @@ section.contact-us .contact-element {
 }
 
 section.contact-us .contact-element.show {
-  -webkit-animation: fadeIn-from-bot-Ycontroll .75s ease-in-out forwards;
-          animation: fadeIn-from-bot-Ycontroll .75s ease-in-out forwards;
+  -webkit-animation: fadeIn-from-bit-Ycontroll .75s ease-in-out forwards;
+          animation: fadeIn-from-bit-Ycontroll .75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 767px) {
