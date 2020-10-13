@@ -127,6 +127,32 @@
   }
 }
 
+@-webkit-keyframes fadeIn-from-bot-Ycontroll {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@keyframes fadeIn-from-bot-Ycontroll {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
 @-webkit-keyframes fadeIn-from-bot-Xcontroll {
   0% {
     opacity: 0;
@@ -363,6 +389,12 @@ main .about-me {
 
 main .about-me .text-wrapper {
   text-align: center;
+  opacity: 0;
+}
+
+main .about-me .text-wrapper.show {
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
 }
 
 main .about-me .text-wrapper h2 {
@@ -426,6 +458,15 @@ main .my-work .works-wrapper {
   border-radius: 10px;
   background-color: #ffffff;
   position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+
+main .my-work .works-wrapper.show {
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
+  -webkit-box-shadow: 0 0 5px #141c3a;
+          box-shadow: 0 0 5px #141c3a;
 }
 
 @media screen and (max-width: 767px) {
@@ -436,19 +477,6 @@ main .my-work .works-wrapper {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-main .my-work .works-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 10em;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-box-shadow: 0 0 3px #141c3a;
-          box-shadow: 0 0 3px #141c3a;
-  z-index: -1;
-  border-radius: 10px;
 }
 
 main .my-work .works-wrapper .work-div {
@@ -528,6 +556,12 @@ main .questions-and-answers h3 {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 2.5em;
+  opacity: 0;
+}
+
+main .questions-and-answers h3.show {
+  -webkit-animation: fadeIn-from-top .75s ease-in-out forwards;
+          animation: fadeIn-from-top .75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 767px) {
@@ -538,6 +572,12 @@ main .questions-and-answers h3 {
 
 main .questions-and-answers .qaa-wrapper {
   width: 75%;
+  opacity: 0;
+}
+
+main .questions-and-answers .qaa-wrapper.show {
+  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
+          animation: fadeIn-from-bot .75s ease-in-out forwards;
 }
 
 main .questions-and-answers .qaa-wrapper .qaa {
@@ -612,6 +652,12 @@ section.contact-us .contact-element {
       justify-content: space-around;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  opacity: 0;
+}
+
+section.contact-us .contact-element.show {
+  -webkit-animation: fadeIn-from-bot-Ycontroll .75s ease-in-out forwards;
+          animation: fadeIn-from-bot-Ycontroll .75s ease-in-out forwards;
 }
 
 @media screen and (max-width: 767px) {

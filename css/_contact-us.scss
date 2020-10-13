@@ -13,6 +13,10 @@ section.contact-us {
         display: flex;
         justify-content: space-around;
         transform: translateY(-50%);
+        opacity: 0;
+        &.show{
+            animation: fadeIn-from-bot-Ycontroll .75s ease-in-out forwards;
+        }
 
         @include breakpoint-less(mobile) {
             flex-direction: column;

@@ -12,20 +12,15 @@ main .my-work {
         border-radius: 10px;
         background-color: #ffffff;
         position: relative;
+        z-index: 1;
+        opacity: 0;
+        &.show{
+            animation: fadeIn-from-bot .75s ease-in-out forwards;
+            box-shadow: 0 0 5px $dark-blue;
+        }
         @include breakpoint-less(mobile){
             width: 90vw;
             flex-direction: column;
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            top: 10em;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            box-shadow: 0 0 3px $dark-blue;
-            z-index: -1;
-            border-radius: 10px;
         }
         .work-div{
             padding: 2em 4em;

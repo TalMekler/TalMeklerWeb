@@ -82,6 +82,16 @@ $breakpoints: (
         transform: translateY(0);
     }
 }
+@keyframes fadeIn-from-bot-Ycontroll{
+    0%{
+        opacity: 0;
+        transform: translateY(-35%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
 @keyframes fadeIn-from-bot-Xcontroll{
     0%{
         opacity: 0;

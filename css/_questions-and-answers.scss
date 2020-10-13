@@ -7,12 +7,20 @@ main .questions-and-answers{
     h3{
         width: fit-content;
         font-size: 2.5em;
+        opacity: 0;
+        &.show{
+            animation: fadeIn-from-top .75s ease-in-out forwards;
+        }
         @include breakpoint-less(mobile){
             font-size: 1.8em;
         }
     }
     .qaa-wrapper{
         width: 75%;
+        opacity: 0;
+        &.show{
+            animation: fadeIn-from-bot .75s ease-in-out forwards;
+        }
         .qaa{
             margin-bottom: 2em;
             &:first-child{
