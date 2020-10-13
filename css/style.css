@@ -1001,7 +1001,7 @@ footer .social a .social-item i {
 
 footer .social a:hover .social-item i {
   z-index: 2;
-  color: #141c3a;
+  color: #7510f7;
 }
 
 footer .social a:hover::before {
