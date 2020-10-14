@@ -689,6 +689,28 @@ section.testimonials .testimonials-wrapper .testimonial .profile__desc {
 section.testimonials .testimonials-wrapper .testimonial-web-link {
   color: #7510f7;
   font-weight: 500;
+  position: relative;
+}
+
+section.testimonials .testimonials-wrapper .testimonial-web-link::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #7510f7;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+section.testimonials .testimonials-wrapper .testimonial-web-link:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 section.testimonials .points {
