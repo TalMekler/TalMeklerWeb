@@ -659,7 +659,7 @@ section.testimonials .testimonials-wrapper .testimonial .img img {
 
 section.testimonials .testimonials-wrapper .testimonial p.text {
   font-weight: 500;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 1.5em;
   line-height: 2em;
 }
@@ -678,7 +678,7 @@ section.testimonials .testimonials-wrapper .testimonial p.text::after {
 
 section.testimonials .testimonials-wrapper .testimonial .profile__name {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 section.testimonials .testimonials-wrapper .testimonial .profile__desc {
