@@ -26,4 +26,7 @@ $(document).ready(function () {
         calcTestimonialsWidth();
         slideTestimonials();
     })
+    var view_width = $('section.testimonials .testimonials-view').width();
+    var num_of_testimonial = $('section.testimonials .testimonials-view .testimonials-wrapper .testimonial').length;
+    testimonials_wrapper.css("width", view_width * num_of_testimonial)
 });

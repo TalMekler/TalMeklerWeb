@@ -29,7 +29,7 @@ section.testimonials {
     }
     .testimonials-wrapper {
         position: relative;
-        width: calc(40vw * 2);
+        // width: calc(40vw * 2);
         display: flex;
         @include breakpoint-less(mobile){
             width: calc(90vw * 2);
@@ -57,9 +57,9 @@ section.testimonials {
                 font-weight: 500;
                 font-size: 1.1em;
                 margin-bottom: 1.5em;
+                line-height: 2em;
                 &::before, &::after{
                     font-size: 1.15em;
-                    font-weight: 900;
                 }
                 &::before{
                     content: "'' ";
@@ -78,6 +78,10 @@ section.testimonials {
                     font-size: 1em;
                 }
             }
+        }
+        .testimonial-web-link{
+            color: $purple;
+            font-weight: 500;
         }
     }
     .points{

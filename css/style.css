@@ -617,7 +617,6 @@ section.testimonials .testimonials-view.show {
 
 section.testimonials .testimonials-wrapper {
   position: relative;
-  width: calc(40vw * 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,11 +661,11 @@ section.testimonials .testimonials-wrapper .testimonial p.text {
   font-weight: 500;
   font-size: 1.1em;
   margin-bottom: 1.5em;
+  line-height: 2em;
 }
 
 section.testimonials .testimonials-wrapper .testimonial p.text::before, section.testimonials .testimonials-wrapper .testimonial p.text::after {
   font-size: 1.15em;
-  font-weight: 900;
 }
 
 section.testimonials .testimonials-wrapper .testimonial p.text::before {
@@ -685,6 +684,11 @@ section.testimonials .testimonials-wrapper .testimonial .profile__name {
 section.testimonials .testimonials-wrapper .testimonial .profile__desc {
   font-weight: 300;
   font-size: 1em;
+}
+
+section.testimonials .testimonials-wrapper .testimonial-web-link {
+  color: #7510f7;
+  font-weight: 500;
 }
 
 section.testimonials .points {
