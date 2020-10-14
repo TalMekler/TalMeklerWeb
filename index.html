@@ -45,7 +45,7 @@
     <script src="scripts/qaa-controller.js"></script>
     <script src="scripts/show-elements-scrollTriger.js"></script>
     <script src="scripts/testimonials.js"></script>
-    
+
     <!-- Facebook Pixel Code -->
     <script>!function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '713872216008265'); fbq('track', 'PageView');</script>
     <noscript> <img height="1" width="1"
@@ -182,17 +182,18 @@
                 <div class="testimonials-wrapper">
                     <div class="testimonial">
                         <div class="img">
-                            <img src="imgs/testimonials/testimonial-1.jpeg"
-                                alt="">
+                            <img src="imgs/testimonials/testimonial-1.jpeg" alt="">
                         </div>
                         <p class="text">
-                            טל הוא מעצב ובונה אתרים מוכשר. חשוב יותר הוא היכולת שלו לעבוד יחד על פרויקט. הוא מקשיב ומבין את הצרכים האישיים שלך. אני ממליץ לכל עסק לעבוד עם טל.
+                            טל הוא מעצב ובונה אתרים מוכשר. חשוב יותר הוא היכולת שלו לעבוד יחד על פרויקט. הוא מקשיב ומבין
+                            את הצרכים האישיים שלך. אני ממליץ לכל עסק לעבוד עם טל.
                         </p>
                         <div class="profile">
                             <p class="profile__name">מישה ון סטי</p>
                             <p class="profile__desc">
                                 פיזיותרפיסט,
-                                <a class="testimonial-web-link" href="http://activekfarsaba" target="_blank">מכון אקטיב כפר סבא</a>
+                                <a class="testimonial-web-link" href="http://activekfarsaba" target="_blank">מכון אקטיב
+                                    כפר סבא</a>
                             </p>
                         </div>
                     </div>
@@ -299,6 +300,29 @@
             2020 &copy <a href="/">Tal Mekler Developer. All Right Reserved.</a>
         </div>
     </footer>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/he_IL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="100134951865570" theme_color="#7646ff"
+        logged_in_greeting=" היי, איך אפשר לעזור לך?" logged_out_greeting=" היי, איך אפשר לעזור לך?">
+    </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177823778-2"></script>
