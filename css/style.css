@@ -179,32 +179,6 @@
   }
 }
 
-@-webkit-keyframes pulse-when-clicked {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    opacity: 0;
-  }
-}
-
-@keyframes pulse-when-clicked {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    opacity: 0;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;

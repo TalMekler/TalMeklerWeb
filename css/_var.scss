@@ -102,14 +102,3 @@ $breakpoints: (
         transform: translateY(0) translateX(-50%);
     }
 }
-
-@keyframes pulse-when-clicked{
-    from{
-        transform: scale(1);
-        opacity: 1;
-    }
-    to{
-        transform: scale(2);
-        opacity: 0;
-    }
-}
