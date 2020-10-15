@@ -12,7 +12,7 @@ main .hero {
         align-items: center;
         position: relative;
         transform: translateY(-50%);
-        @include breakpoint-less(mobile) {
+        @include breakpoint-less(mobile){
             transform: translateY(-25%);
             padding: 0 2em;
         }
@@ -20,49 +20,50 @@ main .hero {
             width: fit-content;
             font-size: 3em;
             padding-bottom: 0.3em;
-            animation: fadeIn-from-top 0.75s ease-in-out forwards;
-            @include breakpoint-less(mobile) {
+            animation: fadeIn-from-top .75s ease-in-out forwards;
+            @include breakpoint-less(mobile){
                 font-size: 2em;
             }
+            
         }
         p {
             direction: rtl;
             font-size: 1.3em;
             margin-bottom: 0.5em;
             opacity: 0;
-            animation: fadeIn-from-top 0.75s ease-in-out forwards 0.25s;
-            @include breakpoint-less(mobile) {
+            animation: fadeIn-from-top .75s ease-in-out forwards .25s;
+            @include breakpoint-less(mobile){
                 font-size: 1em;
                 text-align: center;
                 margin-bottom: 1.3em;
-                animation: fadeIn-from-top 0.75s ease-in-out forwards;
+                animation: fadeIn-from-top .75s ease-in-out forwards;
             }
         }
-        // svg {
-        //     width: fit-content;
-        //     width: 200px;
-        //     margin: 0 auto;
-        //     margin-top: 30px;
-        //     opacity: 0;
-            // animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
-
-        //     circle{
-        //         fill: $purple;
-        //     }
-        //     @include breakpoint-less(mobile){
-        //         width: 130px;
-        //         animation: fadeIn-from-bot .75s ease-in-out forwards;
-        //     }
-        // }
-        img {
+        svg {
+            width: fit-content;
             width: 200px;
+            margin: 0 auto;
+            margin-top: 30px;
             opacity: 0;
             animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
-            @include breakpoint-less(mobile) {
+
+            circle{
+                fill: $purple;
+            }
+            @include breakpoint-less(mobile){
                 width: 130px;
-                animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+                animation: fadeIn-from-bot .75s ease-in-out forwards;
             }
         }
+        // img {
+        //     width: 200px;
+        //     opacity: 0;
+        //     animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
+        //     @include breakpoint-less(mobile) {
+        //         width: 130px;
+        //         animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+        //     }
+        // }
     }
     .all-platforms {
         position: absolute;
@@ -71,9 +72,9 @@ main .hero {
         transform: translateX(-50%);
         width: clamp(310px, 75vw, 689px);
         opacity: 0;
-        animation: fadeIn-from-bot-Xcontroll 0.75s ease-in-out forwards 0.5s;
-        @include breakpoint-less(mobile) {
-            animation: fadeIn-from-bot-Xcontroll 0.75s ease-in-out forwards;
+        animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards .5s;
+        @include breakpoint-less(mobile){
+            animation: fadeIn-from-bot-Xcontroll .75s ease-in-out forwards;
         }
     }
 }
