@@ -396,27 +396,18 @@ main .hero .start-page p {
   }
 }
 
-main .hero .start-page svg {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+main .hero .start-page img {
   width: 200px;
-  margin: 0 auto;
-  margin-top: 30px;
   opacity: 0;
   -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
           animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
 }
 
-main .hero .start-page svg circle {
-  fill: #7510f7;
-}
-
 @media screen and (max-width: 767px) {
-  main .hero .start-page svg {
+  main .hero .start-page img {
     width: 130px;
-    -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
-            animation: fadeIn-from-bot .75s ease-in-out forwards;
+    -webkit-animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+            animation: fadeIn-from-bot 0.75s ease-in-out forwards;
   }
 }
 
@@ -982,23 +973,16 @@ main.contact-page .avatar {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: fadeIn-from-top-avatar .75s ease-in-out forwards;
-          animation: fadeIn-from-top-avatar .75s ease-in-out forwards;
+  -webkit-animation: fadeIn-from-top-avatar 0.75s ease-in-out forwards;
+          animation: fadeIn-from-top-avatar 0.75s ease-in-out forwards;
 }
 
-main.contact-page .avatar svg {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+main.contact-page .avatar img {
   width: 130px;
 }
 
-main.contact-page .avatar svg circle {
-  fill: #7510f7;
-}
-
 @media screen and (max-width: 767px) {
-  main.contact-page .avatar svg {
+  main.contact-page .avatar img {
     width: 90px;
   }
 }
@@ -1016,8 +1000,8 @@ main.contact-page .form-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
-          animation: fadeIn-from-bot .75s ease-in-out forwards;
+  -webkit-animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+          animation: fadeIn-from-bot 0.75s ease-in-out forwards;
 }
 
 main.contact-page .form-wrapper h2 {
@@ -1059,15 +1043,16 @@ main.contact-page .form-wrapper form .input-div::before {
   content: attr(data-attr);
   position: absolute;
   bottom: 100%;
-  right: .75em;
+  right: 0.75em;
 }
 
-main.contact-page .form-wrapper form .input-div input, main.contact-page .form-wrapper form .input-div textarea {
+main.contact-page .form-wrapper form .input-div input,
+main.contact-page .form-wrapper form .input-div textarea {
   width: 100%;
   outline: none;
   border: 1px solid rgba(20, 28, 58, 0.5);
   border-radius: 10px;
-  padding: .7em 1.5em;
+  padding: 0.7em 1.5em;
   font-size: 1.3em;
 }
 
@@ -1092,8 +1077,8 @@ main.contact-page .form-wrapper form .input-div input[type="submit"] {
   border: 1.5px solid #7510f7;
   background-color: transparent;
   cursor: pointer;
-  -webkit-transition: .3s ease-in-out all;
-  transition: .3s ease-in-out all;
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
 }
 
 main.contact-page .form-wrapper form .input-div input[type="submit"]:hover {

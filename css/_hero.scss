@@ -39,31 +39,31 @@ main .hero {
                 animation: fadeIn-from-top .75s ease-in-out forwards;
             }
         }
-        svg {
-            width: fit-content;
-            width: 200px;
-            margin: 0 auto;
-            margin-top: 30px;
-            opacity: 0;
-            animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
-
-            circle{
-                fill: $purple;
-            }
-            @include breakpoint-less(mobile){
-                width: 130px;
-                animation: fadeIn-from-bot .75s ease-in-out forwards;
-            }
-        }
-        // img {
+        // svg {
+        //     width: fit-content;
         //     width: 200px;
+        //     margin: 0 auto;
+        //     margin-top: 30px;
         //     opacity: 0;
         //     animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
-        //     @include breakpoint-less(mobile) {
+
+        //     circle{
+        //         fill: $purple;
+        //     }
+        //     @include breakpoint-less(mobile){
         //         width: 130px;
-        //         animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+        //         animation: fadeIn-from-bot .75s ease-in-out forwards;
         //     }
         // }
+        img {
+            width: 200px;
+            opacity: 0;
+            animation: fadeIn-from-bot .75s ease-in-out forwards .5s;
+            @include breakpoint-less(mobile) {
+                width: 130px;
+                animation: fadeIn-from-bot 0.75s ease-in-out forwards;
+            }
+        }
     }
     .all-platforms {
         position: absolute;
