@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="top-of-the-page">
         <div class="logo">
             <a href="/">
                 <svg width="73" height="52" viewBox="0 0 73 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,12 +47,19 @@
                 </svg>
             </a>
         </div>
-        <div class="btn">
-            <a href="/contact-page">כתבו לי</a>
-        </div>
+        <nav>
+            <i class="fas fa-times close-nav"></i>
+            <a href="#top-of-the-page" class="scroll nav-item">בית</a>
+            <a href="#about-me" class="scroll nav-item">מי אני?</a>
+            <a href="#my-work" class="scroll nav-item">מה אני עושה?</a>
+            <a href="#testimonials" class="scroll nav-item">המלצות</a>
+            <a href="#questions-and-answers" class="scroll nav-item">שאלות ותשובות</a>
+            <a href="/contact-page" class="nav-item">צרו קשר</a>
+        </nav>
+        <i class="fas fa-bars hamburger"></i>
     </header>
     <main>
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="start-page">
                 <h1>
                     מתכנת ומעצב אתרים
@@ -67,7 +74,7 @@
 
         </section>
 
-        <section class="about-me trigger">
+        <section id="about-me" class="about-me trigger">
             <div class="text-wrapper">
                 <h2>
                     <span class="bigger">היי, אני טל,</span><br>
@@ -85,7 +92,7 @@
             </div>
         </section>
 
-        <section class="my-work trigger">
+        <section id="my-work" class="my-work trigger">
             <div class="works-wrapper">
                 <div class="design work-div">
                     <img src="imgs/design-icon.svg" alt="Design Icon" class="icon">
@@ -126,7 +133,7 @@
             </div>
         </section>
 
-        <section class="testimonials trigger">
+        <section id="testimonials" class="testimonials trigger">
             <h3 class="title">המלצות</h3>
             <div class="testimonials-view">
                 <div class="testimonials-wrapper">
@@ -155,7 +162,7 @@
             </div>
         </section>
 
-        <section class="questions-and-answers trigger">
+        <section id="questions-and-answers" class="questions-and-answers trigger">
             <h3>שאלות ותשובות</h3>
             <div class="qaa-wrapper">
                 <div class="qaa">
@@ -267,5 +274,7 @@
 <script src="scripts/qaa-controller.js"></script>
 <script src="scripts/show-elements-scrollTriger.js"></script>
 <script src="scripts/testimonials.js"></script>
+<script src="scripts/smooth-scroll.js"></script>
+<script src="scripts/controll-nav.js"></script>
 
 </html>
