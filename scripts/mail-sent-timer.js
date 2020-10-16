@@ -1,3 +1,4 @@
+// JS
 const show_sec_span = document.querySelector("main.mail-sent .mail-sent-text .timer-wrapper span.timer");
 var sec_left = 3;
 const if_error = document.querySelector("main.mail-sent .mail-sent-text .timer-wrapper span.if-error");

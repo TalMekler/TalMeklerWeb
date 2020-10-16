@@ -611,6 +611,9 @@ section.testimonials .testimonials-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  right: 0;
+  -webkit-transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {

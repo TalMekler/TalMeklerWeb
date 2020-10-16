@@ -16,7 +16,6 @@ section.testimonials {
     .testimonials-view{
         width: 40vw;
         overflow: hidden;
-        // box-shadow: 0 0 5px $dark-blue;
         margin-top: 1.5em;
         opacity: 0;
         
@@ -29,8 +28,9 @@ section.testimonials {
     }
     .testimonials-wrapper {
         position: relative;
-        // width: calc(40vw * 2);
         display: flex;
+        right: 0;
+        transition: right 1s ease-in-out;
         @include breakpoint-less(mobile){
             width: calc(90vw * 2);
         }
