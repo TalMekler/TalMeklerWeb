@@ -11,7 +11,6 @@ function clearActivePoints() {
 }
 function slideTestimonials() {
     slide_to = -((testomonial_num - 1) * width);
-    console.log("slideTestimonials -> slide_to", slide_to)
     testimonials_wrapper.style.right = slide_to + 'px';
     
 }
