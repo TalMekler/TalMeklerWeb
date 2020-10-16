@@ -25,3 +25,20 @@ smooth_links.forEach((link) => {
         }, interval_time);
     })
 })
+var back_to_top = document.querySelector('.back-to-top-btn');
+back_to_top.addEventListener('click', (link)=>{
+    link.preventDefault();
+    var end = 0;
+    var current = window.scrollY;
+    var minus_from_current = 100;
+    var interval = setInterval(() => {
+        current -= minus_from_current;
+        if (current < end) {
+            current = end;
+        }
+        window.scrollTo(0, current)
+        if (current <= end) {
+            clearInterval(interval);
+        }
+    }, interval_time);
+})

@@ -42,3 +42,19 @@ a {
         }
     }
 }
+.back-to-top-btn{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    .back-to-top{
+        font-size: 3em;
+        color: white;
+        border: 2px solid $purple;
+        border-radius: 50%;
+        background-color: $purple;
+        cursor: pointer;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        z-index: 111111;
+    }
+}

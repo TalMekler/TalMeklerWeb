@@ -224,6 +224,25 @@ a {
           transform: scaleX(1);
 }
 
+.back-to-top-btn {
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.back-to-top-btn .back-to-top {
+  font-size: 3em;
+  color: white;
+  border: 2px solid #7510f7;
+  border-radius: 50%;
+  background-color: #7510f7;
+  cursor: pointer;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 111111;
+}
+
 header {
   padding: 2.5em 7.5em;
   display: -webkit-box;
