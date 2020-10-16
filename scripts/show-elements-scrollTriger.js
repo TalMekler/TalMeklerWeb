@@ -27,8 +27,11 @@ if (desktop) {
     })
 }else{
     sections.forEach((section)=>{
-        section_children = section.children[0];
-        section_children.classList.add('show');
+        section_children = section.children;
+        for (var i = 0; i < parseInt(section_children.length); i ++) {
+            child = section_children[i];
+            child.classList.add('show');
+        }
     })
 }
 
