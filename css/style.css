@@ -299,7 +299,7 @@ header nav {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 10em 0 10em 0;
+    padding: 10vh 0 10vh 0;
     background-color: rgba(117, 16, 247, 0.9);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
