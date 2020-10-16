@@ -799,7 +799,9 @@ main .questions-and-answers .qaa-wrapper .qaa__question::before {
 
 main .questions-and-answers .qaa-wrapper .qaa__answer {
   font-size: 1.4em;
-  display: none;
+  overflow: hidden;
+  -webkit-transition: height .5s ease-in-out;
+  transition: height .5s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {

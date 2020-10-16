@@ -14,7 +14,6 @@ if (desktop) {
             // console.log("section_children", section_children)
             for (var i = 0; i < parseInt(section_children.length); i ++){
                 child = section_children[i];
-                console.log("child", child)
                 section_children_pos = child.offsetTop - window_scroll;
                 if (section_children_pos <= window.innerHeight - (window.innerHeight / show_timing)) {
                     child.classList.add("show");
