@@ -1,7 +1,8 @@
 const smooth_links = document.querySelectorAll('.scroll');
-var interval_time = 10;
+var interval_time = 1;
 smooth_links.forEach((link) => {
     link.addEventListener('click', (link) => {
+        console.log('hi');
         link.preventDefault();
         var href = link.target.getAttribute('href');
         var destination = document.querySelector(href);
@@ -10,7 +11,7 @@ smooth_links.forEach((link) => {
         var add_to_current;
         var interval = setInterval(() => {
             if (current > 50 && current < end-50){
-                add_to_current = 50;
+                add_to_current = 20;
             }else{
                 add_to_current = 10;
             }
