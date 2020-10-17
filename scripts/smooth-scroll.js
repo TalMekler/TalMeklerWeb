@@ -31,7 +31,7 @@ back_to_top.addEventListener('click', (link)=>{
     link.preventDefault();
     var end = 0;
     var current = window.scrollY;
-    var minus_from_current = 100;
+    var minus_from_current = 50;
     var interval = setInterval(() => {
         current -= minus_from_current;
         if (current < end) {

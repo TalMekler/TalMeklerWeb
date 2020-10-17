@@ -189,6 +189,11 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -327,6 +332,8 @@ header nav {
     position: absolute;
     top: 0;
     right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -337,8 +344,6 @@ header nav {
     z-index: 11111;
     -webkit-transform-origin: right;
             transform-origin: right;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
@@ -347,8 +352,8 @@ header nav {
 }
 
 header nav.open {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 header nav .close-nav {
@@ -357,6 +362,7 @@ header nav .close-nav {
   top: 3rem;
   right: 3rem;
   font-size: 2em;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1023px) {
