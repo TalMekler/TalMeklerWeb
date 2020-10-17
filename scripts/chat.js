@@ -45,6 +45,7 @@ function openFullChat() {
         open_chat_btn_mobile.style.display = 'none';
         open_chat_btn.style.display = 'none';
         close_chat_btn.style.display = 'inline-block';
+        chat_div.style.padding = '0.5em .75em';
     }else{
         var bottom_div_height = bottom_div_chat.getAttribute('height');
         bottom_div_chat.style.height = bottom_div_height + 'px';
@@ -55,6 +56,7 @@ function openFullChat() {
 function closeChat() {
     if (chatOnMobile()){
         chat_div.style.display = 'block'
+        chat_div.style.padding = '0';
     }else{
         bottom_div_chat.style.height = '0px';
         close_chat_btn.style.display = 'none';

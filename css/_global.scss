@@ -99,7 +99,7 @@ a {
         width: 100vw;
         left: 0;
         border-width: 0;
-        padding: 0;
+        background-color: #fff;
         bottom: 0 !important;
         z-index: 123123123;
     }
@@ -174,8 +174,11 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include breakpoint-less(mobile){
+            margin-top: 1.5em;
+        }
         form {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             p.input {
                 width: 100%;
