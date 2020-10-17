@@ -330,8 +330,6 @@ header nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     padding: 15vh 0 15vh 0;
     background-color: rgba(117, 16, 247, 0.9);
     -webkit-backdrop-filter: blur(10px);
@@ -378,7 +376,7 @@ header nav .nav-item {
 
 @media screen and (max-width: 1023px) {
   header nav .nav-item {
-    margin: 0 !important;
+    margin: 0 0 2em 0 !important;
     font-size: 2em;
     color: white;
   }
