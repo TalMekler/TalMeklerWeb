@@ -6,7 +6,6 @@
     color: $dark-blue;
     scroll-behavior: smooth;
 }
-html,
 body {
     overflow-x: hidden;
 }
@@ -41,10 +40,10 @@ a {
         }
     }
 }
-.back-to-top-btn{
+.back-to-top-btn {
     opacity: 0;
-    transition: opacity .3s ease-in-out;
-    .back-to-top{
+    transition: opacity 0.3s ease-in-out;
+    .back-to-top {
         font-size: 3em;
         color: white;
         border: 2px solid $purple;
@@ -55,14 +54,148 @@ a {
         bottom: 1em;
         right: 1em;
         z-index: 111111;
-        
-        @include breakpoint-less(tablet){
+
+        @include breakpoint-less(tablet) {
             font-size: 2.7em;
             border-width: 1.85px;
         }
-        @include breakpoint-less(mobile){
+        @include breakpoint-less(mobile) {
             font-size: 2.4em;
             border-width: 1.6px;
+        }
+    }
+}
+.chat-btn-for-mobile {
+    font-size: 3em;
+    color: $purple;
+    cursor: pointer;
+    position: fixed;
+    padding: .1em;
+    bottom: 1em;
+    left: 1em;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 111111;
+    @include breakpoint-less(tablet) {
+        font-size: 2.7em;
+    }
+    @include breakpoint-less(mobile) {
+        font-size: 2.4em;
+    }
+}
+.chat {
+    direction: rtl;
+    width: 330px;
+    background-color: rgba(#fff, 0.75);
+    border: 2px solid $purple;
+    position: fixed;
+    bottom: 0;
+    left: 1rem;
+    padding: 0.25em 0.5em;
+    z-index: 9999;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    @include breakpoint-less(mobile) {
+        width: 100vw;
+        left: 0;
+        border-width: 0;
+        padding: 0;
+        bottom: 0 !important;
+        z-index: 123123123;
+    }
+    &.open{
+        @include breakpoint-less(mobile) {
+            // display: block;
+            border: 2px solid $purple;
+            padding: 0.25em 0.5em;
+        }   
+    }
+    .top-div-chat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-child {
+            height: 100%;
+        }
+        .text {
+            .title {
+                font-size: 1.15em;
+            }
+            .sub-title {
+                font-size: 0.9em;
+                font-weight: 500;
+                letter-spacing: 2px;
+            }
+        }
+        .btn {
+            position: relative;
+            z-index: 1;
+            i.fa-angle-up {
+                font-size: 1.25em;
+                padding: 0.3em;
+                position: relative;
+                z-index: 2;
+                cursor: pointer;
+            }
+            i.fa-angle-down {
+                font-size: 1.25em;
+                padding: 0.3em;
+                position: relative;
+                z-index: 2;
+                cursor: pointer;
+                display: none;
+            }
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
+            &::before {
+                content: "";
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                background-color: rgba(white, 0.5);
+                opacity: 0;
+                border: 1px solid $purple;
+                border-radius: 50%;
+                z-index: -1;
+                pointer-events: none;
+                transition: opacity 0.25s ease-in-out;
+            }
+        }
+    }
+    .bottom-div-chat {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        form {
+            width: 90%;
+            margin: 0 auto;
+            p.input {
+                width: 100%;
+                &:first-child {
+                    margin-top: 0.5em;
+                }
+                input {
+                    width: 100%;
+                    padding: 0.5em 1em;
+                    margin-bottom: 1em;
+                    border: 1.5px solid $dark-blue;
+                    border-radius: 10px;
+                    font-size: 1.05em;
+                }
+                input[type="submit"] {
+                    background-color: $purple;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

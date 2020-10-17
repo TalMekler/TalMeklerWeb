@@ -39,7 +39,7 @@ header {
             position: absolute;
             top: 0;
             right: 0;
-            transform: translateX(100%);
+            transform: scaleX(0);
             align-items: center;
             padding: 15vh 0 15vh 0;
             background-color: rgba($purple, 0.9);
@@ -50,7 +50,7 @@ header {
             transition: transform 0.5s ease-in-out;
         }
         &.open {
-            transform: translateX(0%);
+            transform: scaleX(1);
         }
         .close-nav {
             display: none;

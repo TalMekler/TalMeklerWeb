@@ -3,6 +3,8 @@ const close_bar = document.querySelector('i.close-nav');
 const nav_bar = document.querySelector('nav');
 const nav_items = document.querySelectorAll('nav .nav-item');
 
+document.body.style.overflowX = 'hidden';
+
 open_bar.addEventListener('click', ()=>{
     nav_bar.style.transition = 'all .3s ease-in-out';
     nav_bar.classList.add('open');

@@ -189,7 +189,6 @@
   scroll-behavior: smooth;
 }
 
-html,
 body {
   overflow-x: hidden;
 }
@@ -231,8 +230,8 @@ a {
 
 .back-to-top-btn {
   opacity: 0;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .back-to-top-btn .back-to-top {
@@ -260,6 +259,177 @@ a {
     font-size: 2.4em;
     border-width: 1.6px;
   }
+}
+
+.chat-btn-for-mobile {
+  font-size: 3em;
+  color: #7510f7;
+  cursor: pointer;
+  position: fixed;
+  padding: .1em;
+  bottom: 1em;
+  left: 1em;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 111111;
+}
+
+@media screen and (max-width: 1023px) {
+  .chat-btn-for-mobile {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chat-btn-for-mobile {
+    font-size: 2.4em;
+  }
+}
+
+.chat {
+  direction: rtl;
+  width: 330px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 2px solid #7510f7;
+  position: fixed;
+  bottom: 0;
+  left: 1rem;
+  padding: 0.25em 0.5em;
+  z-index: 9999;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .chat {
+    width: 100vw;
+    left: 0;
+    border-width: 0;
+    padding: 0;
+    bottom: 0 !important;
+    z-index: 123123123;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chat.open {
+    border: 2px solid #7510f7;
+    padding: 0.25em 0.5em;
+  }
+}
+
+.chat .top-div-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat .top-div-chat-child {
+  height: 100%;
+}
+
+.chat .top-div-chat .text .title {
+  font-size: 1.15em;
+}
+
+.chat .top-div-chat .text .sub-title {
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.chat .top-div-chat .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.chat .top-div-chat .btn i.fa-angle-up {
+  font-size: 1.25em;
+  padding: 0.3em;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.chat .top-div-chat .btn i.fa-angle-down {
+  font-size: 1.25em;
+  padding: 0.3em;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
+.chat .top-div-chat .btn:hover::before {
+  opacity: 1;
+}
+
+.chat .top-div-chat .btn::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border: 1px solid #7510f7;
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.chat .bottom-div-chat {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat .bottom-div-chat form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.chat .bottom-div-chat form p.input {
+  width: 100%;
+}
+
+.chat .bottom-div-chat form p.input:first-child {
+  margin-top: 0.5em;
+}
+
+.chat .bottom-div-chat form p.input input {
+  width: 100%;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  border: 1.5px solid #141c3a;
+  border-radius: 10px;
+  font-size: 1.05em;
+}
+
+.chat .bottom-div-chat form p.input input[type="submit"] {
+  background-color: #7510f7;
+  color: #fff;
+  cursor: pointer;
 }
 
 header {
@@ -332,8 +502,8 @@ header nav {
     position: absolute;
     top: 0;
     right: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -352,8 +522,8 @@ header nav {
 }
 
 header nav.open {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 header nav .close-nav {
