@@ -56,5 +56,14 @@ a {
         bottom: 1em;
         right: 1em;
         z-index: 111111;
+        
+        @include breakpoint-less(tablet){
+            font-size: 2.7em;
+            border-width: 1.85px;
+        }
+        @include breakpoint-less(mobile){
+            font-size: 2.4em;
+            border-width: 1.6px;
+        }
     }
 }
