@@ -1,5 +1,5 @@
 // const smooth_links = document.querySelectorAll('.scroll');
-var interval_time = 1;
+// var interval_time = 1;
 // smooth_links.forEach((link) => {
 //     link.addEventListener('click', (link) => {
 //         console.log('hi');
@@ -41,9 +41,7 @@ function smoothScroll(target, duration) {
         var run = ease(timeElapsed, startPosition, distance, duration);
         console.log("animation -> run", run)
         window.scrollTo(0, run);
-        if (timeElapsed < duration) {
-            requestAnimationFrame(animation);
-        }
+        if (timeElapsed < duration) requestAnimationFrame(animation);
 
     }
     function ease(t, b, c, d) {
@@ -67,20 +65,28 @@ smooth_links.forEach((link)=>{
 })
 
 var back_to_top = document.querySelector('.back-to-top-btn');
-var interval_time = 1;
-back_to_top.addEventListener('click', (link)=>{
-    link.preventDefault();
-    var end = 0;
-    var current = window.scrollY;
-    var minus_from_current = 50;
-    var interval = setInterval(() => {
-        current -= minus_from_current;
-        if (current < end) {
-            current = end;
+back_to_top.addEventListener('click', (e)=>{
+    e.preventDefault();
+    var startPosition = window.scrollY;
+    var target_pos = 0;
+    var distance = startPosition;
+    var start_time = null;
+    function animation(currentTime) {
+        if (start_time === null) start_time = currentTime;
+        var timeElapsed = currentTime - start_time;
+        var run = ease(timeElapsed, startPosition, -distance, 250);
+        console.log("animation -> run", run)
+        window.scrollTo(0, run);
+        if (timeElapsed < 250) requestAnimationFrame(animation);
+
+    }
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) {
+            return (c / 2 * t * t + b)
         }
-        window.scrollTo(0, current)
-        if (current <= end) {
-            clearInterval(interval);
-        }
-    }, interval_time);
+        t--;
+        return (-c / 2 * (t * (t - 2) - 1) + b)
+    }
+    requestAnimationFrame(animation)
 })
