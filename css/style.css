@@ -560,8 +560,8 @@ header nav .nav-item {
   direction: rtl;
   position: relative;
   font-size: 1.1em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1023px) {

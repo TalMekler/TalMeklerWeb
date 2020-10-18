@@ -68,7 +68,7 @@ header {
             direction: rtl;
             position: relative;
             font-size: 1.1em;
-            transition: all 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out;
             @include breakpoint-less(tablet) {
                 margin: 0 0 2em 0 !important;
                 font-size: 2em;
