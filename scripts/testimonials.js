@@ -30,6 +30,13 @@ points.forEach((point)=>{
     })
 })
 
-var view_width = document.querySelector('section.testimonials .testimonials-view').offsetWidth;
-var num_of_testimonial = document.querySelectorAll('section.testimonials .testimonials-view .testimonials-wrapper .testimonial').length;
-testimonials_wrapper.style.width = (view_width * num_of_testimonial) + 'px';
+function fixSizeOfTestimonials(){
+    var view_width = document.querySelector('section.testimonials .testimonials-view').offsetWidth;
+    var num_of_testimonial = document.querySelectorAll('section.testimonials .testimonials-view .testimonials-wrapper .testimonial').length;
+    testimonials_wrapper.style.width = (view_width * num_of_testimonial) + 'px';
+}
+
+fixSizeOfTestimonials();
+setInterval(()=>{
+    fixSizeOfTestimonials();
+}, 100)
