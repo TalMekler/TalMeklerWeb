@@ -17,7 +17,7 @@ if (desktop) {
                 section_children_pos = child.offsetTop - window_scroll;
                 if (section_children_pos <= window.innerHeight - (window.innerHeight / show_timing)) {
                     child.classList.add("show");
-                } else if (section_children_pos > window.innerHeight) {
+                } else if (section_children_pos > window.innerHeight + (child.offsetHeight / 1.2)) {
                     child.classList.remove("show");
                 }
             }
