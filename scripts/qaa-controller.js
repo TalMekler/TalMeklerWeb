@@ -1,5 +1,6 @@
 // js
 const qaa_divs = document.querySelectorAll("section.questions-and-answers .qaa-wrapper .qaa");
+var current_window_width = window.innerWidth;
 var qaa_quest, qaa_answer, parent, open_check;
 
 function setHeightAttr() {
@@ -24,6 +25,29 @@ function toggleSlide(div){
     var final_height = div.getAttribute('height');
     div.style.height = final_height + 'px';
 }
+
+function resetAnswerHeight(){
+    qaa_divs.forEach((e) =>{
+        qaa_answer = e.children[1];
+        qaa_answer.style.height = 'auto';
+
+    })
+}
+
+function checkWindowWidthChange(){
+    if (current_window_width != window.innerWidth){
+        current_window_width = window.innerWidth;
+        resetAnswerHeight();
+        setHeightAttr();
+        closeAll();
+    }
+}
+
+
+setInterval(()=>{
+    checkWindowWidthChange();
+})
+
 setHeightAttr();
 qaa_divs.forEach((e) => {
     qaa_quest = e.children[0];
