@@ -1430,6 +1430,10 @@ footer {
           align-items: center;
 }
 
+footer.inside-page {
+  padding-top: 4rem;
+}
+
 footer .logo {
   width: auto;
   height: 65px;
