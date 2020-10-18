@@ -978,6 +978,7 @@ section.testimonials .testimonials-wrapper .testimonial p.text {
   font-size: 1.2em;
   margin-bottom: 1.5em;
   line-height: 2em;
+  font-style: italic;
 }
 
 section.testimonials .testimonials-wrapper .testimonial p.text::before, section.testimonials .testimonials-wrapper .testimonial p.text::after {
