@@ -18,7 +18,9 @@ section.testimonials {
         overflow: hidden;
         margin-top: 1.5em;
         opacity: 0;
-        
+        @include breakpoint-less(tablet){
+            width: 65vw;
+        }
         @include breakpoint-less(mobile){
             width: 90vw;
         }
@@ -31,9 +33,9 @@ section.testimonials {
         display: flex;
         right: 0;
         transition: right 1s ease-in-out;
-        @include breakpoint-less(mobile){
-            width: calc(90vw * 2);
-        }
+        // @include breakpoint-less(mobile){
+        //     width: calc(90vw * 2);
+        // }
         .testimonial {
             display: flex;
             align-items: center;

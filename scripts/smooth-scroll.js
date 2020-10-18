@@ -9,10 +9,8 @@ function smoothScroll(target, duration) {
         if (start_time === null) start_time = currentTime;
         var timeElapsed = currentTime - start_time;
         var run = ease(timeElapsed, startPosition, distance, duration);
-        console.log("animation -> run", run)
         window.scrollTo(0, run);
         if (timeElapsed < duration) requestAnimationFrame(animation);
-
     }
     function ease(t, b, c, d) {
         t /= d / 2;
@@ -45,7 +43,6 @@ back_to_top.addEventListener('click', (e)=>{
         if (start_time === null) start_time = currentTime;
         var timeElapsed = currentTime - start_time;
         var run = ease(timeElapsed, startPosition, -distance, 250);
-        console.log("animation -> run", run)
         window.scrollTo(0, run);
         if (timeElapsed < 250) requestAnimationFrame(animation);
 

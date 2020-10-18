@@ -245,6 +245,14 @@ a {
   bottom: 1em;
   right: 1em;
   z-index: 111111;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.back-to-top-btn .back-to-top:hover {
+  background-color: white;
+  color: #7510f7;
+  border: 2px solid white;
 }
 
 @media screen and (max-width: 1023px) {
@@ -266,7 +274,7 @@ a {
   color: #7510f7;
   cursor: pointer;
   position: fixed;
-  padding: .1em;
+  padding: 0.1em;
   bottom: 1em;
   left: 1em;
   background-color: #fff;
@@ -917,6 +925,12 @@ section.testimonials .testimonials-view {
   opacity: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  section.testimonials .testimonials-view {
+    width: 65vw;
+  }
+}
+
 @media screen and (max-width: 767px) {
   section.testimonials .testimonials-view {
     width: 90vw;
@@ -936,12 +950,6 @@ section.testimonials .testimonials-wrapper {
   right: 0;
   -webkit-transition: right 1s ease-in-out;
   transition: right 1s ease-in-out;
-}
-
-@media screen and (max-width: 767px) {
-  section.testimonials .testimonials-wrapper {
-    width: calc(90vw * 2);
-  }
 }
 
 section.testimonials .testimonials-wrapper .testimonial {
