@@ -1,8 +1,9 @@
 //JS
-var desktop = false;
-if (window.innerWidth > 1023) {
-    desktop = true;
+var desktop = checkDesktop();
+function checkDesktop(){
+    return (window.innerWidth > 1023);
 }
+
 var sections = document.querySelectorAll("main section.trigger");
 var section_children, show_timing = 10, window_scroll, child;
 
