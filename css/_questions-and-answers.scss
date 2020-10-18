@@ -49,7 +49,7 @@ main .questions-and-answers {
                 font-size: 1.4em;
                 // display: none;
                 overflow: hidden;
-                transition: height .5s ease-in-out;
+                transition: height 0.5s ease-in-out;
                 @include breakpoint-less(mobile) {
                     font-size: 1.15em;
                 }
