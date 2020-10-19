@@ -12,7 +12,6 @@ if (desktop) {
         window_scroll = window.scrollY;
         sections.forEach((section) => {
             section_children = section.children;
-            // console.log("section_children", section_children)
             for (var i = 0; i < parseInt(section_children.length); i ++){
                 child = section_children[i];
                 section_children_pos = child.offsetTop - window_scroll;
@@ -22,8 +21,6 @@ if (desktop) {
                     child.classList.remove("show");
                 }
             }
-
-
         })
     })
 }else{
