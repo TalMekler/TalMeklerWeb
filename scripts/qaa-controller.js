@@ -18,11 +18,11 @@ function closeAll() {
     qaa_divs.forEach((e) => {
         e.classList.remove('open');
         var answer = e.children[1];
-        answer.style.height = '0px';
+        answer.style.height = null;
     })
 }
 function toggleSlide(div){
-    var final_height = div.getAttribute('height');
+    var final_height = div.scrollHeight;
     div.style.height = final_height + 'px';
 }
 
@@ -44,9 +44,9 @@ function checkWindowWidthChange(){
 }
 
 
-setInterval(()=>{
-    checkWindowWidthChange();
-})
+// setInterval(()=>{
+//     checkWindowWidthChange();
+// })
 
 setHeightAttr();
 qaa_divs.forEach((e) => {
