@@ -185,7 +185,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  color: #141c3a;
+  color: #00072D;
   scroll-behavior: smooth;
 }
 
@@ -203,7 +203,7 @@ a {
 }
 
 .clr-purple {
-  color: #7510f7;
+  color: #6250C2;
   position: relative;
 }
 
@@ -214,7 +214,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #7510f7;
+  background-color: #6250C2;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
@@ -237,9 +237,9 @@ a {
 .back-to-top-btn .back-to-top {
   font-size: 3em;
   color: white;
-  border: 2px solid #7510f7;
+  border: 2px solid #6250C2;
   border-radius: 50%;
-  background-color: #7510f7;
+  background-color: #6250C2;
   cursor: pointer;
   position: fixed;
   bottom: 1em;
@@ -251,7 +251,7 @@ a {
 
 .back-to-top-btn .back-to-top:hover {
   background-color: white;
-  color: #7510f7;
+  color: #6250C2;
   border: 2px solid white;
 }
 
@@ -271,7 +271,7 @@ a {
 
 .chat-btn-for-mobile {
   font-size: 3em;
-  color: #7510f7;
+  color: #6250C2;
   cursor: pointer;
   position: fixed;
   padding: 0.1em;
@@ -298,7 +298,7 @@ a {
   direction: rtl;
   width: 330px;
   background-color: rgba(255, 255, 255, 0.75);
-  border: 2px solid #7510f7;
+  border: 2px solid #6250C2;
   position: fixed;
   bottom: 0;
   left: 1rem;
@@ -321,7 +321,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .chat.open {
-    border: 2px solid #7510f7;
+    border: 2px solid #6250C2;
     padding: 0.25em 0.5em;
   }
 }
@@ -389,7 +389,7 @@ a {
           transform: translateX(-50%) translateY(-50%);
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0;
-  border: 1px solid #7510f7;
+  border: 1px solid #6250C2;
   border-radius: 50%;
   z-index: -1;
   pointer-events: none;
@@ -435,13 +435,13 @@ a {
   width: 100%;
   padding: 0.5em 1em;
   margin-bottom: 1em;
-  border: 1.5px solid #141c3a;
+  border: 1.5px solid #00072D;
   border-radius: 10px;
   font-size: 1.05em;
 }
 
 .chat .bottom-div-chat form p.input input[type="submit"] {
-  background-color: #7510f7;
+  background-color: #6250C2;
   color: #fff;
   cursor: pointer;
 }
@@ -483,16 +483,16 @@ header .logo svg {
 }
 
 header .logo svg .logo-letter {
-  fill: #7510f7;
+  fill: #6250C2;
 }
 
 header .logo svg #out-line {
   stroke-width: 3;
-  stroke: #7510f7;
+  stroke: #6250C2;
 }
 
 header * {
-  color: #7510f7;
+  color: #6250C2;
 }
 
 header nav {
@@ -522,7 +522,7 @@ header nav {
         -ms-flex-align: center;
             align-items: center;
     padding: 15vh 0 15vh 0;
-    background-color: rgba(117, 16, 247, 0.9);
+    background-color: rgba(98, 80, 194, 0.9);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     z-index: 11111;
@@ -587,7 +587,7 @@ header nav .nav-item::before {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #141c3a;
+  background-color: #00072D;
   position: absolute;
   top: 100%;
   right: 0;
@@ -600,7 +600,7 @@ header nav .nav-item::before {
 }
 
 header nav .nav-item:hover {
-  color: #141c3a;
+  color: #00072D;
 }
 
 header nav .nav-item:hover::before {
@@ -735,10 +735,10 @@ main .hero .all-platforms {
 }
 
 main .about-me {
-  background: #7510f7;
+  background: #6250C2;
   direction: rtl;
   padding: 5em 1.5em 15em 1.5em;
-  border-bottom: 2px solid rgba(20, 28, 58, 0.3);
+  border-bottom: 2px solid rgba(0, 7, 45, 0.3);
 }
 
 main .about-me .text-wrapper {
@@ -819,8 +819,8 @@ main .my-work .works-wrapper {
 main .my-work .works-wrapper.show {
   -webkit-animation: fadeIn-from-bot .75s ease-in-out forwards;
           animation: fadeIn-from-bot .75s ease-in-out forwards;
-  -webkit-box-shadow: 0 0 5px #141c3a;
-          box-shadow: 0 0 5px #141c3a;
+  -webkit-box-shadow: 0 0 5px #00072D;
+          box-shadow: 0 0 5px #00072D;
 }
 
 @media screen and (max-width: 767px) {
@@ -876,17 +876,17 @@ main .my-work .works-wrapper .work-div .tools-list li {
 
 main .my-work .works-wrapper .work-div .reg-title {
   font-size: 1.1em;
-  color: #7510f7;
+  color: #6250C2;
 }
 
 main .my-work .works-wrapper .work-div.design {
-  border-left: 2px solid rgba(20, 28, 58, 0.3);
+  border-left: 2px solid rgba(0, 7, 45, 0.3);
 }
 
 @media screen and (max-width: 767px) {
   main .my-work .works-wrapper .work-div.design {
     border-left: none;
-    border-bottom: 2px solid rgba(20, 28, 58, 0.3);
+    border-bottom: 2px solid rgba(0, 7, 45, 0.3);
   }
 }
 
@@ -1012,7 +1012,7 @@ section.testimonials .testimonials-wrapper .testimonial .profile__desc {
 }
 
 section.testimonials .testimonials-wrapper .testimonial-web-link {
-  color: #7510f7;
+  color: #6250C2;
   font-weight: 500;
   position: relative;
 }
@@ -1035,7 +1035,7 @@ section.testimonials .points {
 section.testimonials .points .point {
   width: 15px;
   height: 15px;
-  border: 2px solid #7510f7;
+  border: 2px solid #6250C2;
   border-radius: 50%;
   cursor: pointer;
   background-color: #fff;
@@ -1048,7 +1048,7 @@ section.testimonials .points .point:not(:last-child) {
 }
 
 section.testimonials .points .point.active {
-  background-color: #7510f7;
+  background-color: #6250C2;
 }
 
 main .questions-and-answers {
@@ -1147,7 +1147,7 @@ main .questions-and-answers .qaa-wrapper .qaa.open .qaa__question::before {
 }
 
 section.contact-us {
-  background-color: #7510f7;
+  background-color: #6250C2;
   direction: rtl;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1158,7 +1158,7 @@ section.contact-us {
 }
 
 section.contact-us .contact-element {
-  background-color: #141c3a;
+  background-color: #00072D;
   color: white;
   padding: 3.5em 1.25em;
   width: 75vw;
@@ -1248,7 +1248,7 @@ section.contact-us .contact-element .middle p {
 section.contact-us .contact-element .left a {
   font-size: 1.1em;
   color: white;
-  border: 1.5px solid #7510f7;
+  border: 1.5px solid #6250C2;
   padding: 1em 4em;
   border-radius: 30px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1256,7 +1256,7 @@ section.contact-us .contact-element .left a {
 }
 
 section.contact-us .contact-element .left a:hover {
-  background-color: #7510f7;
+  background-color: #6250C2;
 }
 
 @media screen and (max-width: 767px) {
@@ -1273,7 +1273,7 @@ section.contact-us .contact-element .left a:hover {
 }
 
 main.contact-page {
-  border-top: 1.5px solid rgba(20, 28, 58, 0.7);
+  border-top: 1.5px solid rgba(0, 7, 45, 0.7);
   position: relative;
   padding-bottom: 4em;
 }
@@ -1361,7 +1361,7 @@ main.contact-page .form-wrapper form .input-div input,
 main.contact-page .form-wrapper form .input-div textarea {
   width: 100%;
   outline: none;
-  border: 1px solid rgba(20, 28, 58, 0.5);
+  border: 1px solid rgba(0, 7, 45, 0.5);
   border-radius: 10px;
   padding: 0.7em 1.5em;
   font-size: 1.3em;
@@ -1384,8 +1384,8 @@ main.contact-page .form-wrapper form .input-div input[type="submit"] {
   width: 30%;
   margin: 0 auto;
   border-radius: 30px;
-  color: #7510f7;
-  border: 1.5px solid #7510f7;
+  color: #6250C2;
+  border: 1.5px solid #6250C2;
   background-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out all;
@@ -1394,7 +1394,7 @@ main.contact-page .form-wrapper form .input-div input[type="submit"] {
 
 main.contact-page .form-wrapper form .input-div input[type="submit"]:hover {
   color: white;
-  background-color: #7510f7;
+  background-color: #6250C2;
 }
 
 main.mail-sent .mail-sent-text {
@@ -1426,7 +1426,7 @@ main.mail-sent .mail-sent-text p.timer-wrapper span.if-error.show {
 
 footer {
   padding-bottom: 4rem;
-  background-color: #7510f7;
+  background-color: #6250C2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1517,7 +1517,7 @@ footer .social a .social-item i {
 
 footer .social a:hover .social-item i {
   z-index: 2;
-  color: #7510f7;
+  color: #6250C2;
 }
 
 footer .social a:hover::before {
@@ -1537,6 +1537,6 @@ footer .copyright a {
 }
 
 footer .copyright a:hover {
-  color: #141c3a;
+  color: #00072D;
 }
 /*# sourceMappingURL=style.css.map */
