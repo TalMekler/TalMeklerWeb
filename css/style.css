@@ -965,6 +965,11 @@ section.testimonials .testimonials-wrapper .testimonial {
           flex-direction: column;
   text-align: center;
   padding: 1.8em 3em 2.5em 3em;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 section.testimonials .testimonials-wrapper .testimonial .img {
