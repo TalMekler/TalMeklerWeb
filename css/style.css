@@ -1152,7 +1152,7 @@ main .questions-and-answers .qaa-wrapper .qaa.open .qaa__question::before {
 }
 
 section.contact-us {
-  background-color: #6250C2;
+  background-color: #00072D;
   direction: rtl;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1163,7 +1163,7 @@ section.contact-us {
 }
 
 section.contact-us .contact-element {
-  background-color: #00072D;
+  background-color: #6250C2;
   color: white;
   padding: 3.5em 1.25em;
   width: 75vw;
@@ -1253,7 +1253,7 @@ section.contact-us .contact-element .middle p {
 section.contact-us .contact-element .left a {
   font-size: 1.1em;
   color: white;
-  border: 1.5px solid #6250C2;
+  border: 1.5px solid #00072D;
   padding: 1em 4em;
   border-radius: 30px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1261,7 +1261,7 @@ section.contact-us .contact-element .left a {
 }
 
 section.contact-us .contact-element .left a:hover {
-  background-color: #6250C2;
+  background-color: #00072D;
 }
 
 @media screen and (max-width: 767px) {
@@ -1431,7 +1431,7 @@ main.mail-sent .mail-sent-text p.timer-wrapper span.if-error.show {
 
 footer {
   padding-bottom: 4rem;
-  background-color: #6250C2;
+  background-color: #00072D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1542,6 +1542,6 @@ footer .copyright a {
 }
 
 footer .copyright a:hover {
-  color: #00072D;
+  color: #6250C2;
 }
 /*# sourceMappingURL=style.css.map */

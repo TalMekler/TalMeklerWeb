@@ -1,6 +1,7 @@
 footer {
     padding-bottom: 4rem;
-    background-color: $purple;
+    // background-color: $purple;
+    background-color: $dark-blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +128,8 @@ footer {
             color: white;
             transition: all .3s ease-in-out;
             &:hover{
-                color: $dark-blue;
+                // color: $dark-blue;
+                color: $purple;
             }
         }
     }

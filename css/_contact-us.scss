@@ -1,11 +1,13 @@
 section.contact-us {
-    background-color: $purple;
+    // background-color: $purple;
+    background-color: $dark-blue;
     direction: rtl;
     display: flex;
     justify-content: center;
 
     .contact-element {
-        background-color: $dark-blue;
+        // background-color: $dark-blue;
+        background-color: $purple;
         color: white;
         padding: 3.5em 1.25em;
         width: 75vw;
@@ -63,12 +65,14 @@ section.contact-us {
             a {
                 font-size: 1.1em;
                 color: white;
-                border: 1.5px solid $purple;
+                // border: 1.5px solid $purple;
+                border: 1.5px solid $dark-blue;
                 padding: 1em 4em;
                 border-radius: 30px;
                 transition: all 0.3s ease-in-out;
                 &:hover {
-                    background-color: $purple;
+                    // background-color: $purple;
+                    background-color: $dark-blue;
                 }
                 @include breakpoint-less(mobile) {
                     font-size: 1em;
