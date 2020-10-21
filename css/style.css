@@ -203,7 +203,7 @@ a {
 }
 
 .clr-purple {
-  color: #6250C2;
+  color: #7510f7;
   position: relative;
 }
 
@@ -214,7 +214,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #6250C2;
+  background-color: #7510f7;
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transform: scaleX(0);
@@ -237,9 +237,9 @@ a {
 .back-to-top-btn .back-to-top {
   font-size: 3em;
   color: white;
-  border: 2px solid #6250C2;
+  border: 2px solid #7510f7;
   border-radius: 50%;
-  background-color: #6250C2;
+  background-color: #7510f7;
   cursor: pointer;
   position: fixed;
   bottom: 1em;
@@ -251,7 +251,7 @@ a {
 
 .back-to-top-btn .back-to-top:hover {
   background-color: white;
-  color: #6250C2;
+  color: #7510f7;
   border: 2px solid white;
 }
 
@@ -271,7 +271,7 @@ a {
 
 .chat-btn-for-mobile {
   font-size: 3em;
-  color: #6250C2;
+  color: #7510f7;
   cursor: pointer;
   position: fixed;
   padding: 0.1em;
@@ -298,7 +298,7 @@ a {
   direction: rtl;
   width: 330px;
   background-color: rgba(255, 255, 255, 0.75);
-  border: 2px solid #6250C2;
+  border: 2px solid #7510f7;
   position: fixed;
   bottom: 0;
   left: 1rem;
@@ -321,7 +321,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .chat.open {
-    border: 2px solid #6250C2;
+    border: 2px solid #7510f7;
     padding: 0.25em 0.5em;
   }
 }
@@ -389,7 +389,7 @@ a {
           transform: translateX(-50%) translateY(-50%);
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0;
-  border: 1px solid #6250C2;
+  border: 1px solid #7510f7;
   border-radius: 50%;
   z-index: -1;
   pointer-events: none;
@@ -441,7 +441,7 @@ a {
 }
 
 .chat .bottom-div-chat form p.input input[type="submit"] {
-  background-color: #6250C2;
+  background-color: #7510f7;
   color: #fff;
   cursor: pointer;
 }
@@ -483,16 +483,16 @@ header .logo svg {
 }
 
 header .logo svg .logo-letter {
-  fill: #6250C2;
+  fill: #7510f7;
 }
 
 header .logo svg #out-line {
   stroke-width: 3;
-  stroke: #6250C2;
+  stroke: #7510f7;
 }
 
 header * {
-  color: #6250C2;
+  color: #7510f7;
 }
 
 header nav {
@@ -522,7 +522,7 @@ header nav {
         -ms-flex-align: center;
             align-items: center;
     padding: 15vh 0 15vh 0;
-    background-color: rgba(98, 80, 194, 0.9);
+    background-color: rgba(117, 16, 247, 0.9);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     z-index: 11111;
@@ -735,7 +735,7 @@ main .hero .all-platforms {
 }
 
 main .about-me {
-  background: #6250C2;
+  background: #7510f7;
   direction: rtl;
   padding: 5em 1.5em 15em 1.5em;
   border-bottom: 2px solid rgba(0, 7, 45, 0.3);
@@ -876,7 +876,7 @@ main .my-work .works-wrapper .work-div .tools-list li {
 
 main .my-work .works-wrapper .work-div .reg-title {
   font-size: 1.1em;
-  color: #6250C2;
+  color: #7510f7;
 }
 
 main .my-work .works-wrapper .work-div.design {
@@ -1017,7 +1017,7 @@ section.testimonials .testimonials-wrapper .testimonial .profile__desc {
 }
 
 section.testimonials .testimonials-wrapper .testimonial-web-link {
-  color: #6250C2;
+  color: #7510f7;
   font-weight: 500;
   position: relative;
 }
@@ -1040,7 +1040,7 @@ section.testimonials .points {
 section.testimonials .points .point {
   width: 15px;
   height: 15px;
-  border: 2px solid #6250C2;
+  border: 2px solid #7510f7;
   border-radius: 50%;
   cursor: pointer;
   background-color: #fff;
@@ -1053,7 +1053,7 @@ section.testimonials .points .point:not(:last-child) {
 }
 
 section.testimonials .points .point.active {
-  background-color: #6250C2;
+  background-color: #7510f7;
 }
 
 main .questions-and-answers {
@@ -1163,7 +1163,7 @@ section.contact-us {
 }
 
 section.contact-us .contact-element {
-  background-color: #6250C2;
+  background-color: #7510f7;
   color: white;
   padding: 3.5em 1.25em;
   width: 75vw;
@@ -1389,8 +1389,8 @@ main.contact-page .form-wrapper form .input-div input[type="submit"] {
   width: 30%;
   margin: 0 auto;
   border-radius: 30px;
-  color: #6250C2;
-  border: 1.5px solid #6250C2;
+  color: #7510f7;
+  border: 1.5px solid #7510f7;
   background-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out all;
@@ -1399,7 +1399,7 @@ main.contact-page .form-wrapper form .input-div input[type="submit"] {
 
 main.contact-page .form-wrapper form .input-div input[type="submit"]:hover {
   color: white;
-  background-color: #6250C2;
+  background-color: #7510f7;
 }
 
 main.mail-sent .mail-sent-text {
@@ -1522,7 +1522,7 @@ footer .social a .social-item i {
 
 footer .social a:hover .social-item i {
   z-index: 2;
-  color: #6250C2;
+  color: #7510f7;
 }
 
 footer .social a:hover::before {
@@ -1542,6 +1542,6 @@ footer .copyright a {
 }
 
 footer .copyright a:hover {
-  color: #6250C2;
+  color: #7510f7;
 }
 /*# sourceMappingURL=style.css.map */
