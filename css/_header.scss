@@ -90,6 +90,9 @@ header {
         }
 
         a {
+            &:first-child{
+                margin-top: -2em;
+            }
             &:not(:first-child){
                 @include breakpoint-less(tablet){
                     margin-top: 3em;
