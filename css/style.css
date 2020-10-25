@@ -469,6 +469,10 @@ header nav .close-btn i {
   }
 }
 
+header nav a:first-child {
+  margin-top: -2em;
+}
+
 @media screen and (max-width: 1023px) {
   header nav a:not(:first-child) {
     margin-top: 3em;
