@@ -1,0 +1,82 @@
+main section.about-me{
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5.5em;
+    padding: 4em;
+    padding-top: 0;
+    padding-bottom: 8em;
+    @include breakpoint-less(tablet){
+        flex-direction: column-reverse;
+        margin-top: 3em;
+    }
+    .text-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50%;
+        opacity: 0;
+        @include breakpoint-less(tablet){
+            max-width: 100%;
+            margin-top: 2em;
+        }
+        &.show{
+            animation: fadeIn-from-bot .75s ease-in-out forwards;
+        }
+        h2{
+            font-size: 2.5em;
+            text-align: center;
+            @include breakpoint-less(tablet){
+                font-size: 2.25em;
+            }
+            @include breakpoint-less(mobile){
+                font-size: 2em;
+            }
+            span{
+                font-size: .9em;
+            }
+        }
+        p{
+            margin-top: .5em;
+            font-size: 1.3em;
+            text-align: center;
+            @include breakpoint-less(tablet){
+                font-size: 1.2em;
+            }
+            @include breakpoint-less(mobile){
+                font-size: 1.1em;
+            }
+
+            span{
+                line-height: 2em;
+                font-weight: 700;
+                letter-spacing: 2px;
+                @include breakpoint-less(tablet){
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+    .img{
+        text-align: center;
+        opacity: 0;
+        &.show{
+            animation: fadeIn-from-top .75s ease-in-out forwards;
+        }
+        img{
+            width: 350px;
+            height: 350px;
+            padding: 10px;
+            filter: drop-shadow(0 0 10px rgba($dark-blue, .5));
+
+            @include breakpoint-less(tablet){
+                width: 300px;
+                height: 300px;
+            }
+            @include breakpoint-less(mobile){
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}

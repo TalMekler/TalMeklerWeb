@@ -1,5 +1,5 @@
-const open_bar = document.querySelector('i.hamburger');
-const close_bar = document.querySelector('i.close-nav');
+const open_bar = document.querySelector('i.fa-bars');
+const close_bar = document.querySelector('.close-btn i.fa-times');
 const nav_bar = document.querySelector('nav');
 const nav_items = document.querySelectorAll('nav .nav-item');
 

@@ -1,0 +1,77 @@
+main section.contact{
+    background-color: $purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10em;
+    .contact-box{
+        background-color: $dark-blue;
+        width: 75%;
+        padding: 3.5em 1.25em;
+        direction: rtl;
+        display: flex;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0 0 20px $dark-blue;
+        @include breakpoint-less(tablet) {
+            flex-direction: column;
+            padding-top: 2em;
+        }
+        // @include breakpoint-less(mobile) {
+        //     font-size: 2em;
+        // }
+        .box-div{
+            color: #ffffff;            
+            text-align: center;
+            width: 100%;
+            a{
+                color: #ffffff;
+            }
+
+            &.right{
+                font-size: 2em;
+                font-weight: 700;
+                @include breakpoint-less(tablet) {
+                    margin-bottom: 1em;
+                    font-size: 1.75em;
+                }
+            }
+            &.center{
+                font-size: 1.1em;
+                @include breakpoint-less(tablet) {
+                    font-size: 1em;
+                    margin-bottom: 2.5em;
+                }
+                .breaker-1{
+                    display: inline-block;
+                    @include breakpoint-less(tablet) {
+                        display: none;
+                    }   
+                }
+                .breaker-2{
+                    display: none;
+                    @include breakpoint-less(tablet) {
+                        display: inline-block;
+                    }   
+                }
+            }
+            &.left{
+                a{
+                    font-size: 1.1em;
+                    padding: .8em 3.5em;
+                    border: 2.5px solid $purple;
+                    border-radius: 30px;
+                    transition: all .2s ease-in-out;
+                    @include breakpoint-less(tablet) {
+                        font-size: 1em;
+                    }
+                    &:hover{
+                        background-color: $purple;
+                    }
+                }
+            }
+        }
+    }
+}

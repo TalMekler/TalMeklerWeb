@@ -2,7 +2,13 @@ function smoothScroll(target, duration) {
     var target = document.querySelector(target);
     var targetPosition = target.offsetTop;
     var startPosition = window.scrollY;
-    var distance = targetPosition - startPosition;
+    var res = 0;
+    if (target.getAttribute('id') == 'my-work') {
+        var deg = 30 / 100;
+        var targetHeight = target.offsetHeight;
+        res = targetHeight * deg;
+    }
+    var distance = targetPosition - startPosition - res;
     var start_time = null;
 
     function animation(currentTime) {
@@ -23,18 +29,18 @@ function smoothScroll(target, duration) {
     requestAnimationFrame(animation)
 }
 
-const smooth_links = document.querySelectorAll('a.scroll');
-smooth_links.forEach((link)=>{
-    link.addEventListener('click', (e)=>{
+const smooth_links = document.querySelectorAll('header nav .scroll');
+smooth_links.forEach((link) => {
+    link.addEventListener('click', (e) => {
         e.preventDefault();
-        var href = e.target.getAttribute('href');
-        smoothScroll(href, 500)
+        var href = e.target.parentElement.getAttribute('href');
+        smoothScroll(href, 750)
     })
 })
 
 var back_to_top = document.querySelectorAll('.scroll-to-top');
-back_to_top.forEach((btn)=>{
-    btn.addEventListener('click', (e)=>{
+back_to_top.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
         e.preventDefault();
         var startPosition = window.scrollY;
         var target_pos = 0;
@@ -46,7 +52,7 @@ back_to_top.forEach((btn)=>{
             var run = ease(timeElapsed, startPosition, -distance, 250);
             window.scrollTo(0, run);
             if (timeElapsed < 250) requestAnimationFrame(animation);
-    
+
         }
         function ease(t, b, c, d) {
             t /= d / 2;
