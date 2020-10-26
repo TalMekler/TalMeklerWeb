@@ -411,6 +411,13 @@ header i.fa-bars {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header i.fa-bars {
+    font-size: 1.5em;
   }
 }
 

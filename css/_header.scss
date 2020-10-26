@@ -50,6 +50,10 @@ header {
         display: none;
         @include breakpoint-less(tablet){
             display: inline-flex;
+            font-size: 1.75em;
+        }
+        @include breakpoint-less(mobile){
+            font-size: 1.5em;
         }
     }
     nav {
