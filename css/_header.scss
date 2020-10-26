@@ -4,6 +4,12 @@ header {
     padding: 2rem 4rem;
     justify-content: space-between;
     align-items: center;
+    @include breakpoint-less(tablet){
+        padding: 1.5rem 3rem;
+    }
+    @include breakpoint-less(mobile){
+        padding: rem 2rem;
+    }
     i.fa-undo{
         color: #fff;
         font-size: 1.2em;
