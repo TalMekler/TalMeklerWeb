@@ -25,16 +25,7 @@ header {
             transition: transform .3s ease-in-out;
             &:hover{
                 transform: rotate(7.5deg);
-            }
-            .logo-letter {
-                fill: #fff;
-            }
-            #out-line {
-                stroke: #fff;
-                stroke-width: 3;
-            }
-
-            
+            }            
             @include breakpoint-less(tablet){
                 width: 110px;   
             }

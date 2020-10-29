@@ -378,15 +378,6 @@ header .logo svg:hover {
           transform: rotate(7.5deg);
 }
 
-header .logo svg .logo-letter {
-  fill: #fff;
-}
-
-header .logo svg #out-line {
-  stroke: #fff;
-  stroke-width: 3;
-}
-
 @media screen and (max-width: 1023px) {
   header .logo svg {
     width: 110px;
@@ -1522,15 +1513,6 @@ footer .logo svg {
 footer .logo svg:hover {
   -webkit-transform: rotate(7.5deg);
           transform: rotate(7.5deg);
-}
-
-footer .logo svg .logo-letter {
-  fill: white !important;
-}
-
-footer .logo svg #out-line {
-  stroke: white !important;
-  stroke-width: 3 !important;
 }
 
 footer .text {
