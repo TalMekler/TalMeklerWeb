@@ -8,7 +8,9 @@ if (window.innerWidth <= 767) {
 }
 
 window.addEventListener('scroll', toggleTrigger);
-toggleTrigger();
+setInterval(() => {
+    toggleTrigger();
+}, 100);
 
 function toggleTrigger() {
     var scroll = window.scrollY;
