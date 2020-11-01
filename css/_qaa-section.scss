@@ -10,13 +10,18 @@ main section.questions-and-answers {
         width: fit-content;
         position: relative;
         opacity: 0;
-        &.show{
-            animation: fadeIn-from-top .75s ease-in-out forwards;
+        transform: translateY(150px);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        &.trigger-on {
+            opacity: 1;
+            transform: translateY(0);
         }
         @include breakpoint-less(tablet) {
+            transform: translateY(125px);
             font-size: 2.25em;
         }
         @include breakpoint-less(mobile) {
+            transform: translateY(100px);
             font-size: 2em;
         }
     }
@@ -25,8 +30,17 @@ main section.questions-and-answers {
         width: 75%;
         margin-top: 2em;
         opacity: 0;
-        &.show{
-            animation: fadeIn-from-bot .75s ease-in-out forwards;
+        transform: translateY(150px);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        &.trigger-on {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @include breakpoint-less(tablet) {
+            transform: translateY(125px);
+        }
+        @include breakpoint-less(mobile) {
+            transform: translateY(100px);
         }
         .qaa {
             direction: rtl;
@@ -54,27 +68,27 @@ main section.questions-and-answers {
                     font-size: 1.3em;
                 }
 
-                &::before{
-                    content: '\f067';
-                    font-family: 'Font Awesome 5 Free';
+                &::before {
+                    content: "\f067";
+                    font-family: "Font Awesome 5 Free";
                     font-weight: 900;
-                    font-size: .9em;
+                    font-size: 0.9em;
                     position: absolute;
                     top: 50%;
                     left: 100%;
                     transform: translateY(-50%) translateX(100%);
                     @include breakpoint-less(tablet) {
-                        font-size: .85em;
+                        font-size: 0.85em;
                     }
                     @include breakpoint-less(mobile) {
-                        font-size: .8em;
+                        font-size: 0.8em;
                     }
                 }
             }
-            &.open{
-                .qaa__question{
-                    &::before{
-                        content: '\f068';
+            &.open {
+                .qaa__question {
+                    &::before {
+                        content: "\f068";
                     }
                 }
             }
@@ -89,7 +103,7 @@ main section.questions-and-answers {
                 @include breakpoint-less(mobile) {
                     font-size: 1.2em;
                 }
-                a{
+                a {
                     position: relative;
                     &::before {
                         content: "";

@@ -10,18 +10,25 @@ main section.contact{
         padding: 3.5em 1.25em;
         direction: rtl;
         display: flex;
-        transform: translateY(-50%);
         justify-content: space-between;
         align-items: center;
         border-radius: 20px;
         box-shadow: 0 0 20px $dark-blue;
+        opacity: 0;
+        transform: translateY(calc(-50% + 150px));
+        transition: transform .4s ease, opacity .4s ease;
+        &.trigger-on{
+            opacity: 1;
+            transform: translateY(-50%);
+        }
         @include breakpoint-less(tablet) {
             flex-direction: column;
             padding-top: 2em;
+            transform: translateY(calc(-50% + 125px));
         }
-        // @include breakpoint-less(mobile) {
-        //     font-size: 2em;
-        // }
+        @include breakpoint-less(mobile) {
+            transform: translateY(calc(-50% + 100px));
+        }
         .box-div{
             color: #ffffff;            
             text-align: center;

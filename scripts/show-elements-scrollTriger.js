@@ -1,39 +1,32 @@
-//JS
-var desktop = checkDesktop();
-function checkDesktop() {
-    return (window.innerWidth > 1023);
+const trigger_blocks = document.querySelectorAll('.trigger');
+var trigger_distance = 150; // px in page
+if (window.innerWidth <= 1023){
+    trigger_distance = 125;
+} 
+if (window.innerWidth <= 767) {
+    trigger_distance = 100;
 }
-setInterval(() => {
-    desktop = checkDesktop();
-}, 100)
-var sections = document.querySelectorAll("main section.trigger");
-var section_children, show_timing = 10, window_scroll, child;
 
-window.addEventListener('scroll', () => {
-    if (desktop) {
-        window_scroll = window.scrollY;
-        sections.forEach((section) => {
-            section_children = section.children;
-            for (var i = 0; i < parseInt(section_children.length); i++) {
-                child = section_children[i];
-                section_children_pos = child.offsetTop - window_scroll;
-                if (section_children_pos <= window.innerHeight - (window.innerHeight / show_timing)) {
-                    child.classList.add("show");
-                }
-                // else if (section_children_pos > window.innerHeight) {
-                //     child.classList.remove("show");
-                // }
-            }
-        })
-    } else {
-        sections.forEach((section) => {
-            section_children = section.children;
-            for (var i = 0; i < parseInt(section_children.length); i++) {
-                child = section_children[i];
-                child.classList.add('show');
-            }
-        })
-    }
-})
+window.addEventListener('scroll', toggleTrigger);
+toggleTrigger();
 
+function toggleTrigger() {
+    var scroll = window.scrollY;
+    trigger_blocks.forEach((block) => {
+        var block_translateY = 0;
+        if (hasClass(block, 'hty')){
+            block_translateY = block.offsetHeight * (block.getAttribute('data-translateY-deg') / 100);
+            console.log("toggleTrigger -> block_translateY", block_translateY)
+        }
+        var offset_top = block.offsetTop - block_translateY;
+        if (offset_top <= scroll + window.innerHeight - trigger_distance) {
+            block.classList.add('trigger-on');
+        } else {
+            block.classList.remove('trigger-on');
+        }
+    })
+}
 
+function hasClass(element, className) {
+    return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
+}

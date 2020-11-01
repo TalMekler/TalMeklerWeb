@@ -9,13 +9,18 @@ main section.testimonials {
     h2 {
         font-size: 2.5em;
         opacity: 0;
-        &.show {
-            animation: fadeIn-from-bot 0.75s forwards;
+        transform: translateY(150px);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        &.trigger-on {
+            opacity: 1;
+            transform: translateY(0);
         }
         @include breakpoint-less(tablet) {
+            transform: translateY(125px);
             font-size: 2.25em;
         }
         @include breakpoint-less(mobile) {
+            transform: translateY(100px);
             font-size: 2em;
         }
     }
@@ -27,14 +32,19 @@ main section.testimonials {
         flex-direction: column;
         align-items: center;
         opacity: 0;
-        &.show {
-            animation: fadeIn-from-bot 0.75s forwards;
+        transform: translateY(150px);
+        transition: transform .4s ease, opacity .4s ease;
+        &.trigger-on {
+            opacity: 1;
+            transform: translateY(0);
         }
         @include breakpoint-less(tablet) {
+            transform: translateY(125px);
             margin-top: 3em;
             width: 55vw;
         }
         @include breakpoint-less(mobile) {
+            transform: translateY(100px);
             margin-top: 2em;
             width: 70vw;
         }
@@ -66,11 +76,11 @@ main section.testimonials {
                     line-height: 2em;
                     position: relative;
                     @include breakpoint-less(tablet) {
-                        margin-top: .75em;
+                        margin-top: 0.75em;
                         font-size: 1.15em;
                     }
                     @include breakpoint-less(mobile) {
-                        margin-top: .5em;
+                        margin-top: 0.5em;
                         font-size: 1.1em;
                     }
 
