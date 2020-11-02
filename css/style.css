@@ -823,7 +823,7 @@ main section.about-me .img.trigger-on {
 main section.about-me .img img {
   width: 350px;
   height: 350px;
-  padding: 10px;
+  padding: 20px;
   -webkit-filter: drop-shadow(0 0 10px rgba(0, 7, 45, 0.5));
           filter: drop-shadow(0 0 10px rgba(0, 7, 45, 0.5));
 }
