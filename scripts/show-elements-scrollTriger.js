@@ -18,7 +18,6 @@ function toggleTrigger() {
         var block_translateY = 0;
         if (hasClass(block, 'hty')){
             block_translateY = block.offsetHeight * (block.getAttribute('data-translateY-deg') / 100);
-            console.log("toggleTrigger -> block_translateY", block_translateY)
         }
         var offset_top = block.offsetTop - block_translateY;
         if (offset_top <= scroll + window.innerHeight - trigger_distance) {
