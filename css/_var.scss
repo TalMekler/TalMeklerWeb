@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
 // Fonts
 $poppins: "Poppins", sans-serif;
@@ -9,7 +9,7 @@ $rubik: "Rubik", sans-serif;
 $purple: #7510f7;
 // $purple: #6250C2;
 // $dark-blue: #141c3a;
-$dark-blue: #00072D;
+$dark-blue: #00072d;
 
 // Breakpoints
 $breakpoints: (
@@ -33,101 +33,119 @@ $breakpoints: (
 }
 
 // Keyframes
-@keyframes fadeIn-from-top{
-    0%{
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn-from-top {
+    0% {
         opacity: 0;
         transform: translateY(-50%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes fadeIn-from-top-X-50deg{
-    0%{
+@keyframes fadeIn-from-top-BText {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+@keyframes fadeIn-from-top-X-50deg {
+    0% {
         opacity: 0;
         transform: translateY(-50%) translateX(-50%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0) translateX(-50%);
     }
 }
-@keyframes fadeIn-from-top-X-50deg-backTextElement{
-    0%{
+@keyframes fadeIn-from-top-X-50deg-backTextElement {
+    0% {
         opacity: 0;
         transform: translateY(-150%) translateX(-50%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(-50%) translateX(-50%);
     }
 }
-@keyframes fadeIn-from-top-avatar{
-    0%{
+@keyframes fadeIn-from-top-avatar {
+    0% {
         opacity: 0;
         transform: translate(-50%, -65%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(-50%, -50%);
     }
 }
-@keyframes fadeIn-from-top-Ycontroll{
-    0%{
+@keyframes fadeIn-from-top-Ycontroll {
+    0% {
         opacity: 0;
         transform: translateY(-65%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(-50%);
     }
 }
-@keyframes fadeIn-from-bot{
-    0%{
+@keyframes fadeIn-from-bot {
+    0% {
         opacity: 0;
         transform: translateY(15%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@keyframes fadeIn-from-bot-Ycontroll{
-    0%{
+@keyframes fadeIn-from-bot-Ycontroll {
+    0% {
         opacity: 0;
         transform: translateY(-15%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(-30%);
     }
 }
-@keyframes fadeIn-from-bot-Ycontroll-50deg{
-    0%{
+@keyframes fadeIn-from-bot-Ycontroll-50deg {
+    0% {
         opacity: 0;
         transform: translateY(-35%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(-50%);
     }
 }
-@keyframes fadeIn-from-bot-Xcontroll{
-    0%{
+@keyframes fadeIn-from-bot-Xcontroll {
+    0% {
         opacity: 0;
         transform: translateY(15%) translateX(-50%);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0) translateX(-50%);
     }
 }
-@keyframes back-btn-rotate{
-    from{
+@keyframes back-btn-rotate {
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(-360deg);
     }
 }
