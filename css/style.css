@@ -1884,7 +1884,7 @@ main.contact-page .form-wrapper form .input-div textarea {
 }
 
 main.contact-page .form-wrapper form .input-div input[type="submit"] {
-  width: 30%;
+  min-width: 30%;
   margin: 0 auto;
   border-radius: 30px;
   color: #7510f7;
