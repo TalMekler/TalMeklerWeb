@@ -1,6 +1,9 @@
 main section.hero-section {
     background-color: $purple;
     position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     @include breakpoint-less(mobile) {
         display: flex;
         flex-direction: column;
@@ -13,7 +16,7 @@ main section.hero-section {
         flex-direction: column;
         align-items: center;
         @include breakpoint-less(mobile) {
-            transform: translateY(-50%);
+            // transform: translateY(-50%);
         }
         h1 {
             color: #fff;

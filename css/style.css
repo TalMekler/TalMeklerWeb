@@ -612,13 +612,6 @@ main section.hero-section .hero__text {
           align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  main section.hero-section .hero__text {
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
-
 main section.hero-section .hero__text h1 {
   color: #fff;
   font-size: 3em;
