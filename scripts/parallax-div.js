@@ -28,6 +28,9 @@ function setDataStartTranslateY(div) {
     var matrix_length = matrix.length;
     matrix = matrix[matrix_length - 1];
     var starting_translateY_position = matrix.split(')')[0];
+    if (starting_translateY_position == 'none'){
+        starting_translateY_position = 0;
+    }
     div.setAttribute('start-translateY', starting_translateY_position);
 }
 
