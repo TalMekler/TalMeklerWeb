@@ -10,8 +10,6 @@ window.addEventListener('scroll', () => {
         if (window.scrollY >= div_top) {
             var start_translateY = getStartingTranslateY(div);
             var div_translate_y = (-((window.scrollY - div_top) * 0.5) + start_translateY);
-            // var div_translate_y = (-((window.scrollY - div_top) * 0.5));
-            console.log("div_translate_y", div_translate_y)
             div.style.transform = `translateY(${div_translate_y}px)`;
         }
     })

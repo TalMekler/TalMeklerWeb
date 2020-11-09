@@ -730,7 +730,8 @@ main section.hero-section .platforms-wrapper {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 0;
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
   -webkit-animation: fadeIn-from-bot-Xcontroll 0.75s ease-in-out forwards;
           animation: fadeIn-from-bot-Xcontroll 0.75s ease-in-out forwards;
 }

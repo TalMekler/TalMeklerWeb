@@ -1,9 +1,6 @@
 main section.hero-section {
     background-color: $purple;
     position: relative;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     @include breakpoint-less(mobile) {
         display: flex;
         flex-direction: column;
@@ -91,13 +88,13 @@ main section.hero-section {
 
     .platforms-wrapper {
         position: absolute;
-        // width: 50%;
         width: clamp(300px, 50%, 80vw);
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
         animation: fadeIn-from-bot-Xcontroll 0.75s ease-in-out forwards;
 
         .platforms {
