@@ -27,7 +27,20 @@
     <script data-ad-client="ca-pub-3090339093552509" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
-<body>
+<body class="load">
+    <div class="loader">
+        <div class="loader-icons">
+            <div class="loader-icon"></div>
+            <div class="loader-icon"></div>
+            <div class="loader-icon"></div>
+        </div>
+        <div class="progress-wrapper">
+            <div class="progress-bar">
+                <div class="progress-bar-show"></div>
+            </div>
+            <p class="percent">2%</p>
+        </div>
+    </div>
     <div id="top"></div>
     <a href="#header" class="back-to-top-btn scroll-to-top">
         <i class="fas fa-chevron-circle-up back-to-top"></i>
@@ -484,6 +497,7 @@
 </body>
 <!-- Scripts -->
 
+<script src="scripts/loader.js"></script>
 <script src="scripts/fix-back-text__heroSection.js"></script>
 <script src="scripts/fix-hero-section.js"></script>
 <script src="scripts/qaa-controller.js"></script>

@@ -8,6 +8,9 @@
 }
 body {
     overflow-x: hidden;
+    &.load{
+        overflow: hidden;
+    }
 }
 // section{
 //     overflow: hidden;

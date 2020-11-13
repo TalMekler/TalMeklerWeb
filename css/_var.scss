@@ -149,3 +149,9 @@ $breakpoints: (
         transform: rotate(-360deg);
     }
 }
+
+@keyframes loader{
+    50%{
+        height: 64px;
+    }
+}
