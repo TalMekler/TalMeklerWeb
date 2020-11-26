@@ -9,7 +9,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    background: rgba(#000000, .85);
+    background: rgba(#000000, .9);
     z-index: 111111111111111111111;
     backdrop-filter: blur(7.5px);
 
@@ -21,6 +21,16 @@
         box-shadow: 0 0 10px #ffffff;
         z-index: 1100;
         padding: 4.5rem;
+        max-width: 100vw;
+
+        @include breakpoint-less(tablet){
+            padding: 4.5rem 3rem;
+        }
+        @include breakpoint-less(mobile){
+            padding: 4.5rem 1.5rem;
+            width: 100vw;
+
+        }
 
         .logo-vector-only{
             width: 100%;
@@ -42,6 +52,13 @@
             font-size: 2.5rem;
             cursor: pointer;
 
+            @include breakpoint-less(tablet){
+                font-size: 2.25rem;
+            }
+            @include breakpoint-less(mobile){
+                font-size: 2rem;
+            }
+
             &:hover{
                 color: rgba($color: #fff, $alpha: .5)
             }
@@ -62,10 +79,24 @@
             h2{
                 font-size: 2.5rem;
                 margin-bottom: 2rem;
+
+                @include breakpoint-less(tablet){
+                    font-size: 2.25rem;
+                }
+                @include breakpoint-less(mobile){
+                    font-size: 2rem;
+                }
             }
             p{
                 font-size: 1.75rem;
                 margin-bottom: 2rem;
+
+                @include breakpoint-less(tablet){
+                    font-size: 1.625rem;
+                }
+                @include breakpoint-less(mobile){
+                    font-size: 1.5rem;
+                }
             }
             a{
                 font-size: 1.5rem;
@@ -76,6 +107,15 @@
                 border: 3px solid transparent;
                 transition: .25s ease;
                 z-index: 2;
+
+                @include breakpoint-less(tablet){
+                    font-size: 1.425rem;
+                    padding: .5rem 3.5rem;
+                }
+                @include breakpoint-less(mobile){
+                    font-size: 1.3rem;
+                    padding: .5rem 3.5rem;
+                }
 
                 &:hover{
                     border: 3px solid $purple;

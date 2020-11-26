@@ -511,7 +511,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 111111111111111111111;
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
@@ -524,6 +524,20 @@ a {
           box-shadow: 0 0 10px #ffffff;
   z-index: 1100;
   padding: 4.5rem;
+  max-width: 100vw;
+}
+
+@media screen and (max-width: 1023px) {
+  #popup-wrapper .popup-box {
+    padding: 4.5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #popup-wrapper .popup-box {
+    padding: 4.5rem 1.5rem;
+    width: 100vw;
+  }
 }
 
 #popup-wrapper .popup-box .logo-vector-only {
@@ -546,6 +560,18 @@ a {
   color: white;
   font-size: 2.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  #popup-wrapper .popup-box .close-popup {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #popup-wrapper .popup-box .close-popup {
+    font-size: 2rem;
+  }
 }
 
 #popup-wrapper .popup-box .close-popup:hover {
@@ -581,9 +607,33 @@ a {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1023px) {
+  #popup-wrapper .popup-box .content h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #popup-wrapper .popup-box .content h2 {
+    font-size: 2rem;
+  }
+}
+
 #popup-wrapper .popup-box .content p {
   font-size: 1.75rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+  #popup-wrapper .popup-box .content p {
+    font-size: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #popup-wrapper .popup-box .content p {
+    font-size: 1.5rem;
+  }
 }
 
 #popup-wrapper .popup-box .content a {
@@ -596,6 +646,20 @@ a {
   -webkit-transition: .25s ease;
   transition: .25s ease;
   z-index: 2;
+}
+
+@media screen and (max-width: 1023px) {
+  #popup-wrapper .popup-box .content a {
+    font-size: 1.425rem;
+    padding: .5rem 3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #popup-wrapper .popup-box .content a {
+    font-size: 1.3rem;
+    padding: .5rem 3.5rem;
+  }
 }
 
 #popup-wrapper .popup-box .content a:hover {
