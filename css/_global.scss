@@ -11,6 +11,9 @@ body {
     &.load{
         overflow: hidden;
     }
+    &.popup-open{
+        overflow: hidden;
+    }
 }
 // section{
 //     overflow: hidden;

@@ -1,0 +1,87 @@
+#popup-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(#000000, .85);
+    z-index: 111111111111111111111;
+    backdrop-filter: blur(7.5px);
+
+    .popup-box{
+        position: relative;
+        background: #00072D;
+        // width: 50%;
+        // height: 50%;
+        box-shadow: 0 0 10px #ffffff;
+        z-index: 1100;
+        padding: 4.5rem;
+
+        .logo-vector-only{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: .1;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .close-popup{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+
+            &:hover{
+                color: rgba($color: #fff, $alpha: .5)
+            }
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            z-index: 2;
+            h2, p, a, strong{
+                direction: rtl;
+                color: #fff;
+                text-align: center;
+            }
+            h2{
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 1.75rem;
+                margin-bottom: 2rem;
+            }
+            a{
+                font-size: 1.5rem;
+                font-weight: 500;
+                background-color: $purple;
+                padding: .75rem 5rem;
+                border-radius: 30px;
+                border: 3px solid transparent;
+                transition: .25s ease;
+                z-index: 2;
+
+                &:hover{
+                    border: 3px solid $purple;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
