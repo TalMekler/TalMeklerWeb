@@ -517,6 +517,14 @@ a {
           backdrop-filter: blur(7.5px);
 }
 
+#popup-wrapper *::-moz-selection {
+  background: transparent;
+}
+
+#popup-wrapper *::selection {
+  background: transparent;
+}
+
 #popup-wrapper .close-bg {
   position: absolute;
   top: 0;
@@ -531,7 +539,7 @@ a {
 
 #popup-wrapper .popup-box {
   position: relative;
-  background: #00072D;
+  background: #00072d;
   -webkit-box-shadow: 0 0 15px #ffffff;
           box-shadow: 0 0 15px #ffffff;
   z-index: 1100;
@@ -560,7 +568,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .1;
+  opacity: 0.1;
   z-index: 1;
   pointer-events: none;
 }
@@ -608,7 +616,10 @@ a {
   z-index: 2;
 }
 
-#popup-wrapper .popup-box .content h2, #popup-wrapper .popup-box .content p, #popup-wrapper .popup-box .content a, #popup-wrapper .popup-box .content strong {
+#popup-wrapper .popup-box .content h2,
+#popup-wrapper .popup-box .content p,
+#popup-wrapper .popup-box .content a,
+#popup-wrapper .popup-box .content strong {
   direction: rtl;
   color: #fff;
   text-align: center;
@@ -652,25 +663,25 @@ a {
   font-size: 1.5rem;
   font-weight: 500;
   background-color: #7510f7;
-  padding: .75rem 5rem;
+  padding: 0.75rem 5rem;
   border-radius: 30px;
   border: 3px solid transparent;
-  -webkit-transition: .25s ease;
-  transition: .25s ease;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
   z-index: 2;
 }
 
 @media screen and (max-width: 1023px) {
   #popup-wrapper .popup-box .content a {
     font-size: 1.425rem;
-    padding: .5rem 3.5rem;
+    padding: 0.5rem 3.5rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   #popup-wrapper .popup-box .content a {
     font-size: 1.3rem;
-    padding: .5rem 3.5rem;
+    padding: 0.5rem 3.5rem;
   }
 }
 
