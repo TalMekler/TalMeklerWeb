@@ -10,8 +10,20 @@
     align-items: center;
     justify-content: center;
     background: rgba(#000, .8);
-    z-index: 111111111111111111111;
+    z-index: 111;
     backdrop-filter: blur(7.5px);
+
+    .close-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
 
     .popup-box{
         position: relative;
