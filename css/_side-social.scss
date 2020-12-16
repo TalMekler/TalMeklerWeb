@@ -18,6 +18,7 @@
     }
 
     a {
+        position: relative;
         &:not(:first-child) {
             margin-top: 1rem;
         }
@@ -30,6 +31,26 @@
         i {
             font-size: 1.75rem;
             color: $purple;
+        }
+        .desc{
+            background-color: #fff;
+            position: absolute;
+            right: calc(100% + .75rem);
+            top: 50%;
+            pointer-events: none;
+            direction: rtl;
+            width: 150px;
+            border-radius: 10px;
+            padding: .25rem;
+            transform: translateY(-50%) translateX(50%);
+            opacity: 0;
+            transition: all .25s ease;
+
+            &.active{
+                transform: translateY(-50%);
+                opacity: 1;
+            }
+
         }
     }
 }
