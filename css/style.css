@@ -743,7 +743,7 @@ a {
 .side-social a .desc {
   background-color: #fff;
   position: absolute;
-  right: calc(100% + .75rem);
+  right: calc(100% + .65rem);
   top: 50%;
   pointer-events: none;
   direction: rtl;
@@ -753,7 +753,6 @@ a {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: .25rem;
-  padding-right: .35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
