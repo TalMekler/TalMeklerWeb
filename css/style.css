@@ -748,7 +748,8 @@ a {
   pointer-events: none;
   direction: rtl;
   width: 150px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding: .25rem;
   -webkit-transform: translateY(-50%) translateX(50%);
           transform: translateY(-50%) translateX(50%);
