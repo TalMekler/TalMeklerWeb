@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @-webkit-keyframes blink {
@@ -363,7 +364,7 @@ a {
   position: fixed;
   bottom: 1em;
   right: 1em;
-  z-index: 111111;
+  z-index: 110ס;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
