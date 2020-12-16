@@ -742,6 +742,7 @@ a {
 
 .side-social a .desc {
   background-color: #fff;
+  border: 1.5px solid #7510f7;
   position: absolute;
   right: calc(100% + .65rem);
   top: 50%;
