@@ -110,8 +110,7 @@ header {
                     font-weight: 500;
                     letter-spacing: 1.5px;
                 }
-                
-
+            
                 &::before {
                     content: "";
                     width: 100%;
@@ -126,12 +125,24 @@ header {
                     transition: all 0.3s ease-in-out;
                 }
             }
+            .special-nav-item{
+                border: 2px solid #fff;
+                border-radius: 30px;
+                padding: .5rem 1.25rem;
+            }
 
             &:hover {
                 .nav-item {
                     color: $dark-blue;
                     &::before {
                         transform: scaleX(1);
+                    }
+                }
+                .special-nav-item {
+                    // color: $purple;
+                    background-color: #fff;
+                    &::before {
+                        transform: scaleX(0);
                     }
                 }
             }
