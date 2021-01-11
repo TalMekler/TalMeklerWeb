@@ -12,6 +12,10 @@ main section.my-work {
         background-color: #f1f6f9;
         clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
         z-index: -1;
+
+        @include breakpoint-less(tablet){
+            clip-path: polygon(0 12.5%, 100% 0, 100% 100%, 0 100%);
+        }
     }
     .works-wrapper {
         direction: rtl;
