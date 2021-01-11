@@ -714,6 +714,7 @@ a {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   padding: 0.75rem;
+  border: 2px solid #7510f7;
 }
 
 @media screen and (max-width: 1023px) {

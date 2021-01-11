@@ -12,6 +12,7 @@
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     padding: 0.75rem;
+    border: 2px solid $purple;
 
     @include breakpoint-less(tablet) {
         display: none;
