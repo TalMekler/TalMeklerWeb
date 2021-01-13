@@ -337,6 +337,7 @@ section.about-me .text-wrapper p span {
 section.about-me .img {
     width: 350px;
     overflow: visible;
+    padding: 10px;
 }
 
 section.about-me .img img {
