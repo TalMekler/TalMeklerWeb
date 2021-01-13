@@ -906,7 +906,6 @@ body.contact-page-body footer {
         top: 2rem;
         left: 0;
         width: 400px;
-        /* filter: invert(1); */
         display: flex;
         justify-content: center;
         transition: 0;
@@ -1099,7 +1098,7 @@ body.contact-page-body footer {
         width: 110px;
     }
     header .logo.open {
-        width: 300px;
+        width: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
