@@ -23,9 +23,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicons/favicon-16x16.png">
     <link rel="manifest" href="imgs/favicons/site.webmanifest">
+    <script src="https://kit.fontawesome.com/3744ced7eb.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="contact-page-body">
     <header>
         <div class="logo">
             <a href="/">
@@ -69,9 +70,11 @@
                 </svg>
             </a>
         </div>
-        <a href="/">
-            <i class="fas fa-undo"></i>
-        </a>
+        <nav>
+            <a href="/" class="scroll scroll-to-top">
+                <div class="nav-item">בית</div>
+            </a>
+        </nav>
     </header>
     <main class="contact-page">
         <div class="form-wrapper">
@@ -80,22 +83,22 @@
             </h2>
             <form action="/" method="post" netlify>
                 <div class="input-div" data-attr="שם מלא">
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" placeholder=" " autocomplete="off" required>
                 </div>
                 <div class="input-div" data-attr="אימייל">
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" placeholder=" " autocomplete="off" required>
                 </div>
                 <div class="input-div" data-attr="טלפון">
-                    <input type="tel" name="phone" required>
+                    <input type="tel" name="phone" placeholder=" " autocomplete="off" required>
                 </div>
                 <div class="input-div" data-attr="סוג האתר">
-                    <input type="text" name="what-page">
+                    <input type="text" name="what-page" placeholder=" " autocomplete="off">
                 </div>
-                <div class="input-div span-2" data-attr="הודעה">
-                    <textarea name="msg" id="msg"></textarea>
+                <div class="input-div textarea span-2" data-attr="הודעה">
+                    <textarea name="msg" id="msg" placeholder=" " autocomplete="off"></textarea>
                 </div>
                 <div class="input-div span-2">
-                    <input type="submit" value="שליחה">
+                    <input type="submit" value="שליחה" placeholder=" ">
                 </div>
             </form>
         </div>
@@ -183,7 +186,8 @@
 
 </body>
 <!-- Scripts -->
-<script src="scripts/qaa-controller.js"></script>
-<script src="scripts/fontawesome.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="/scripts/fontawesome.js"></script>
+<script src="/scripts/contact-page-app.js"></script>
 
 </html>

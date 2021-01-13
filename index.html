@@ -17,43 +17,17 @@
     <meta property="og:image:alt" content="בניית אתרים לעסקים קטנים | Tal Mekler Developer" />
     <meta property="og:url" content="https://www.tal-mekler.com">
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- Fav icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicons/favicon-16x16.png">
     <link rel="manifest" href="imgs/favicons/site.webmanifest">
+
+    <script src="https://kit.fontawesome.com/3744ced7eb.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="load">
-    <div class="loader">
-        <div class="loader-icons">
-            <div class="loader-icon"></div>
-            <div class="loader-icon"></div>
-            <div class="loader-icon"></div>
-        </div>
-        <div class="progress-wrapper">
-            <div class="progress-bar">
-                <div class="progress-bar-show"></div>
-            </div>
-            <p class="percent">0%</p>
-        </div>
-    </div>
-    <div id="popup-wrapper">
-        <div class="close-bg"></div>
-        <div class="popup-box">
-            <img src="/imgs/logo-vector-only.svg" alt="Tal Mekler Developer">
-            <i class="far fa-times-circle close-popup"></i>
-            <div class="content">
-                <h2>עדיין אין לכם אתר אינטרנט לעסק?</h2>
-                <p>
-                    לחצו על הכפתור למטה <br>
-                    <strong>ונתחיל לבנות לכם אחד</strong>
-                </p>
-                <a href="/contact-page">לחצו כאן</a>
-            </div>
-        </div>
-    </div>
+<body class="index-page">
     <div class="side-social">
         <a href="https://www.facebook.com/talmeklerdeveloper" target="_blank" class="social-item">
             <i class="fab fa-facebook-f"></i>
@@ -77,14 +51,9 @@
             <p class="desc">שליחת הודעה דרך האתר</p>
         </a>
     </div>
-    <div id="top"></div>
-    <a href="#header" class="back-to-top-btn scroll-to-top">
-        <i class="fas fa-chevron-circle-up back-to-top"></i>
-    </a>
-
     <header id="header">
         <div class="logo">
-            <a href="#header" class="scroll-to-top">
+            <a href="#" class="scroll-to-top">
                 <svg width="247" height="163" viewBox="0 0 247 163" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="logo">
                         <g id="vector" filter="url(#filter0_d)">
@@ -127,9 +96,9 @@
         </div>
         <nav>
             <div class="close-btn">
-                <i class="fas fa-times"></i>
+                <i class="fas fa-times" id="close-bar-btn"></i>
             </div>
-            <a href="#top" class="scroll">
+            <a href="#" class="scroll scroll-to-top">
                 <div class="nav-item">בית</div>
             </a>
             <a href="#about-me" class="scroll">
@@ -145,22 +114,21 @@
                 <div class="nav-item">שאלות ותשובות</div>
             </a>
             <a href="/contact-page">
-                <div class="nav-item special-nav-item">צרו קשר</div>
+                <div class=" nav-item special-nav-item">צרו קשר</div>
             </a>
         </nav>
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" id="open-bar-btn"></i>
     </header>
     <main>
         <section id="hero" class="hero-section trigger">
-            <div class="hero__text parallax-div">
+            <div class="hero__text trigger-top">
                 <h1>מתכנת ומעצב אתרים</h1>
-                <h1 class="back-text">מתכנת ומעצב אתרים</h1>
-                <p class="sub-title">
+                <p class="sub-title trigger-top">
                     אני מתכנת ומעצב אתרים יפים בפשטותם <br class="breaker">ואני אוהב מה שאני עושה.
                 </p>
-                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-down trigger-top"></i>
             </div>
-            <div class="platforms-wrapper">
+            <div class="platforms-wrapper trigger-bottom">
                 <svg class="platforms" width="853" height="246" viewBox="0 0 853 246" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -238,12 +206,11 @@
                         fill="#7510F7" />
                 </svg>
             </div>
-
         </section>
 
-        <section id="about-me" class="about-me">
-            <div class="text-wrapper trigger">
-                <h2>
+        <section id="about-me" class="about-me pd5r pad-rl">
+            <div class="text-wrapper trigger-right">
+                <h2 class="ta-center">
                     היי, אני טל,<br>
                     <span>נעים להכיר.</span>
                 </h2>
@@ -255,14 +222,14 @@
                     <span>אשמח להיות המתכנת של אתר האינטרנט הבא שלכם!</span>
                 </p>
             </div>
-            <div class="img trigger"><img src="imgs/me.png" alt="Tal Mekler Developer"></div>
+            <div class="img trigger-left"><img src="imgs/me.png" alt="Tal Mekler Developer"></div>
         </section>
 
-        <section id="my-work" class="my-work">
+        <section id="my-work" class="my-work pd5r">
             <div class="bg"></div>
-            <div class="works-wrapper trigger hty" data-translateY-deg="30">
+            <div class="works-wrapper trigger-bottom hty" data-translateY-deg="30">
                 <div class="work">
-                    <div class="logo"><svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                    <div class="logo mb1"><svg width="70" height="70" viewBox="0 0 70 70" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="paint-palette 1">
                                 <g id="Group">
@@ -285,18 +252,18 @@
                             </g>
                         </svg>
                     </div>
-                    <h3 class="title">עיצוב</h3>
-                    <p class="sub-title">אני מעריך את פשטות התוכן והמבנה ומשתמש בדפוסי עיצוב נקיים ובאינטראקציות
+                    <h3 class="title ta-center">עיצוב</h3>
+                    <p class="sub-title mb1 ta-center">אני מעריך את פשטות התוכן והמבנה ומשתמש בדפוסי עיצוב נקיים ובאינטראקציות
                         מתחשבות.</p>
-                    <p class="t1 clr-purple">דברים שאני אוהב לעצב</p>
-                    <p class="desc">אתרי אינטרנט מותאמים לדסקטופ ומובייל</p>
-                    <p class="t2 clr-purple">כלי עיצוב</p>
+                    <p class="t1 clr-purple bold500 ta-center">דברים שאני אוהב לעצב</p>
+                    <p class="desc mb1 ta-center">אתרי אינטרנט מותאמים לדסקטופ ומובייל</p>
+                    <p class="t2 clr-purple bold500 ta-center">כלי עיצוב</p>
                     <ul>
                         <li>Figma</li>
                     </ul>
                 </div>
                 <div class="work">
-                    <div class="logo"><svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                    <div class="logo mb1"><svg width="70" height="70" viewBox="0 0 70 70" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="web-design 1">
                                 <g id="Expand">
@@ -361,11 +328,11 @@
                             </g>
                         </svg>
                     </div>
-                    <h3 class="title">תכנות</h3>
-                    <p class="sub-title">אני אוהב לתכנת מ-0, להפוך את הרעיון למציאות בדפדפן.</p>
-                    <p class="t1 clr-purple">שפות שאני דובר</p>
-                    <p class="desc">HTML, CSS, Sass, JavaScript</p>
-                    <p class="t2 clr-purple">כלי תכנות</p>
+                    <h3 class="title ta-center">תכנות</h3>
+                    <p class="sub-title mb1 ta-center">אני אוהב לתכנת מ-0, להפוך את הרעיון למציאות בדפדפן.</p>
+                    <p class="t1 clr-purple bold500 ta-center">שפות שאני דובר</p>
+                    <p class="desc mb1 ta-center">HTML, CSS, Sass, JavaScript</p>
+                    <p class="t2 clr-purple bold500 ta-center">כלי תכנות</p>
                     <ul>
                         <li>GitHub</li>
                         <li>VS Code</li>
@@ -374,13 +341,15 @@
             </div>
         </section>
 
-        <section id="testimonials" class="testimonials">
-            <h2 class="trigger">המלצות</h2>
-            <div class="testimonials-view trigger">
+        <section id="testimonials" class="testimonials pd5r pad-rl">
+            <div class="bg"></div>
+            <div class="bg2"></div>
+            <h2 class="trigger-top ta-center">המלצות</h2>
+            <div class="testimonials-view trigger-bottom">
                 <div class="testimonials-wrapper">
                     <div class="testimonial" data-bg="imgs/testimonials/testimonial-1-bg.png">
                         <img src="imgs/testimonials/testimonial-1.jpeg" alt="Tal Mekler Developer Testimonial 1">
-                        <p class="testimonial-text">
+                        <p class="testimonial-text ta-center">
                             טל הוא מעצב ובונה אתרים מוכשר. חשוב יותר הוא היכולת שלו לעבוד יחד על פרויקט. הוא מקשיב ומבין
                             את הצרכים האישיים שלך. אני ממליץ לכל עסק לעבוד עם טל.
                         </p>
@@ -402,18 +371,18 @@
         </section>
 
         <section id="questions-and-answers" class="questions-and-answers">
-            <h2 class="trigger">שאלות ותשובות</h2>
+            <h2 class="trigger-top ta-center">שאלות ותשובות</h2>
             <div class="qaa-wrapper trigger">
-                <div class="qaa">
+                <div class="qaa trigger-right reveal-interval-on">
                     <div class="qaa__question">
                         אז... איך מתחילים?
                     </div>
-                    <div class="qaa__answer">
+                    <div class="qaa__answer hide">
                         פשוט מאוד! כדי להתחיל את התהליך הדבר היחיד שצריך לעשות הוא ליצור קשר ולהיות זמינים לשיחה ואז כבר
                         אדריך אתכם בשלבים.
                     </div>
                 </div>
-                <div class="qaa">
+                <div class="qaa trigger-right reveal-interval-on">
                     <div class="qaa__question">
                         מה המחיר לאתר?
                     </div>
@@ -422,7 +391,7 @@
                         שתקבלו יהיה מחיר הוגן תוך הבנה שאתם בעלי עסק קטן ועצמאיים.
                     </div>
                 </div>
-                <div class="qaa">
+                <div class="qaa trigger-right reveal-interval-on">
                     <div class="qaa__question">
                         איך משתמשים באחריות?
                     </div>
@@ -431,7 +400,7 @@
                         שיפוצים קטנים.
                     </div>
                 </div>
-                <div class="qaa">
+                <div class="qaa trigger-right reveal-interval-on">
                     <div class="qaa__question">
                         יש לי עוד שאלות, מה לעשות?
                     </div>
@@ -443,7 +412,7 @@
         </section>
 
         <section id="contact" class="contact">
-            <div class="contact-box trigger hty" data-translateY-deg="50">
+            <div class="contact-box trigger-bottom hty" data-translateY-deg="50">
                 <div class="right box-div">
                     להתחלת פרוייקט
                 </div>
@@ -459,7 +428,7 @@
     </main>
     <footer>
         <div class="logo">
-            <a href="#top" class="scroll-to-top">
+            <a href="#" class="scroll-to-top">
                 <svg width="247" height="163" viewBox="0 0 247 163" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="logo">
                         <g id="vector" filter="url(#filter0_d)">
@@ -522,8 +491,8 @@
                 <i class="far fa-envelope"></i>
             </a>
         </div>
-        <div class="copyright">
-            2020 © <a href="#top" class="scroll-to-top">Tal Mekler Developer.</a> All Right Reserved.
+        <div class="copyright english-text">
+            2020 © &nbsp;<a href="#top" class="scroll-to-top">Tal Mekler Developer</a>. All Right Reserved.
         </div>
     </footer>
 
@@ -536,22 +505,10 @@
 
         gtag('config', 'UA-177823778-2');
     </script>
-
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/scripts/fontawesome.js"></script>
+    <script src="/scripts/app.js"></script>
 </body>
-<!-- Scripts -->
-
-<script src="scripts/loader.js"></script>
-<script src="scripts/popup.js"></script>
-<script src="scripts/fix-back-text__heroSection.js"></script>
-<script src="scripts/fix-hero-section.js"></script>
-<script src="scripts/qaa-controller.js"></script>
-<script src="scripts/show-elements-scrollTriger.js"></script>
-<script src="scripts/testimonials.js"></script>
-<script src="scripts/smooth-scroll.js"></script>
-<script src="scripts/controll-nav.js"></script>
-<script src="scripts/show-back--to-top.js"></script>
-<script src="scripts/fontawesome.js"></script>
-<script src="scripts/parallax-div.js"></script>
-<script src="scripts/side-social-controller.js"></script>
 
 </html>
