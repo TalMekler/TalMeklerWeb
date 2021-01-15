@@ -682,7 +682,6 @@ footer p.text span {
 
 footer .social {
     display: flex;
-    gap: calc(var(--mb-2) * 1.25);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -690,14 +689,6 @@ footer .social {
     margin-bottom: var(--mb-3);
     padding-right: var(--mb-1);
     padding-left: var(--mb-1);
-}
-
-body.safari footer .social .social-item {
-    margin-right: calc(var(--mb-2) * 1.25);
-}
-
-body.safari footer .social .social-item:last-child {
-    margin-right: 0;
 }
 
 footer .social .social-item {
@@ -710,7 +701,12 @@ footer .social .social-item {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    margin-right: calc(var(--mb-2) * 1.25);
     transition: all .3s ease;
+}
+
+footer .social .social-item:last-child {
+    margin-right: 0;
 }
 
 footer .social .social-item:hover {
@@ -819,8 +815,8 @@ body.contact-page-body main.contact-page .form-wrapper form .input-div.active::b
     top: 0;
     right: .5rem;
     transform: scale(.9) translateY(-50%);
-    
 }
+
 body.contact-page-body main.contact-page .form-wrapper form .input-div.type-in::before {
     top: 0;
     right: .5rem;
@@ -831,7 +827,7 @@ body.contact-page-body main.contact-page .form-wrapper form .input-div input:foc
     border: 2px solid var(--first-color);
 }
 
-body.contact-page-body main.contact-page .form-wrapper form .input-div input[type="submit"]{
+body.contact-page-body main.contact-page .form-wrapper form .input-div input[type="submit"] {
     color: var(--first-color);
     background-color: transparent;
     border: 2px solid var(--first-color);
@@ -841,16 +837,18 @@ body.contact-page-body main.contact-page .form-wrapper form .input-div input[typ
     transition: all .3s ease;
     cursor: pointer;
 }
-body.contact-page-body main.contact-page .form-wrapper form .input-div input[type="submit"]:hover{
+
+body.contact-page-body main.contact-page .form-wrapper form .input-div input[type="submit"]:hover {
     color: #fff;
     background-color: var(--first-color);
     border-color: transparent;
-    box-shadow: 0 0 20px rgba(0,0,0,.5);
-
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
+
 body.contact-page-body footer {
     padding-top: var(--mb-4);
 }
+
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
