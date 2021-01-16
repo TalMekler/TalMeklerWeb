@@ -691,7 +691,17 @@ footer .social {
     padding-left: var(--mb-1);
 }
 
-footer .social .social-item {
+footer .social .social-container {
+    position: relative;
+    margin-right: calc(var(--mb-2) * 1.25);
+}
+
+footer .social .social-container:last-child {
+    margin-right: 0;
+}
+
+footer .social .social-container .social-item {
+    position: relative;
     font-size: var(--large-size);
     color: #fff;
     border: 2px solid rgba(255, 255, 255, .3);
@@ -701,15 +711,10 @@ footer .social .social-item {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-right: calc(var(--mb-2) * 1.25);
     transition: all .3s ease;
 }
 
-footer .social .social-item:last-child {
-    margin-right: 0;
-}
-
-footer .social .social-item:hover {
+footer .social .social-container .social-item:hover {
     background-color: #fff;
     color: var(--first-color);
 }
@@ -1004,6 +1009,93 @@ body.contact-page-body footer {
     }
 }
 
+@media screen and (min-width: 800px) {
+    footer .social .social-container .social__tooltip {
+        opacity: 0;
+        position: absolute;
+        box-sizing: initial;
+        width: max-content;
+        padding: .5rem 1rem;
+        background-color: var(--light-color);
+        color: var(--first-color);
+        font-size: var(--normal-size);
+        white-space: nowrap;
+        font-weight: 700;
+        border-radius: .5rem;
+        pointer-events: none;
+        z-index: var(--z-index-over-1);
+        transition: all .3s ease;
+    }
+    footer .social .social-container .social__tooltip::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: var(--light-color);
+        border-radius: 3px;
+    }
+    /* --- Tooltip left --- */
+    footer .social .social-container .social__tooltip.social__tooltip-left {
+        top: 50%;
+        left: 0;
+        transform: translateX(-100%) translateY(-50%);
+    }
+    footer .social .social-container .social__tooltip.social__tooltip-left::after {
+        top: 50%;
+        transform: translateY(-50%) translateX(50%) rotate(45deg);
+        right: 1px;
+    }
+    footer .social .social-container:hover .social__tooltip.social__tooltip-left {
+        opacity: 1;
+        left: -1rem;
+    }
+    /* --- Tooltip top --- */
+    footer .social .social-container .social__tooltip.social__tooltip-top {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+    }
+    footer .social .social-container .social__tooltip.social__tooltip-top::after {
+        top: 100%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    }
+    footer .social .social-container:hover .social__tooltip.social__tooltip-top {
+        opacity: 1;
+        top: -1rem;
+    }
+    /* --- Tooltip right --- */
+    footer .social .social-container .social__tooltip.social__tooltip-right {
+        top: 50%;
+        right: 0;
+        transform: translateX(100%) translateY(-50%);
+    }
+    footer .social .social-container .social__tooltip.social__tooltip-right::after {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    }
+    footer .social .social-container:hover .social__tooltip.social__tooltip-right {
+        opacity: 1;
+        right: -1rem;
+    }
+    /* --- Tooltip bottom --- */
+    footer .social .social-container .social__tooltip.social__tooltip-bottom {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%);
+    }
+    footer .social .social-container .social__tooltip.social__tooltip-bottom::after {
+        top: 0;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    }
+    footer .social .social-container:hover .social__tooltip.social__tooltip-bottom {
+        opacity: 1;
+        bottom: -1rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     section.my-work {
         margin-top: 15rem;
@@ -1031,6 +1123,9 @@ body.contact-page-body footer {
     }
     section.contact .contact-box .box-div:last-child {
         margin-bottom: 0;
+    }
+    footer .social .social-container .social__tooltip{
+        display: none;
     }
 }
 
