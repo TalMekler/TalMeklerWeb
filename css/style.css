@@ -389,6 +389,12 @@ section.my-work .works-wrapper .work {
     padding: 2rem 1rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     background-color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+section.my-work .works-wrapper .work:hover{
+    filter: brightness(.9);
 }
 
 section.my-work .works-wrapper .work h3 {
