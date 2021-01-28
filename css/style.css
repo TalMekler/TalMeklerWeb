@@ -52,6 +52,8 @@
     /* general vars */
     --plus-size: var(--medium-size);
     --mobile-nav-size: 300px;
+    --switcher-height: 1.25rem;
+    --switcher-space: .3125rem;
 }
 
 *, *::after, *::before {
@@ -230,7 +232,8 @@ header nav ul .toggle-theme-wrapper span {
 header nav ul .toggle-theme-wrapper .toggle-theme {
     position: relative;
     width: 3.25rem;
-    height: 1.25rem;
+    /* height: 1.25rem; */
+    height: var(--switcher-height);
     background: var(--toggle-div);
     border-radius: 30px;
     display: inline-block;
@@ -239,12 +242,12 @@ header nav ul .toggle-theme-wrapper .toggle-theme {
 
 header nav ul .toggle-theme-wrapper .toggle-theme .toggle-theme-switcher {
     position: absolute;
-    width: .8rem;
-    height: .8rem;
+    width: calc(.64 * var(--switcher-height));
+    height: calc(.64 * var(--switcher-height));
     background-color: var(--bg-color-1);
     border-radius: 50%;
     top: 50%;
-    left: calc(100% - 4px);
+    left: calc(100% - var(--switcher-space));
     transform: translate(-100%, -50%);
     transition: all .3s ease-in-out;
 }
@@ -285,7 +288,7 @@ header .hamburger-btn.active .l3 {
 }
 
 body.light-theme header nav ul .toggle-theme-wrapper .toggle-theme .toggle-theme-switcher {
-    left: 4px;
+    left: var(--switcher-space);
     transform: translate(0, -50%);
 }
 
