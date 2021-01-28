@@ -88,6 +88,10 @@ body.open-menu {
     right: var(--mobile-nav-size);
 }
 
+.menu-body-bg {
+    display: none;
+}
+
 .english {
     font-family: var(--english-text);
 }
@@ -1112,6 +1116,20 @@ footer .copyright a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .menu-body-bg {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: var(--z-index-over-all);
+        pointer-events: none;
+    }
+    body.open-menu .menu-body-bg {
+        cursor: pointer;
+        pointer-events: all;
     }
     header nav, body.scroll header nav {
         position: fixed;
