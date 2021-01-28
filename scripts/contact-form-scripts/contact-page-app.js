@@ -1,5 +1,5 @@
 // Contact form Controll
-var inputs = document.querySelectorAll("body.contact-page-body main.contact-page .form-wrapper form .input-div input, body.contact-page-body main.contact-page .form-wrapper form .input-div textarea");
+var inputs = document.querySelectorAll(".inner-page main form .input-wrapper input, .inner-page main form .input-wrapper textarea");
 
 inputs.forEach((input)=>{
     input.addEventListener("focusin", ()=>{
