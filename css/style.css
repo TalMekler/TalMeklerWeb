@@ -239,8 +239,8 @@ header nav ul .toggle-theme-wrapper .toggle-theme {
 
 header nav ul .toggle-theme-wrapper .toggle-theme .toggle-theme-switcher {
     position: absolute;
-    width: 1rem;
-    height: 1rem;
+    width: .8rem;
+    height: .8rem;
     background-color: var(--bg-color-1);
     border-radius: 50%;
     top: 50%;
