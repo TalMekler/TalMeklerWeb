@@ -2,7 +2,7 @@
 const sr = ScrollReveal({
     distance: '30px',
     duration: 2000,
-    reset: true
+    reset: false
 });
 
 sr.reveal(".trigger-top" , {
